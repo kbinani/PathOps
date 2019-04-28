@@ -3,6 +3,8 @@
 #include "skia/include/pathops/SkPathOps.h"
 #include "skia/include/core/SkPath.h"
 #include "skia/include/core/SkRegion.h"
+#include "skia/include/core/SkStrokeRec.h"
+#include "skia/src/core/SkStroke.h"
 
 @implementation SKPath
 {
@@ -155,6 +157,50 @@ end:
     SKPath *sk = [[SKPath alloc] init];
     Op(self->path, path->path, SkPathOp::kUnion_SkPathOp, &sk->path);
     return sk;
+}
+
+
+- (SKPath*)copyStrokingWithWidth:(CGFloat)width lineCap:(CGLineCap)lineCap lineJoin:(CGLineJoin)lineJoin miterLimit:(CGFloat)miterLimit resolutionScale:(CGFloat)resolutionScale
+{
+    SkStroke stroker;
+    stroker.setWidth(width);
+    SkPaint::Cap cap;
+    switch (lineCap) {
+        case CGLineCap::kCGLineCapButt:
+            cap = SkPaint::Cap::kButt_Cap;
+            break;
+        case CGLineCap::kCGLineCapRound:
+            cap = SkPaint::Cap::kRound_Cap;
+            break;
+        case CGLineCap::kCGLineCapSquare:
+            cap = SkPaint::Cap::kSquare_Cap;
+            break;
+        default:
+            cap = SkPaint::Cap::kDefault_Cap;
+            break;
+    }
+    stroker.setCap(cap);
+    SkPaint::Join join;
+    switch (lineJoin) {
+        case CGLineJoin::kCGLineJoinBevel:
+            join = SkPaint::Join::kBevel_Join;
+            break;
+        case CGLineJoin::kCGLineJoinMiter:
+            join = SkPaint::Join::kMiter_Join;
+            break;
+        case CGLineJoin::kCGLineJoinRound:
+            join = SkPaint::Join::kRound_Join;
+            break;
+        default:
+            join = SkPaint::Join::kDefault_Join;
+            break;
+    }
+    stroker.setJoin(join);
+    stroker.setResScale(resolutionScale);
+    stroker.setDoFill(true);
+    SKPath *p = [[SKPath alloc] init];
+    stroker.strokePath(self->path, &p->path);
+    return p;
 }
 
 @end

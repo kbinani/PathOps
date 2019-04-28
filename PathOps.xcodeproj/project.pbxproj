@@ -86,6 +86,10 @@
 		945B4C062275BCA7002BC3AB /* PathOps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945B3E352274A547002BC3AB /* PathOps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		945B4C092275BCA7002BC3AB /* PathOpsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4BD32275B306002BC3AB /* PathOpsSwift.framework */; };
 		945B4C0A2275BCA7002BC3AB /* PathOpsSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4BD32275B306002BC3AB /* PathOpsSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94A9DC8A22760E7A007A2A01 /* SkStrokeRec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B445D2274BE25002BC3AB /* SkStrokeRec.cpp */; };
+		94A9DC8B22760F66007A2A01 /* SkStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452B2274BE25002BC3AB /* SkStroke.cpp */; };
+		94A9DC8D22760FC5007A2A01 /* SkStrokerPriv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45242274BE25002BC3AB /* SkStrokerPriv.cpp */; };
+		94A9DC8F22761149007A2A01 /* skia_stub.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DC8E22761149007A2A01 /* skia_stub.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1853,6 +1857,7 @@
 		945B4BEB2275B843002BC3AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		945B4BEE2275B843002BC3AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		945B4BF02275B843002BC3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A9DC8E22761149007A2A01 /* skia_stub.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = skia_stub.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1912,6 +1917,7 @@
 				945B3E392274A547002BC3AB /* Info.plist */,
 				945B4BA122759713002BC3AB /* PathOps.h */,
 				945B3E402274A61A002BC3AB /* skia_compat.mm */,
+				94A9DC8E22761149007A2A01 /* skia_stub.mm */,
 				945B4B862274D0A1002BC3AB /* SKPath.h */,
 				945B4B842274D033002BC3AB /* SKPath.mm */,
 				945B41652274BDED002BC3AB /* third_party */,
@@ -4229,6 +4235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				945B4A022274C9A2002BC3AB /* SkOpts_hsw.cpp in Sources */,
+				94A9DC8B22760F66007A2A01 /* SkStroke.cpp in Sources */,
 				945B4B782274CC8D002BC3AB /* SkPoint.cpp in Sources */,
 				945B4B812274CEC4002BC3AB /* SkMath.cpp in Sources */,
 				945B49FB2274C962002BC3AB /* SkOSFile_stdio.cpp in Sources */,
@@ -4244,9 +4251,12 @@
 				945B4B7F2274CDBB002BC3AB /* SkMemory_malloc.cpp in Sources */,
 				945B4BF52275BA4A002BC3AB /* SkOpts_crc32.cpp in Sources */,
 				945B48612274BE4F002BC3AB /* SkOpBuilder.cpp in Sources */,
+				94A9DC8A22760E7A007A2A01 /* SkStrokeRec.cpp in Sources */,
 				945B484D2274BE4F002BC3AB /* SkDCubicLineIntersection.cpp in Sources */,
 				945B4B712274CBF6002BC3AB /* SkString.cpp in Sources */,
 				945B48492274BE4F002BC3AB /* SkPathOpsQuad.cpp in Sources */,
+				94A9DC8D22760FC5007A2A01 /* SkStrokerPriv.cpp in Sources */,
+				94A9DC8F22761149007A2A01 /* skia_stub.mm in Sources */,
 				945B4B6E2274CBC2002BC3AB /* SkSemaphore.cpp in Sources */,
 				945B4B852274D033002BC3AB /* SKPath.mm in Sources */,
 				945B4B7D2274CD2B002BC3AB /* SkColor.cpp in Sources */,
