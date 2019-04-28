@@ -71,6 +71,11 @@
 		945B4B852274D033002BC3AB /* SKPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B4B842274D033002BC3AB /* SKPath.mm */; };
 		945B4B892274D367002BC3AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4B882274D366002BC3AB /* CoreGraphics.framework */; };
 		945B4B8B2274D36E002BC3AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4B8A2274D36D002BC3AB /* Foundation.framework */; };
+		945B4BA62275A70A002BC3AB /* PathOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 945B4BA122759713002BC3AB /* PathOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945B4BA72275A753002BC3AB /* SKPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 945B4B862274D0A1002BC3AB /* SKPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945B4BD72275B306002BC3AB /* PathOpsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 945B4BD52275B306002BC3AB /* PathOpsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945B4BDB2275B320002BC3AB /* PathOps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B3E352274A547002BC3AB /* PathOps.framework */; };
+		945B4BDD2275B37F002BC3AB /* CGPath+PathOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B4BDC2275B37F002BC3AB /* CGPath+PathOps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1788,6 +1793,10 @@
 		945B4B882274D366002BC3AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		945B4B8A2274D36D002BC3AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		945B4BA122759713002BC3AB /* PathOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathOps.h; sourceTree = "<group>"; };
+		945B4BD32275B306002BC3AB /* PathOpsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathOpsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		945B4BD52275B306002BC3AB /* PathOpsSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathOpsSwift.h; sourceTree = "<group>"; };
+		945B4BD62275B306002BC3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945B4BDC2275B37F002BC3AB /* CGPath+PathOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+PathOps.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1800,6 +1809,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		945B4BD02275B306002BC3AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945B4BDB2275B320002BC3AB /* PathOps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1807,6 +1824,7 @@
 			isa = PBXGroup;
 			children = (
 				945B3E372274A547002BC3AB /* PathOps */,
+				945B4BD42275B306002BC3AB /* PathOpsSwift */,
 				945B3E362274A547002BC3AB /* Products */,
 				945B4B872274D366002BC3AB /* Frameworks */,
 			);
@@ -1816,6 +1834,7 @@
 			isa = PBXGroup;
 			children = (
 				945B3E352274A547002BC3AB /* PathOps.framework */,
+				945B4BD32275B306002BC3AB /* PathOpsSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3964,6 +3983,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		945B4BD42275B306002BC3AB /* PathOpsSwift */ = {
+			isa = PBXGroup;
+			children = (
+				945B4BDC2275B37F002BC3AB /* CGPath+PathOps.swift */,
+				945B4BD62275B306002BC3AB /* Info.plist */,
+				945B4BD52275B306002BC3AB /* PathOpsSwift.h */,
+			);
+			path = PathOpsSwift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -3971,6 +4000,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945B4BA62275A70A002BC3AB /* PathOps.h in Headers */,
+				945B4BA72275A753002BC3AB /* SKPath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945B4BCE2275B306002BC3AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945B4BD72275B306002BC3AB /* PathOpsSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3995,6 +4034,24 @@
 			productReference = 945B3E352274A547002BC3AB /* PathOps.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		945B4BD22275B306002BC3AB /* PathOpsSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 945B4BD82275B306002BC3AB /* Build configuration list for PBXNativeTarget "PathOpsSwift" */;
+			buildPhases = (
+				945B4BCE2275B306002BC3AB /* Headers */,
+				945B4BCF2275B306002BC3AB /* Sources */,
+				945B4BD02275B306002BC3AB /* Frameworks */,
+				945B4BD12275B306002BC3AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PathOpsSwift;
+			productName = PathOpsSwift;
+			productReference = 945B4BD32275B306002BC3AB /* PathOpsSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -4006,6 +4063,11 @@
 				TargetAttributes = {
 					945B3E342274A547002BC3AB = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					945B4BD22275B306002BC3AB = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -4022,12 +4084,20 @@
 			projectRoot = "";
 			targets = (
 				945B3E342274A547002BC3AB /* PathOps */,
+				945B4BD22275B306002BC3AB /* PathOpsSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		945B3E332274A547002BC3AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945B4BD12275B306002BC3AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4103,6 +4173,14 @@
 				945B48572274BE4F002BC3AB /* SkPathOpsTypes.cpp in Sources */,
 				945B4B7B2274CCCA002BC3AB /* SkCubicClipper.cpp in Sources */,
 				945B4A0A2274CA84002BC3AB /* SkUTF.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945B4BCF2275B306002BC3AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945B4BDD2275B37F002BC3AB /* CGPath+PathOps.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4234,6 +4312,7 @@
 		945B3E3E2274A547002BC3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -4255,6 +4334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.PathOps;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4263,6 +4343,7 @@
 		945B3E3F2274A547002BC3AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -4289,6 +4370,57 @@
 			};
 			name = Release;
 		};
+		945B4BD92275B306002BC3AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PathOpsSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.PathOpsSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		945B4BDA2275B306002BC3AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PathOpsSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.PathOpsSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4306,6 +4438,15 @@
 			buildConfigurations = (
 				945B3E3E2274A547002BC3AB /* Debug */,
 				945B3E3F2274A547002BC3AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		945B4BD82275B306002BC3AB /* Build configuration list for PBXNativeTarget "PathOpsSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				945B4BD92275B306002BC3AB /* Debug */,
+				945B4BDA2275B306002BC3AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface SKPath : NSObject
 - (instancetype)initWithCGPath:(CGPathRef)path;
 - (instancetype)init;
@@ -16,3 +18,5 @@
 - (SKPath*)subtracted:(SKPath*)path;
 - (SKPath*)unionWith:(SKPath*)path;
 @end
+
+NS_ASSUME_NONNULL_END

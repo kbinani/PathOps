@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PathOps.h"
 
 //! Project version number for PathOps.
 FOUNDATION_EXPORT double PathOpsVersionNumber;
@@ -16,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char PathOpsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PathOps/PublicHeader.h>
 
-
+#import "SKPath.h"
