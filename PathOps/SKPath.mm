@@ -103,7 +103,7 @@
     for (SkPath::Verb v = iter.next(pts); v != SkPath::Verb::kDone_Verb; v = iter.next(pts)) {
         switch (v) {
             case SkPath::Verb::kLine_Verb: {
-                CGPathAddLineToPoint(p, nil, pts[0].x(), pts[0].y());
+                CGPathAddLineToPoint(p, nil, pts[1].x(), pts[1].y());
                 break;
             }
             case SkPath::Verb::kMove_Verb: {
@@ -111,11 +111,11 @@
                 break;
             }
             case SkPath::Verb::kQuad_Verb: {
-                CGPathAddQuadCurveToPoint(p, nil, pts[0].x(), pts[0].y(), pts[1].x(), pts[1].y());
+                CGPathAddQuadCurveToPoint(p, nil, pts[1].x(), pts[1].y(), pts[2].x(), pts[2].y());
                 break;
             }
             case SkPath::Verb::kCubic_Verb: {
-                CGPathAddCurveToPoint(p, nil, pts[0].x(), pts[0].y(), pts[1].x(), pts[1].y(), pts[2].x(), pts[2].y());
+                CGPathAddCurveToPoint(p, nil, pts[1].x(), pts[1].y(), pts[2].x(), pts[2].y(), pts[3].x(), pts[3].y());
                 break;
             }
             case SkPath::Verb::kClose_Verb: {
