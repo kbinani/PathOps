@@ -134,6 +134,14 @@ end:
 }
 
 
+- (void)simplify
+{
+    SkPath p;
+    Simplify(self->path, &p);
+    self->path.swap(p);
+}
+
+
 - (SKPath*)subtracted:(SKPath*)path
 {
     SKPath *sk = [[SKPath alloc] init];

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)closeSubpath;
 
 - (CGPathRef)toCGPath;
+- (void)simplify;
 
 - (SKPath*)subtracted:(SKPath*)path;
 - (SKPath*)unionWith:(SKPath*)path;
