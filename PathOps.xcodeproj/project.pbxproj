@@ -80,6 +80,12 @@
 		94A9DCF122799974007A2A01 /* skia_compat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B3E402274A61A002BC3AB /* skia_compat.mm */; };
 		94A9DCF222799977007A2A01 /* skia_stub.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DC8E22761149007A2A01 /* skia_stub.mm */; };
 		94A9DCF322799979007A2A01 /* SKPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B4B842274D033002BC3AB /* SKPath.mm */; };
+		94A9DCF62279D5C9007A2A01 /* CatmulRomStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */; };
+		94A9DCF82279FB3F007A2A01 /* NamedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCF72279FB3F007A2A01 /* NamedColor.swift */; };
+		94A9DCFA2279FB64007A2A01 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCF92279FB64007A2A01 /* PickerViewController.swift */; };
+		94A9DCFC2279FB88007A2A01 /* DrawingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */; };
+		94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */; };
+		94A9DD002279FE33007A2A01 /* CGFloat+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1806,6 +1812,12 @@
 		94A9DC8E22761149007A2A01 /* skia_stub.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = skia_stub.mm; sourceTree = "<group>"; };
 		94A9DCEF22799874007A2A01 /* CGPath+PathOps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPath+PathOps.swift"; sourceTree = "<group>"; };
 		94A9DCF422799A54007A2A01 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmulRomStroke.swift; sourceTree = "<group>"; };
+		94A9DCF72279FB3F007A2A01 /* NamedColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedColor.swift; sourceTree = "<group>"; };
+		94A9DCF92279FB64007A2A01 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvas.swift; sourceTree = "<group>"; };
+		94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
+		94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Math.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3988,11 +4000,17 @@
 			children = (
 				945B4BE42275B841002BC3AB /* AppDelegate.swift */,
 				945B4BEB2275B843002BC3AB /* Assets.xcassets */,
+				94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */,
 				94A9DCF422799A54007A2A01 /* Example-Bridging-Header.h */,
 				945B4BF02275B843002BC3AB /* Info.plist */,
 				945B4BED2275B843002BC3AB /* LaunchScreen.storyboard */,
 				945B4BE82275B841002BC3AB /* Main.storyboard */,
+				94A9DCF72279FB3F007A2A01 /* NamedColor.swift */,
+				94A9DCF92279FB64007A2A01 /* PickerViewController.swift */,
+				94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */,
 				945B4BE62275B841002BC3AB /* ViewController.swift */,
+				94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */,
+				94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -4074,6 +4092,7 @@
 				94A9DCEB2279970B007A2A01 /* SkOSFile_posix.cpp in Sources */,
 				94A9DCB72279934B007A2A01 /* SkOpts.cpp in Sources */,
 				94A9DCDF227996DB007A2A01 /* SkPathOpsLine.cpp in Sources */,
+				94A9DCF62279D5C9007A2A01 /* CatmulRomStroke.swift in Sources */,
 				94A9DCDE227996D8007A2A01 /* SkPathOpsDebug.cpp in Sources */,
 				945B4BE72275B841002BC3AB /* ViewController.swift in Sources */,
 				94A9DCF222799977007A2A01 /* skia_stub.mm in Sources */,
@@ -4094,10 +4113,12 @@
 				94A9DCB2227992D8007A2A01 /* SkCpu.cpp in Sources */,
 				94A9DCC722799584007A2A01 /* SkOpts_sse41.cpp in Sources */,
 				94A9DCE2227996E3007A2A01 /* SkPathOpsRect.cpp in Sources */,
+				94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */,
 				94A9DCBB2279937F007A2A01 /* SkRect.cpp in Sources */,
 				94A9DCC1227993B4007A2A01 /* SkStrokeRec.cpp in Sources */,
 				94A9DCC4227993CF007A2A01 /* SkUtils.cpp in Sources */,
 				94A9DCC922799588007A2A01 /* SkOpts_sse42.cpp in Sources */,
+				94A9DCFC2279FB88007A2A01 /* DrawingCanvas.swift in Sources */,
 				94A9DCDD227996D6007A2A01 /* SkPathOpsCurve.cpp in Sources */,
 				94A9DCB3227992DB007A2A01 /* SkCubicClipper.cpp in Sources */,
 				94A9DCCD227996AF007A2A01 /* SkDCubicToQuads.cpp in Sources */,
@@ -4109,7 +4130,9 @@
 				94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */,
 				94A9DCB1227992CB007A2A01 /* SkColor.cpp in Sources */,
 				94A9DCC822799586007A2A01 /* SkOpts_hsw.cpp in Sources */,
+				94A9DCFA2279FB64007A2A01 /* PickerViewController.swift in Sources */,
 				94A9DCD0227996B6007A2A01 /* SkIntersections.cpp in Sources */,
+				94A9DD002279FE33007A2A01 /* CGFloat+Math.swift in Sources */,
 				94A9DCDA227996CF007A2A01 /* SkPathOpsCommon.cpp in Sources */,
 				94A9DCB622799338007A2A01 /* SkMatrix.cpp in Sources */,
 				94A9DCBC22799388007A2A01 /* SkRRect.cpp in Sources */,
@@ -4122,6 +4145,7 @@
 				94A9DCE6227996EC007A2A01 /* SkPathOpsTypes.cpp in Sources */,
 				94A9DCCB227996AB007A2A01 /* SkDConicLineIntersection.cpp in Sources */,
 				94A9DCD8227996CB007A2A01 /* SkOpSpan.cpp in Sources */,
+				94A9DCF82279FB3F007A2A01 /* NamedColor.swift in Sources */,
 				94A9DCCA227996A8007A2A01 /* SkAddIntersections.cpp in Sources */,
 				94A9DCC52279957E007A2A01 /* SkOpts_avx.cpp in Sources */,
 				94A9DCD2227996BB007A2A01 /* SkOpBuilder.cpp in Sources */,
