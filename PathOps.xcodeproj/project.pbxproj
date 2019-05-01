@@ -86,6 +86,7 @@
 		94A9DCFC2279FB88007A2A01 /* DrawingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */; };
 		94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */; };
 		94A9DD002279FE33007A2A01 /* CGFloat+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */; };
+		94A9DD04227A0E9B007A2A01 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DD03227A0E9B007A2A01 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1818,6 +1819,7 @@
 		94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvas.swift; sourceTree = "<group>"; };
 		94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
 		94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Math.swift"; sourceTree = "<group>"; };
+		94A9DD03227A0E9B007A2A01 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4000,6 +4002,9 @@
 			children = (
 				945B4BE42275B841002BC3AB /* AppDelegate.swift */,
 				945B4BEB2275B843002BC3AB /* Assets.xcassets */,
+				94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */,
+				94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */,
+				94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */,
 				94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */,
 				94A9DCF422799A54007A2A01 /* Example-Bridging-Header.h */,
 				945B4BF02275B843002BC3AB /* Info.plist */,
@@ -4007,10 +4012,8 @@
 				945B4BE82275B841002BC3AB /* Main.storyboard */,
 				94A9DCF72279FB3F007A2A01 /* NamedColor.swift */,
 				94A9DCF92279FB64007A2A01 /* PickerViewController.swift */,
-				94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */,
+				94A9DD03227A0E9B007A2A01 /* RoundedButton.swift */,
 				945B4BE62275B841002BC3AB /* ViewController.swift */,
-				94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */,
-				94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -4125,6 +4128,7 @@
 				94A9DCDC227996D3007A2A01 /* SkPathOpsCubic.cpp in Sources */,
 				94A9DCE9227996F3007A2A01 /* SkReduceOrder.cpp in Sources */,
 				94A9DCF022799874007A2A01 /* CGPath+PathOps.swift in Sources */,
+				94A9DD04227A0E9B007A2A01 /* RoundedButton.swift in Sources */,
 				94A9DCC0227993B1007A2A01 /* SkStroke.cpp in Sources */,
 				94A9DCEA22799708007A2A01 /* SkOSFile_stdio.cpp in Sources */,
 				94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */,

@@ -5,7 +5,7 @@ class DrawingCanvas : UIView {
     private var working: CatmulRomStroke? = nil
 
     var width: CGFloat = 40
-    var color = UIColor.black
+    var color: NamedColor = .black
     var strokeAlpha: CGFloat = 1
 
     override func draw(_ rect: CGRect) {
@@ -55,7 +55,7 @@ class DrawingCanvas : UIView {
         guard let first = touches.first else {
             return
         }
-        let stroke = CatmulRomStroke(width: self.width, color: self.color, alpha: self.strokeAlpha)
+        let stroke = CatmulRomStroke(width: self.width, color: self.color.color, alpha: self.strokeAlpha)
         stroke.push(first.location(in: self))
 
         self.working = stroke

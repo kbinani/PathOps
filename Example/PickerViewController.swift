@@ -1,8 +1,10 @@
-class PickerViewController<T> : UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class PickerViewController<T> : UIViewController, UIPickerViewDataSource, UIPickerViewDelegate where T : Equatable {
     let elements: [T]
+    private let initialSelect: T
 
-    init(_ elements: [T]) {
+    init(elements: [T], select: T) {
         self.elements = elements
+        self.initialSelect = select
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -14,6 +16,9 @@ class PickerViewController<T> : UIViewController, UIPickerViewDataSource, UIPick
         let v = UIPickerView(frame: CGRect(x: 0, y: 0, width: 200, height: 400))
         v.dataSource = self
         v.delegate = self
+        if let idx = self.elements.firstIndex(of: self.initialSelect) {
+            v.selectRow(idx, inComponent: 0, animated: true)
+        }
         self.view = v
     }
 
