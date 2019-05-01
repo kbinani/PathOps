@@ -1,5 +1,4 @@
 import CoreGraphics
-import PathOps
 
 
 extension CGPath {

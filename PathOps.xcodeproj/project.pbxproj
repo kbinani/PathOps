@@ -7,132 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		945B3E412274A61A002BC3AB /* skia_compat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B3E402274A61A002BC3AB /* skia_compat.mm */; };
-		945B48442274BE4F002BC3AB /* SkPathOpsAsWinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45A82274BE25002BC3AB /* SkPathOpsAsWinding.cpp */; };
-		945B48452274BE4F002BC3AB /* SkPathOpsWinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45A92274BE25002BC3AB /* SkPathOpsWinding.cpp */; };
-		945B48462274BE4F002BC3AB /* SkIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AA2274BE25002BC3AB /* SkIntersections.cpp */; };
-		945B48472274BE4F002BC3AB /* SkReduceOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AB2274BE25002BC3AB /* SkReduceOrder.cpp */; };
-		945B48482274BE4F002BC3AB /* SkPathOpsDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AC2274BE25002BC3AB /* SkPathOpsDebug.cpp */; };
-		945B48492274BE4F002BC3AB /* SkPathOpsQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AE2274BE25002BC3AB /* SkPathOpsQuad.cpp */; };
-		945B484A2274BE4F002BC3AB /* SkPathOpsCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AF2274BE25002BC3AB /* SkPathOpsCommon.cpp */; };
-		945B484B2274BE4F002BC3AB /* SkPathOpsLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B52274BE25002BC3AB /* SkPathOpsLine.cpp */; };
-		945B484C2274BE4F002BC3AB /* SkPathOpsSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B62274BE25002BC3AB /* SkPathOpsSimplify.cpp */; };
-		945B484D2274BE4F002BC3AB /* SkDCubicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B72274BE25002BC3AB /* SkDCubicLineIntersection.cpp */; };
-		945B484E2274BE4F002BC3AB /* SkPathOpsTSect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BA2274BE25002BC3AB /* SkPathOpsTSect.cpp */; };
-		945B484F2274BE4F002BC3AB /* SkOpCubicHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BB2274BE25002BC3AB /* SkOpCubicHull.cpp */; };
-		945B48502274BE4F002BC3AB /* SkPathOpsCubic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BE2274BE25002BC3AB /* SkPathOpsCubic.cpp */; };
-		945B48512274BE4F002BC3AB /* SkOpEdgeBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BF2274BE25002BC3AB /* SkOpEdgeBuilder.cpp */; };
-		945B48522274BE4F002BC3AB /* SkOpAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C12274BE25002BC3AB /* SkOpAngle.cpp */; };
-		945B48532274BE4F002BC3AB /* SkPathOpsCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C22274BE25002BC3AB /* SkPathOpsCurve.cpp */; };
-		945B48542274BE4F002BC3AB /* SkOpSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C52274BE25002BC3AB /* SkOpSegment.cpp */; };
-		945B48552274BE4F002BC3AB /* SkPathOpsTightBounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C62274BE25002BC3AB /* SkPathOpsTightBounds.cpp */; };
-		945B48562274BE4F002BC3AB /* SkDConicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C82274BE25002BC3AB /* SkDConicLineIntersection.cpp */; };
-		945B48572274BE4F002BC3AB /* SkPathOpsTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CC2274BE25002BC3AB /* SkPathOpsTypes.cpp */; };
-		945B48582274BE4F002BC3AB /* SkPathOpsOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CD2274BE25002BC3AB /* SkPathOpsOp.cpp */; };
-		945B48592274BE4F002BC3AB /* SkPathOpsConic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CF2274BE25002BC3AB /* SkPathOpsConic.cpp */; };
-		945B485A2274BE4F002BC3AB /* SkPathWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D02274BE25002BC3AB /* SkPathWriter.cpp */; };
-		945B485B2274BE4F002BC3AB /* SkDQuadLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D22274BE25002BC3AB /* SkDQuadLineIntersection.cpp */; };
-		945B485C2274BE4F002BC3AB /* SkOpCoincidence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D32274BE25002BC3AB /* SkOpCoincidence.cpp */; };
-		945B485D2274BE4F002BC3AB /* SkOpContour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D62274BE25002BC3AB /* SkOpContour.cpp */; };
-		945B485E2274BE4F002BC3AB /* SkDCubicToQuads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D82274BE25002BC3AB /* SkDCubicToQuads.cpp */; };
-		945B485F2274BE4F002BC3AB /* SkDLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DB2274BE25002BC3AB /* SkDLineIntersection.cpp */; };
-		945B48602274BE4F002BC3AB /* SkOpSpan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DC2274BE25002BC3AB /* SkOpSpan.cpp */; };
-		945B48612274BE4F002BC3AB /* SkOpBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DD2274BE25002BC3AB /* SkOpBuilder.cpp */; };
-		945B48622274BE4F002BC3AB /* SkPathOpsRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DE2274BE25002BC3AB /* SkPathOpsRect.cpp */; };
-		945B48632274BE4F002BC3AB /* SkAddIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DF2274BE25002BC3AB /* SkAddIntersections.cpp */; };
-		945B49FB2274C962002BC3AB /* SkOSFile_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48102274BE26002BC3AB /* SkOSFile_stdio.cpp */; };
-		945B49FC2274C965002BC3AB /* SkOSFile_posix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48112274BE26002BC3AB /* SkOSFile_posix.cpp */; };
-		945B4A002274C9A2002BC3AB /* SkOpts_avx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47C42274BE26002BC3AB /* SkOpts_avx.cpp */; };
-		945B4A012274C9A2002BC3AB /* SkOpts_sse41.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CF2274BE26002BC3AB /* SkOpts_sse41.cpp */; };
-		945B4A022274C9A2002BC3AB /* SkOpts_hsw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D02274BE26002BC3AB /* SkOpts_hsw.cpp */; };
-		945B4A032274C9A2002BC3AB /* SkOpts_sse42.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D12274BE26002BC3AB /* SkOpts_sse42.cpp */; };
-		945B4A0A2274CA84002BC3AB /* SkUTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47382274BE26002BC3AB /* SkUTF.cpp */; };
-		945B4B6D2274CBAC002BC3AB /* SkOpts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B447C2274BE25002BC3AB /* SkOpts.cpp */; };
-		945B4B6E2274CBC2002BC3AB /* SkSemaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44532274BE25002BC3AB /* SkSemaphore.cpp */; };
-		945B4B6F2274CBCF002BC3AB /* SkPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B455E2274BE25002BC3AB /* SkPath.cpp */; };
-		945B4B702274CBDE002BC3AB /* SkRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B454E2274BE25002BC3AB /* SkRect.cpp */; };
-		945B4B712274CBF6002BC3AB /* SkString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B448C2274BE25002BC3AB /* SkString.cpp */; };
-		945B4B722274CC03002BC3AB /* SkThreadID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45822274BE25002BC3AB /* SkThreadID.cpp */; };
-		945B4B742274CC4C002BC3AB /* SkGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452A2274BE25002BC3AB /* SkGeometry.cpp */; };
-		945B4B752274CC5A002BC3AB /* SkMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B459D2274BE25002BC3AB /* SkMatrix.cpp */; };
-		945B4B762274CC68002BC3AB /* SkRRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458E2274BE25002BC3AB /* SkRRect.cpp */; };
-		945B4B772274CC72002BC3AB /* SkPathRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458F2274BE25002BC3AB /* SkPathRef.cpp */; };
-		945B4B782274CC8D002BC3AB /* SkPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45262274BE25002BC3AB /* SkPoint.cpp */; };
-		945B4B792274CC9C002BC3AB /* SkArenaAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B453B2274BE25002BC3AB /* SkArenaAlloc.cpp */; };
-		945B4B7A2274CCA5002BC3AB /* SkBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B446D2274BE25002BC3AB /* SkBuffer.cpp */; };
-		945B4B7B2274CCCA002BC3AB /* SkCubicClipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B456D2274BE25002BC3AB /* SkCubicClipper.cpp */; };
-		945B4B7C2274CCDA002BC3AB /* SkStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44A62274BE25002BC3AB /* SkStringUtils.cpp */; };
-		945B4B7D2274CD2B002BC3AB /* SkColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44F12274BE25002BC3AB /* SkColor.cpp */; };
-		945B4B7E2274CD4E002BC3AB /* SkUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44582274BE25002BC3AB /* SkUtils.cpp */; };
-		945B4B7F2274CDBB002BC3AB /* SkMemory_malloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B481D2274BE26002BC3AB /* SkMemory_malloc.cpp */; };
-		945B4B812274CEC4002BC3AB /* SkMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44682274BE25002BC3AB /* SkMath.cpp */; };
-		945B4B822274CEE1002BC3AB /* SkCpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44872274BE25002BC3AB /* SkCpu.cpp */; };
-		945B4B832274CF13002BC3AB /* SkDebug_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48352274BE26002BC3AB /* SkDebug_stdio.cpp */; };
-		945B4B852274D033002BC3AB /* SKPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B4B842274D033002BC3AB /* SKPath.mm */; };
-		945B4B892274D367002BC3AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4B882274D366002BC3AB /* CoreGraphics.framework */; };
-		945B4B8B2274D36E002BC3AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4B8A2274D36D002BC3AB /* Foundation.framework */; };
-		945B4BA62275A70A002BC3AB /* PathOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 945B4BA122759713002BC3AB /* PathOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		945B4BA72275A753002BC3AB /* SKPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 945B4B862274D0A1002BC3AB /* SKPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		945B4BD72275B306002BC3AB /* PathOpsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 945B4BD52275B306002BC3AB /* PathOpsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		945B4BDB2275B320002BC3AB /* PathOps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B3E352274A547002BC3AB /* PathOps.framework */; };
-		945B4BDD2275B37F002BC3AB /* CGPath+PathOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B4BDC2275B37F002BC3AB /* CGPath+PathOps.swift */; };
 		945B4BE52275B841002BC3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B4BE42275B841002BC3AB /* AppDelegate.swift */; };
 		945B4BE72275B841002BC3AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B4BE62275B841002BC3AB /* ViewController.swift */; };
 		945B4BEA2275B841002BC3AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945B4BE82275B841002BC3AB /* Main.storyboard */; };
 		945B4BEC2275B843002BC3AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945B4BEB2275B843002BC3AB /* Assets.xcassets */; };
 		945B4BEF2275B843002BC3AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945B4BED2275B843002BC3AB /* LaunchScreen.storyboard */; };
-		945B4BF52275BA4A002BC3AB /* SkOpts_crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CE2274BE26002BC3AB /* SkOpts_crc32.cpp */; };
-		945B4C052275BCA7002BC3AB /* PathOps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B3E352274A547002BC3AB /* PathOps.framework */; };
-		945B4C062275BCA7002BC3AB /* PathOps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945B3E352274A547002BC3AB /* PathOps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		945B4C092275BCA7002BC3AB /* PathOpsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4BD32275B306002BC3AB /* PathOpsSwift.framework */; };
-		945B4C0A2275BCA7002BC3AB /* PathOpsSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945B4BD32275B306002BC3AB /* PathOpsSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94A9DC8A22760E7A007A2A01 /* SkStrokeRec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B445D2274BE25002BC3AB /* SkStrokeRec.cpp */; };
-		94A9DC8B22760F66007A2A01 /* SkStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452B2274BE25002BC3AB /* SkStroke.cpp */; };
-		94A9DC8D22760FC5007A2A01 /* SkStrokerPriv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45242274BE25002BC3AB /* SkStrokerPriv.cpp */; };
-		94A9DC8F22761149007A2A01 /* skia_stub.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DC8E22761149007A2A01 /* skia_stub.mm */; };
+		94A9DCAF22799289007A2A01 /* SkArenaAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B453B2274BE25002BC3AB /* SkArenaAlloc.cpp */; };
+		94A9DCB0227992AD007A2A01 /* SkBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B446D2274BE25002BC3AB /* SkBuffer.cpp */; };
+		94A9DCB1227992CB007A2A01 /* SkColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44F12274BE25002BC3AB /* SkColor.cpp */; };
+		94A9DCB2227992D8007A2A01 /* SkCpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44872274BE25002BC3AB /* SkCpu.cpp */; };
+		94A9DCB3227992DB007A2A01 /* SkCubicClipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B456D2274BE25002BC3AB /* SkCubicClipper.cpp */; };
+		94A9DCB42279930C007A2A01 /* SkGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452A2274BE25002BC3AB /* SkGeometry.cpp */; };
+		94A9DCB522799334007A2A01 /* SkMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44682274BE25002BC3AB /* SkMath.cpp */; };
+		94A9DCB622799338007A2A01 /* SkMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B459D2274BE25002BC3AB /* SkMatrix.cpp */; };
+		94A9DCB72279934B007A2A01 /* SkOpts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B447C2274BE25002BC3AB /* SkOpts.cpp */; };
+		94A9DCB822799354007A2A01 /* SkPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B455E2274BE25002BC3AB /* SkPath.cpp */; };
+		94A9DCB92279935A007A2A01 /* SkPathRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458F2274BE25002BC3AB /* SkPathRef.cpp */; };
+		94A9DCBA2279936A007A2A01 /* SkPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45262274BE25002BC3AB /* SkPoint.cpp */; };
+		94A9DCBB2279937F007A2A01 /* SkRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B454E2274BE25002BC3AB /* SkRect.cpp */; };
+		94A9DCBC22799388007A2A01 /* SkRRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458E2274BE25002BC3AB /* SkRRect.cpp */; };
+		94A9DCBD2279939D007A2A01 /* SkSemaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44532274BE25002BC3AB /* SkSemaphore.cpp */; };
+		94A9DCBE227993AC007A2A01 /* SkString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B448C2274BE25002BC3AB /* SkString.cpp */; };
+		94A9DCBF227993AE007A2A01 /* SkStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44A62274BE25002BC3AB /* SkStringUtils.cpp */; };
+		94A9DCC0227993B1007A2A01 /* SkStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452B2274BE25002BC3AB /* SkStroke.cpp */; };
+		94A9DCC1227993B4007A2A01 /* SkStrokeRec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B445D2274BE25002BC3AB /* SkStrokeRec.cpp */; };
+		94A9DCC2227993B7007A2A01 /* SkStrokerPriv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45242274BE25002BC3AB /* SkStrokerPriv.cpp */; };
+		94A9DCC3227993C1007A2A01 /* SkThreadID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45822274BE25002BC3AB /* SkThreadID.cpp */; };
+		94A9DCC4227993CF007A2A01 /* SkUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44582274BE25002BC3AB /* SkUtils.cpp */; };
+		94A9DCC52279957E007A2A01 /* SkOpts_avx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47C42274BE26002BC3AB /* SkOpts_avx.cpp */; };
+		94A9DCC622799582007A2A01 /* SkOpts_crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CE2274BE26002BC3AB /* SkOpts_crc32.cpp */; };
+		94A9DCC722799584007A2A01 /* SkOpts_sse41.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CF2274BE26002BC3AB /* SkOpts_sse41.cpp */; };
+		94A9DCC822799586007A2A01 /* SkOpts_hsw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D02274BE26002BC3AB /* SkOpts_hsw.cpp */; };
+		94A9DCC922799588007A2A01 /* SkOpts_sse42.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D12274BE26002BC3AB /* SkOpts_sse42.cpp */; };
+		94A9DCCA227996A8007A2A01 /* SkAddIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DF2274BE25002BC3AB /* SkAddIntersections.cpp */; };
+		94A9DCCB227996AB007A2A01 /* SkDConicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C82274BE25002BC3AB /* SkDConicLineIntersection.cpp */; };
+		94A9DCCC227996AD007A2A01 /* SkDCubicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B72274BE25002BC3AB /* SkDCubicLineIntersection.cpp */; };
+		94A9DCCD227996AF007A2A01 /* SkDCubicToQuads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D82274BE25002BC3AB /* SkDCubicToQuads.cpp */; };
+		94A9DCCE227996B1007A2A01 /* SkDLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DB2274BE25002BC3AB /* SkDLineIntersection.cpp */; };
+		94A9DCCF227996B4007A2A01 /* SkDQuadLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D22274BE25002BC3AB /* SkDQuadLineIntersection.cpp */; };
+		94A9DCD0227996B6007A2A01 /* SkIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AA2274BE25002BC3AB /* SkIntersections.cpp */; };
+		94A9DCD1227996B9007A2A01 /* SkOpAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C12274BE25002BC3AB /* SkOpAngle.cpp */; };
+		94A9DCD2227996BB007A2A01 /* SkOpBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DD2274BE25002BC3AB /* SkOpBuilder.cpp */; };
+		94A9DCD3227996BE007A2A01 /* SkOpCoincidence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D32274BE25002BC3AB /* SkOpCoincidence.cpp */; };
+		94A9DCD4227996C1007A2A01 /* SkOpContour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D62274BE25002BC3AB /* SkOpContour.cpp */; };
+		94A9DCD5227996C3007A2A01 /* SkOpCubicHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BB2274BE25002BC3AB /* SkOpCubicHull.cpp */; };
+		94A9DCD6227996C5007A2A01 /* SkOpEdgeBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BF2274BE25002BC3AB /* SkOpEdgeBuilder.cpp */; };
+		94A9DCD7227996C8007A2A01 /* SkOpSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C52274BE25002BC3AB /* SkOpSegment.cpp */; };
+		94A9DCD8227996CB007A2A01 /* SkOpSpan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DC2274BE25002BC3AB /* SkOpSpan.cpp */; };
+		94A9DCD9227996CD007A2A01 /* SkPathOpsAsWinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45A82274BE25002BC3AB /* SkPathOpsAsWinding.cpp */; };
+		94A9DCDA227996CF007A2A01 /* SkPathOpsCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AF2274BE25002BC3AB /* SkPathOpsCommon.cpp */; };
+		94A9DCDB227996D1007A2A01 /* SkPathOpsConic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CF2274BE25002BC3AB /* SkPathOpsConic.cpp */; };
+		94A9DCDC227996D3007A2A01 /* SkPathOpsCubic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BE2274BE25002BC3AB /* SkPathOpsCubic.cpp */; };
+		94A9DCDD227996D6007A2A01 /* SkPathOpsCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C22274BE25002BC3AB /* SkPathOpsCurve.cpp */; };
+		94A9DCDE227996D8007A2A01 /* SkPathOpsDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AC2274BE25002BC3AB /* SkPathOpsDebug.cpp */; };
+		94A9DCDF227996DB007A2A01 /* SkPathOpsLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B52274BE25002BC3AB /* SkPathOpsLine.cpp */; };
+		94A9DCE0227996DD007A2A01 /* SkPathOpsOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CD2274BE25002BC3AB /* SkPathOpsOp.cpp */; };
+		94A9DCE1227996E1007A2A01 /* SkPathOpsQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AE2274BE25002BC3AB /* SkPathOpsQuad.cpp */; };
+		94A9DCE2227996E3007A2A01 /* SkPathOpsRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DE2274BE25002BC3AB /* SkPathOpsRect.cpp */; };
+		94A9DCE3227996E5007A2A01 /* SkPathOpsSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B62274BE25002BC3AB /* SkPathOpsSimplify.cpp */; };
+		94A9DCE4227996E8007A2A01 /* SkPathOpsTightBounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C62274BE25002BC3AB /* SkPathOpsTightBounds.cpp */; };
+		94A9DCE5227996EA007A2A01 /* SkPathOpsTSect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BA2274BE25002BC3AB /* SkPathOpsTSect.cpp */; };
+		94A9DCE6227996EC007A2A01 /* SkPathOpsTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CC2274BE25002BC3AB /* SkPathOpsTypes.cpp */; };
+		94A9DCE7227996EE007A2A01 /* SkPathOpsWinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45A92274BE25002BC3AB /* SkPathOpsWinding.cpp */; };
+		94A9DCE8227996F1007A2A01 /* SkPathWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D02274BE25002BC3AB /* SkPathWriter.cpp */; };
+		94A9DCE9227996F3007A2A01 /* SkReduceOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AB2274BE25002BC3AB /* SkReduceOrder.cpp */; };
+		94A9DCEA22799708007A2A01 /* SkOSFile_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48102274BE26002BC3AB /* SkOSFile_stdio.cpp */; };
+		94A9DCEB2279970B007A2A01 /* SkOSFile_posix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48112274BE26002BC3AB /* SkOSFile_posix.cpp */; };
+		94A9DCEC2279971D007A2A01 /* SkDebug_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48352274BE26002BC3AB /* SkDebug_stdio.cpp */; };
+		94A9DCED22799740007A2A01 /* SkMemory_malloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B481D2274BE26002BC3AB /* SkMemory_malloc.cpp */; };
+		94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47382274BE26002BC3AB /* SkUTF.cpp */; };
+		94A9DCF022799874007A2A01 /* CGPath+PathOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCEF22799874007A2A01 /* CGPath+PathOps.swift */; };
+		94A9DCF122799974007A2A01 /* skia_compat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B3E402274A61A002BC3AB /* skia_compat.mm */; };
+		94A9DCF222799977007A2A01 /* skia_stub.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DC8E22761149007A2A01 /* skia_stub.mm */; };
+		94A9DCF322799979007A2A01 /* SKPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B4B842274D033002BC3AB /* SKPath.mm */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		945B4BFA2275BBD9002BC3AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 945B3E2C2274A547002BC3AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 945B3E342274A547002BC3AB;
-			remoteInfo = PathOps;
-		};
-		945B4C072275BCA7002BC3AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 945B3E2C2274A547002BC3AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 945B3E342274A547002BC3AB;
-			remoteInfo = PathOps;
-		};
-		945B4C0B2275BCA7002BC3AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 945B3E2C2274A547002BC3AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 945B4BD22275B306002BC3AB;
-			remoteInfo = PathOpsSwift;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		945B4C0D2275BCA7002BC3AB /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				945B4C0A2275BCA7002BC3AB /* PathOpsSwift.framework in Embed Frameworks */,
-				945B4C062275BCA7002BC3AB /* PathOps.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		945B3E352274A547002BC3AB /* PathOps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathOps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		945B3E392274A547002BC3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		945B3E402274A61A002BC3AB /* skia_compat.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = skia_compat.mm; sourceTree = "<group>"; };
 		945B416A2274BE24002BC3AB /* SkSVGCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SkSVGCanvas.cpp; sourceTree = "<group>"; };
@@ -1846,10 +1796,6 @@
 		945B4B882274D366002BC3AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		945B4B8A2274D36D002BC3AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		945B4BA122759713002BC3AB /* PathOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathOps.h; sourceTree = "<group>"; };
-		945B4BD32275B306002BC3AB /* PathOpsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathOpsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		945B4BD52275B306002BC3AB /* PathOpsSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathOpsSwift.h; sourceTree = "<group>"; };
-		945B4BD62275B306002BC3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		945B4BDC2275B37F002BC3AB /* CGPath+PathOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+PathOps.swift"; sourceTree = "<group>"; };
 		945B4BE22275B840002BC3AB /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945B4BE42275B841002BC3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945B4BE62275B841002BC3AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1858,32 +1804,15 @@
 		945B4BEE2275B843002BC3AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		945B4BF02275B843002BC3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94A9DC8E22761149007A2A01 /* skia_stub.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = skia_stub.mm; sourceTree = "<group>"; };
+		94A9DCEF22799874007A2A01 /* CGPath+PathOps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPath+PathOps.swift"; sourceTree = "<group>"; };
+		94A9DCF422799A54007A2A01 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		945B3E322274A547002BC3AB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945B4B8B2274D36E002BC3AB /* Foundation.framework in Frameworks */,
-				945B4B892274D367002BC3AB /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		945B4BD02275B306002BC3AB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945B4BDB2275B320002BC3AB /* PathOps.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		945B4BDF2275B840002BC3AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945B4C092275BCA7002BC3AB /* PathOpsSwift.framework in Frameworks */,
-				945B4C052275BCA7002BC3AB /* PathOps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1893,8 +1822,7 @@
 		945B3E2B2274A547002BC3AB = {
 			isa = PBXGroup;
 			children = (
-				945B3E372274A547002BC3AB /* PathOps */,
-				945B4BD42275B306002BC3AB /* PathOpsSwift */,
+				945B3E372274A547002BC3AB /* Source */,
 				945B4BE32275B841002BC3AB /* Example */,
 				945B3E362274A547002BC3AB /* Products */,
 				945B4B872274D366002BC3AB /* Frameworks */,
@@ -1904,16 +1832,15 @@
 		945B3E362274A547002BC3AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				945B3E352274A547002BC3AB /* PathOps.framework */,
-				945B4BD32275B306002BC3AB /* PathOpsSwift.framework */,
 				945B4BE22275B840002BC3AB /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		945B3E372274A547002BC3AB /* PathOps */ = {
+		945B3E372274A547002BC3AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				94A9DCEF22799874007A2A01 /* CGPath+PathOps.swift */,
 				945B3E392274A547002BC3AB /* Info.plist */,
 				945B4BA122759713002BC3AB /* PathOps.h */,
 				945B3E402274A61A002BC3AB /* skia_compat.mm */,
@@ -1922,7 +1849,7 @@
 				945B4B842274D033002BC3AB /* SKPath.mm */,
 				945B41652274BDED002BC3AB /* third_party */,
 			);
-			path = PathOps;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		945B41652274BDED002BC3AB /* third_party */ = {
@@ -1975,8 +1902,8 @@
 			isa = PBXGroup;
 			children = (
 				945B416A2274BE24002BC3AB /* SkSVGCanvas.cpp */,
-				945B416B2274BE24002BC3AB /* SkSVGDevice.h */,
 				945B416C2274BE24002BC3AB /* SkSVGDevice.cpp */,
+				945B416B2274BE24002BC3AB /* SkSVGDevice.h */,
 			);
 			path = svg;
 			sourceTree = "<group>";
@@ -2319,34 +2246,34 @@
 		945B42392274BE24002BC3AB /* glsl */ = {
 			isa = PBXGroup;
 			children = (
-				945B423A2274BE24002BC3AB /* GrGLSLUtil.cpp */,
-				945B423B2274BE24002BC3AB /* GrGLSL.h */,
-				945B423C2274BE24002BC3AB /* GrGLSLUniformHandler.h */,
-				945B423D2274BE24002BC3AB /* GrGLSLXferProcessor.h */,
-				945B423E2274BE24002BC3AB /* GrGLSLProgramBuilder.h */,
-				945B423F2274BE24002BC3AB /* GrGLSLVertexGeoBuilder.cpp */,
-				945B42402274BE24002BC3AB /* GrGLSLColorSpaceXformHelper.h */,
-				945B42412274BE24002BC3AB /* GrGLSLVertexGeoBuilder.h */,
-				945B42422274BE24002BC3AB /* GrGLSLProgramDataManager.cpp */,
-				945B42432274BE24002BC3AB /* GrGLSLPrimitiveProcessor.cpp */,
-				945B42442274BE24002BC3AB /* GrGLSLGeometryProcessor.h */,
-				945B42452274BE24002BC3AB /* GrGLSLFragmentProcessor.cpp */,
 				945B42462274BE24002BC3AB /* GrGLSL.cpp */,
-				945B42472274BE24002BC3AB /* GrGLSLGeometryProcessor.cpp */,
+				945B423B2274BE24002BC3AB /* GrGLSL.h */,
 				945B42482274BE24002BC3AB /* GrGLSLBlend.cpp */,
-				945B42492274BE24002BC3AB /* GrGLSLVarying.h */,
-				945B424A2274BE24002BC3AB /* GrGLSLVarying.cpp */,
 				945B424B2274BE24002BC3AB /* GrGLSLBlend.h */,
-				945B424C2274BE24002BC3AB /* GrGLSLFragmentShaderBuilder.h */,
-				945B424D2274BE24002BC3AB /* GrGLSLUtil.h */,
-				945B424E2274BE24002BC3AB /* GrGLSLShaderBuilder.h */,
-				945B424F2274BE24002BC3AB /* GrGLSLShaderBuilder.cpp */,
-				945B42502274BE24002BC3AB /* GrGLSLPrimitiveProcessor.h */,
+				945B42402274BE24002BC3AB /* GrGLSLColorSpaceXformHelper.h */,
+				945B42452274BE24002BC3AB /* GrGLSLFragmentProcessor.cpp */,
 				945B42512274BE24002BC3AB /* GrGLSLFragmentProcessor.h */,
-				945B42522274BE24002BC3AB /* GrGLSLProgramDataManager.h */,
-				945B42532274BE24002BC3AB /* GrGLSLXferProcessor.cpp */,
-				945B42542274BE24002BC3AB /* GrGLSLProgramBuilder.cpp */,
 				945B42552274BE24002BC3AB /* GrGLSLFragmentShaderBuilder.cpp */,
+				945B424C2274BE24002BC3AB /* GrGLSLFragmentShaderBuilder.h */,
+				945B42472274BE24002BC3AB /* GrGLSLGeometryProcessor.cpp */,
+				945B42442274BE24002BC3AB /* GrGLSLGeometryProcessor.h */,
+				945B42432274BE24002BC3AB /* GrGLSLPrimitiveProcessor.cpp */,
+				945B42502274BE24002BC3AB /* GrGLSLPrimitiveProcessor.h */,
+				945B42542274BE24002BC3AB /* GrGLSLProgramBuilder.cpp */,
+				945B423E2274BE24002BC3AB /* GrGLSLProgramBuilder.h */,
+				945B42422274BE24002BC3AB /* GrGLSLProgramDataManager.cpp */,
+				945B42522274BE24002BC3AB /* GrGLSLProgramDataManager.h */,
+				945B424F2274BE24002BC3AB /* GrGLSLShaderBuilder.cpp */,
+				945B424E2274BE24002BC3AB /* GrGLSLShaderBuilder.h */,
+				945B423C2274BE24002BC3AB /* GrGLSLUniformHandler.h */,
+				945B423A2274BE24002BC3AB /* GrGLSLUtil.cpp */,
+				945B424D2274BE24002BC3AB /* GrGLSLUtil.h */,
+				945B424A2274BE24002BC3AB /* GrGLSLVarying.cpp */,
+				945B42492274BE24002BC3AB /* GrGLSLVarying.h */,
+				945B423F2274BE24002BC3AB /* GrGLSLVertexGeoBuilder.cpp */,
+				945B42412274BE24002BC3AB /* GrGLSLVertexGeoBuilder.h */,
+				945B42532274BE24002BC3AB /* GrGLSLXferProcessor.cpp */,
+				945B423D2274BE24002BC3AB /* GrGLSLXferProcessor.h */,
 			);
 			path = glsl;
 			sourceTree = "<group>";
@@ -2354,63 +2281,63 @@
 		945B42772274BE24002BC3AB /* gl */ = {
 			isa = PBXGroup;
 			children = (
-				945B42782274BE24002BC3AB /* GrGLGpuCommandBuffer.cpp */,
-				945B42792274BE24002BC3AB /* GrGLAssembleGLInterfaceAutogen.cpp */,
-				945B427A2274BE24002BC3AB /* GrGLContext.h */,
-				945B427B2274BE24002BC3AB /* GrGLPath.cpp */,
-				945B427C2274BE24002BC3AB /* GrGLInterfaceAutogen.cpp */,
-				945B427D2274BE24002BC3AB /* GrGLExtensions.cpp */,
-				945B427E2274BE24002BC3AB /* GrGLMakeNativeInterface_none.cpp */,
-				945B427F2274BE24002BC3AB /* GrGLTexture.cpp */,
-				945B42802274BE24002BC3AB /* GrGLPath.h */,
-				945B42812274BE24002BC3AB /* GrGLUniformHandler.h */,
-				945B42822274BE24002BC3AB /* GrGLDefines.h */,
-				945B42832274BE24002BC3AB /* GrGLCaps.h */,
-				945B42842274BE24002BC3AB /* GrGLBuffer.h */,
-				945B42852274BE24002BC3AB /* GrGLContext.cpp */,
-				945B42862274BE24002BC3AB /* builders */,
-				945B428B2274BE24002BC3AB /* GrGLSemaphore.cpp */,
-				945B428C2274BE24002BC3AB /* GrGLAssembleWebGLInterfaceAutogen.cpp */,
-				945B428D2274BE24002BC3AB /* win */,
-				945B428F2274BE24002BC3AB /* GrGLGLSL.cpp */,
-				945B42902274BE24002BC3AB /* GrGLVertexArray.h */,
-				945B42912274BE24002BC3AB /* GrGLVaryingHandler.h */,
-				945B42922274BE24002BC3AB /* GrGLProgramDataManager.cpp */,
-				945B42932274BE24002BC3AB /* GrGLProgram.cpp */,
-				945B42942274BE24002BC3AB /* GrGLGpuProgramCache.cpp */,
-				945B42952274BE24002BC3AB /* GrGLGpuCommandBuffer.h */,
-				945B42962274BE24002BC3AB /* GrGLStencilAttachment.cpp */,
-				945B42972274BE24002BC3AB /* iOS */,
-				945B42992274BE24002BC3AB /* GrGLSemaphore.h */,
-				945B429A2274BE24002BC3AB /* GrGLProgram.h */,
-				945B429B2274BE24002BC3AB /* egl */,
-				945B429D2274BE24002BC3AB /* mac */,
-				945B429F2274BE24002BC3AB /* GrGLUniformHandler.cpp */,
-				945B42A02274BE24002BC3AB /* GrGLPathRendering.cpp */,
-				945B42A12274BE24002BC3AB /* GrGLTexture.h */,
-				945B42A22274BE24002BC3AB /* GrGLGpu.h */,
-				945B42A32274BE24002BC3AB /* GrGLAssembleHelpers.cpp */,
-				945B42A42274BE24002BC3AB /* GrGLUtil.h */,
-				945B42A52274BE24002BC3AB /* GrGLRenderTarget.cpp */,
-				945B42A62274BE24002BC3AB /* GrGLPathRendering.h */,
-				945B42A72274BE24002BC3AB /* GrGLBuffer.cpp */,
-				945B42A82274BE24002BC3AB /* GrGLUtil.cpp */,
 				945B42A92274BE24002BC3AB /* android */,
-				945B42AB2274BE24002BC3AB /* GrGLCaps.cpp */,
-				945B42AC2274BE24002BC3AB /* GrGLTextureRenderTarget.cpp */,
-				945B42AD2274BE24002BC3AB /* GrGLAssembleInterface.cpp */,
-				945B42AE2274BE24002BC3AB /* GrGLAssembleGLESInterfaceAutogen.cpp */,
-				945B42AF2274BE24002BC3AB /* GrGLGLSL.h */,
-				945B42B02274BE24002BC3AB /* GrGLStencilAttachment.h */,
+				945B42862274BE24002BC3AB /* builders */,
+				945B429B2274BE24002BC3AB /* egl */,
 				945B42B12274BE24002BC3AB /* glfw */,
-				945B42B32274BE24002BC3AB /* GrGLVertexArray.cpp */,
-				945B42B42274BE24002BC3AB /* GrGLTextureRenderTarget.h */,
-				945B42B52274BE24002BC3AB /* GrGLRenderTarget.h */,
-				945B42B62274BE24002BC3AB /* GrGLIRect.h */,
-				945B42B72274BE24002BC3AB /* GrGLGpu.cpp */,
 				945B42B82274BE24002BC3AB /* glx */,
+				945B42AE2274BE24002BC3AB /* GrGLAssembleGLESInterfaceAutogen.cpp */,
+				945B42792274BE24002BC3AB /* GrGLAssembleGLInterfaceAutogen.cpp */,
+				945B42A32274BE24002BC3AB /* GrGLAssembleHelpers.cpp */,
+				945B42AD2274BE24002BC3AB /* GrGLAssembleInterface.cpp */,
+				945B428C2274BE24002BC3AB /* GrGLAssembleWebGLInterfaceAutogen.cpp */,
+				945B42A72274BE24002BC3AB /* GrGLBuffer.cpp */,
+				945B42842274BE24002BC3AB /* GrGLBuffer.h */,
+				945B42AB2274BE24002BC3AB /* GrGLCaps.cpp */,
+				945B42832274BE24002BC3AB /* GrGLCaps.h */,
+				945B42852274BE24002BC3AB /* GrGLContext.cpp */,
+				945B427A2274BE24002BC3AB /* GrGLContext.h */,
+				945B42822274BE24002BC3AB /* GrGLDefines.h */,
+				945B427D2274BE24002BC3AB /* GrGLExtensions.cpp */,
+				945B428F2274BE24002BC3AB /* GrGLGLSL.cpp */,
+				945B42AF2274BE24002BC3AB /* GrGLGLSL.h */,
+				945B42B72274BE24002BC3AB /* GrGLGpu.cpp */,
+				945B42A22274BE24002BC3AB /* GrGLGpu.h */,
+				945B42782274BE24002BC3AB /* GrGLGpuCommandBuffer.cpp */,
+				945B42952274BE24002BC3AB /* GrGLGpuCommandBuffer.h */,
+				945B42942274BE24002BC3AB /* GrGLGpuProgramCache.cpp */,
+				945B427C2274BE24002BC3AB /* GrGLInterfaceAutogen.cpp */,
+				945B42B62274BE24002BC3AB /* GrGLIRect.h */,
+				945B427E2274BE24002BC3AB /* GrGLMakeNativeInterface_none.cpp */,
+				945B427B2274BE24002BC3AB /* GrGLPath.cpp */,
+				945B42802274BE24002BC3AB /* GrGLPath.h */,
+				945B42A02274BE24002BC3AB /* GrGLPathRendering.cpp */,
+				945B42A62274BE24002BC3AB /* GrGLPathRendering.h */,
+				945B42932274BE24002BC3AB /* GrGLProgram.cpp */,
+				945B429A2274BE24002BC3AB /* GrGLProgram.h */,
+				945B42922274BE24002BC3AB /* GrGLProgramDataManager.cpp */,
 				945B42BA2274BE24002BC3AB /* GrGLProgramDataManager.h */,
+				945B42A52274BE24002BC3AB /* GrGLRenderTarget.cpp */,
+				945B42B52274BE24002BC3AB /* GrGLRenderTarget.h */,
+				945B428B2274BE24002BC3AB /* GrGLSemaphore.cpp */,
+				945B42992274BE24002BC3AB /* GrGLSemaphore.h */,
+				945B42962274BE24002BC3AB /* GrGLStencilAttachment.cpp */,
+				945B42B02274BE24002BC3AB /* GrGLStencilAttachment.h */,
+				945B427F2274BE24002BC3AB /* GrGLTexture.cpp */,
+				945B42A12274BE24002BC3AB /* GrGLTexture.h */,
+				945B42AC2274BE24002BC3AB /* GrGLTextureRenderTarget.cpp */,
+				945B42B42274BE24002BC3AB /* GrGLTextureRenderTarget.h */,
+				945B429F2274BE24002BC3AB /* GrGLUniformHandler.cpp */,
+				945B42812274BE24002BC3AB /* GrGLUniformHandler.h */,
+				945B42A82274BE24002BC3AB /* GrGLUtil.cpp */,
+				945B42A42274BE24002BC3AB /* GrGLUtil.h */,
 				945B42BB2274BE24002BC3AB /* GrGLVaryingHandler.cpp */,
+				945B42912274BE24002BC3AB /* GrGLVaryingHandler.h */,
+				945B42B32274BE24002BC3AB /* GrGLVertexArray.cpp */,
+				945B42902274BE24002BC3AB /* GrGLVertexArray.h */,
+				945B42972274BE24002BC3AB /* iOS */,
+				945B429D2274BE24002BC3AB /* mac */,
+				945B428D2274BE24002BC3AB /* win */,
 			);
 			path = gl;
 			sourceTree = "<group>";
@@ -2418,10 +2345,10 @@
 		945B42862274BE24002BC3AB /* builders */ = {
 			isa = PBXGroup;
 			children = (
-				945B42872274BE24002BC3AB /* GrGLShaderStringBuilder.cpp */,
-				945B42882274BE24002BC3AB /* GrGLProgramBuilder.h */,
-				945B42892274BE24002BC3AB /* GrGLShaderStringBuilder.h */,
 				945B428A2274BE24002BC3AB /* GrGLProgramBuilder.cpp */,
+				945B42882274BE24002BC3AB /* GrGLProgramBuilder.h */,
+				945B42872274BE24002BC3AB /* GrGLShaderStringBuilder.cpp */,
+				945B42892274BE24002BC3AB /* GrGLShaderStringBuilder.h */,
 			);
 			path = builders;
 			sourceTree = "<group>";
@@ -2608,43 +2535,43 @@
 		945B43432274BE24002BC3AB /* ccpr */ = {
 			isa = PBXGroup;
 			children = (
-				945B43442274BE24002BC3AB /* GrCCPerFlushResources.h */,
-				945B43452274BE24002BC3AB /* GrCCClipPath.cpp */,
-				945B43462274BE24002BC3AB /* GrCCDrawPathsOp.cpp */,
-				945B43472274BE24002BC3AB /* GrCCPathProcessor.cpp */,
-				945B43482274BE24002BC3AB /* GrCCStroker.cpp */,
-				945B43492274BE24002BC3AB /* GrCCFillGeometry.cpp */,
-				945B434A2274BE24002BC3AB /* GrCoverageCountingPathRenderer_none.cpp */,
-				945B434B2274BE24002BC3AB /* GrCCCubicShader.h */,
-				945B434C2274BE24002BC3AB /* GrCCCoverageProcessor.h */,
-				945B434D2274BE24002BC3AB /* GrCCAtlas.h */,
-				945B434E2274BE24002BC3AB /* GrVSCoverageProcessor.cpp */,
 				945B434F2274BE24002BC3AB /* GrCCAtlas.cpp */,
-				945B43502274BE24002BC3AB /* GrGSCoverageProcessor.cpp */,
-				945B43512274BE24002BC3AB /* GrCoverageCountingPathRenderer.cpp */,
-				945B43522274BE24002BC3AB /* GrCCCubicShader.cpp */,
-				945B43532274BE24002BC3AB /* GrCCPathProcessor.h */,
-				945B43542274BE24002BC3AB /* GrCCCoverageProcessor.cpp */,
-				945B43552274BE24002BC3AB /* GrCCConicShader.h */,
-				945B43562274BE24002BC3AB /* GrCCQuadraticShader.cpp */,
+				945B434D2274BE24002BC3AB /* GrCCAtlas.h */,
+				945B43452274BE24002BC3AB /* GrCCClipPath.cpp */,
 				945B43572274BE24002BC3AB /* GrCCClipProcessor.cpp */,
-				945B43582274BE24002BC3AB /* GrCCFillGeometry.h */,
-				945B43592274BE24002BC3AB /* GrCCSTLList.h */,
-				945B435A2274BE24002BC3AB /* GrCoverageCountingPathRenderer.h */,
-				945B435B2274BE24002BC3AB /* GrCCConicShader.cpp */,
-				945B435C2274BE24002BC3AB /* GrCCStrokeGeometry.h */,
-				945B435D2274BE24002BC3AB /* GrCCDrawPathsOp.h */,
-				945B435E2274BE24002BC3AB /* GrCCPerFlushResources.cpp */,
-				945B435F2274BE24002BC3AB /* GrCCStroker.h */,
 				945B43602274BE24002BC3AB /* GrCCClipProcessor.h */,
+				945B435B2274BE24002BC3AB /* GrCCConicShader.cpp */,
+				945B43552274BE24002BC3AB /* GrCCConicShader.h */,
+				945B43542274BE24002BC3AB /* GrCCCoverageProcessor.cpp */,
+				945B434C2274BE24002BC3AB /* GrCCCoverageProcessor.h */,
+				945B43522274BE24002BC3AB /* GrCCCubicShader.cpp */,
+				945B434B2274BE24002BC3AB /* GrCCCubicShader.h */,
+				945B43462274BE24002BC3AB /* GrCCDrawPathsOp.cpp */,
+				945B435D2274BE24002BC3AB /* GrCCDrawPathsOp.h */,
 				945B43612274BE24002BC3AB /* GrCCFiller.cpp */,
 				945B43622274BE24002BC3AB /* GrCCFiller.h */,
-				945B43632274BE24002BC3AB /* GrGSCoverageProcessor.h */,
-				945B43642274BE24002BC3AB /* GrVSCoverageProcessor.h */,
+				945B43492274BE24002BC3AB /* GrCCFillGeometry.cpp */,
+				945B43582274BE24002BC3AB /* GrCCFillGeometry.h */,
 				945B43652274BE24002BC3AB /* GrCCPathCache.cpp */,
 				945B43662274BE24002BC3AB /* GrCCPathCache.h */,
-				945B43672274BE24002BC3AB /* GrCCStrokeGeometry.cpp */,
+				945B43472274BE24002BC3AB /* GrCCPathProcessor.cpp */,
+				945B43532274BE24002BC3AB /* GrCCPathProcessor.h */,
+				945B435E2274BE24002BC3AB /* GrCCPerFlushResources.cpp */,
+				945B43442274BE24002BC3AB /* GrCCPerFlushResources.h */,
+				945B43562274BE24002BC3AB /* GrCCQuadraticShader.cpp */,
 				945B43682274BE24002BC3AB /* GrCCQuadraticShader.h */,
+				945B43592274BE24002BC3AB /* GrCCSTLList.h */,
+				945B43672274BE24002BC3AB /* GrCCStrokeGeometry.cpp */,
+				945B435C2274BE24002BC3AB /* GrCCStrokeGeometry.h */,
+				945B43482274BE24002BC3AB /* GrCCStroker.cpp */,
+				945B435F2274BE24002BC3AB /* GrCCStroker.h */,
+				945B434A2274BE24002BC3AB /* GrCoverageCountingPathRenderer_none.cpp */,
+				945B43512274BE24002BC3AB /* GrCoverageCountingPathRenderer.cpp */,
+				945B435A2274BE24002BC3AB /* GrCoverageCountingPathRenderer.h */,
+				945B43502274BE24002BC3AB /* GrGSCoverageProcessor.cpp */,
+				945B43632274BE24002BC3AB /* GrGSCoverageProcessor.h */,
+				945B434E2274BE24002BC3AB /* GrVSCoverageProcessor.cpp */,
+				945B43642274BE24002BC3AB /* GrVSCoverageProcessor.h */,
 			);
 			path = ccpr;
 			sourceTree = "<group>";
@@ -2677,20 +2604,20 @@
 			children = (
 				945B43882274BE24002BC3AB /* generated */,
 				945B439D2274BE24002BC3AB /* GrClampedGradientEffect.fp */,
-				945B439E2274BE24002BC3AB /* GrSingleIntervalGradientColorizer.fp */,
-				945B439F2274BE24002BC3AB /* GrTiledGradientEffect.fp */,
-				945B43A02274BE24002BC3AB /* GrTextureGradientColorizer.fp */,
 				945B43A12274BE24002BC3AB /* GrDualIntervalGradientColorizer.fp */,
-				945B43A22274BE24002BC3AB /* GrUnrolledBinaryGradientColorizer.fp */,
-				945B43A32274BE24002BC3AB /* GrRadialGradientLayout.fp */,
-				945B43A42274BE24002BC3AB /* README.md */,
+				945B43AA2274BE24002BC3AB /* GrGradientBitmapCache.cpp */,
+				945B43A72274BE24002BC3AB /* GrGradientBitmapCache.h */,
 				945B43A52274BE24002BC3AB /* GrGradientShader.cpp */,
 				945B43A62274BE24002BC3AB /* GrGradientShader.h */,
-				945B43A72274BE24002BC3AB /* GrGradientBitmapCache.h */,
-				945B43A82274BE24002BC3AB /* GrTwoPointConicalGradientLayout.fp */,
 				945B43A92274BE24002BC3AB /* GrLinearGradientLayout.fp */,
-				945B43AA2274BE24002BC3AB /* GrGradientBitmapCache.cpp */,
+				945B43A32274BE24002BC3AB /* GrRadialGradientLayout.fp */,
+				945B439E2274BE24002BC3AB /* GrSingleIntervalGradientColorizer.fp */,
 				945B43AB2274BE24002BC3AB /* GrSweepGradientLayout.fp */,
+				945B43A02274BE24002BC3AB /* GrTextureGradientColorizer.fp */,
+				945B439F2274BE24002BC3AB /* GrTiledGradientEffect.fp */,
+				945B43A82274BE24002BC3AB /* GrTwoPointConicalGradientLayout.fp */,
+				945B43A22274BE24002BC3AB /* GrUnrolledBinaryGradientColorizer.fp */,
+				945B43A42274BE24002BC3AB /* README.md */,
 			);
 			path = gradients;
 			sourceTree = "<group>";
@@ -2698,26 +2625,26 @@
 		945B43882274BE24002BC3AB /* generated */ = {
 			isa = PBXGroup;
 			children = (
-				945B43892274BE24002BC3AB /* GrRadialGradientLayout.h */,
-				945B438A2274BE24002BC3AB /* GrUnrolledBinaryGradientColorizer.cpp */,
 				945B438B2274BE24002BC3AB /* GrClampedGradientEffect.cpp */,
-				945B438C2274BE24002BC3AB /* GrRadialGradientLayout.cpp */,
-				945B438D2274BE24002BC3AB /* GrTiledGradientEffect.cpp */,
-				945B438E2274BE24002BC3AB /* GrTextureGradientColorizer.h */,
-				945B438F2274BE24002BC3AB /* GrTwoPointConicalGradientLayout.h */,
-				945B43902274BE24002BC3AB /* GrDualIntervalGradientColorizer.h */,
-				945B43912274BE24002BC3AB /* GrLinearGradientLayout.h */,
-				945B43922274BE24002BC3AB /* GrSingleIntervalGradientColorizer.h */,
-				945B43932274BE24002BC3AB /* GrTextureGradientColorizer.cpp */,
-				945B43942274BE24002BC3AB /* GrTiledGradientEffect.h */,
-				945B43952274BE24002BC3AB /* GrTwoPointConicalGradientLayout.cpp */,
-				945B43962274BE24002BC3AB /* GrUnrolledBinaryGradientColorizer.h */,
 				945B43972274BE24002BC3AB /* GrClampedGradientEffect.h */,
 				945B43982274BE24002BC3AB /* GrDualIntervalGradientColorizer.cpp */,
-				945B43992274BE24002BC3AB /* GrSingleIntervalGradientColorizer.cpp */,
+				945B43902274BE24002BC3AB /* GrDualIntervalGradientColorizer.h */,
 				945B439A2274BE24002BC3AB /* GrLinearGradientLayout.cpp */,
-				945B439B2274BE24002BC3AB /* GrSweepGradientLayout.h */,
+				945B43912274BE24002BC3AB /* GrLinearGradientLayout.h */,
+				945B438C2274BE24002BC3AB /* GrRadialGradientLayout.cpp */,
+				945B43892274BE24002BC3AB /* GrRadialGradientLayout.h */,
+				945B43992274BE24002BC3AB /* GrSingleIntervalGradientColorizer.cpp */,
+				945B43922274BE24002BC3AB /* GrSingleIntervalGradientColorizer.h */,
 				945B439C2274BE24002BC3AB /* GrSweepGradientLayout.cpp */,
+				945B439B2274BE24002BC3AB /* GrSweepGradientLayout.h */,
+				945B43932274BE24002BC3AB /* GrTextureGradientColorizer.cpp */,
+				945B438E2274BE24002BC3AB /* GrTextureGradientColorizer.h */,
+				945B438D2274BE24002BC3AB /* GrTiledGradientEffect.cpp */,
+				945B43942274BE24002BC3AB /* GrTiledGradientEffect.h */,
+				945B43952274BE24002BC3AB /* GrTwoPointConicalGradientLayout.cpp */,
+				945B438F2274BE24002BC3AB /* GrTwoPointConicalGradientLayout.h */,
+				945B438A2274BE24002BC3AB /* GrUnrolledBinaryGradientColorizer.cpp */,
+				945B43962274BE24002BC3AB /* GrUnrolledBinaryGradientColorizer.h */,
 			);
 			path = generated;
 			sourceTree = "<group>";
@@ -2790,42 +2717,42 @@
 		945B43B02274BE24002BC3AB /* generated */ = {
 			isa = PBXGroup;
 			children = (
-				945B43B12274BE24002BC3AB /* GrComposeLerpRedEffect.cpp */,
-				945B43B22274BE24002BC3AB /* GrLumaColorFilterEffect.cpp */,
-				945B43B32274BE24002BC3AB /* GrCircleEffect.h */,
-				945B43B42274BE24002BC3AB /* GrCircleEffect.cpp */,
-				945B43B52274BE24002BC3AB /* GrPremulInputFragmentProcessor.h */,
-				945B43B62274BE24002BC3AB /* GrConstColorProcessor.cpp */,
-				945B43B72274BE24002BC3AB /* GrRRectBlurEffect.h */,
-				945B43B82274BE24002BC3AB /* GrRRectBlurEffect.cpp */,
-				945B43B92274BE24002BC3AB /* GrComposeLerpEffect.cpp */,
-				945B43BA2274BE24002BC3AB /* GrAlphaThresholdFragmentProcessor.h */,
-				945B43BB2274BE24002BC3AB /* GrLumaColorFilterEffect.h */,
-				945B43BC2274BE24002BC3AB /* GrRectBlurEffect.cpp */,
-				945B43BD2274BE24002BC3AB /* GrComposeLerpRedEffect.h */,
-				945B43BE2274BE24002BC3AB /* GrSimpleTextureEffect.cpp */,
-				945B43BF2274BE24002BC3AB /* GrMixerEffect.h */,
-				945B43C02274BE24002BC3AB /* GrAARectEffect.h */,
-				945B43C12274BE24002BC3AB /* GrComposeLerpEffect.h */,
-				945B43C22274BE24002BC3AB /* GrOverrideInputFragmentProcessor.cpp */,
-				945B43C32274BE24002BC3AB /* GrConfigConversionEffect.h */,
-				945B43C42274BE24002BC3AB /* GrPremulInputFragmentProcessor.cpp */,
 				945B43C52274BE24002BC3AB /* GrAARectEffect.cpp */,
-				945B43C62274BE24002BC3AB /* GrConfigConversionEffect.cpp */,
-				945B43C72274BE24002BC3AB /* GrSimpleTextureEffect.h */,
-				945B43C82274BE24002BC3AB /* GrBlurredEdgeFragmentProcessor.cpp */,
-				945B43C92274BE24002BC3AB /* GrEllipseEffect.cpp */,
-				945B43CA2274BE24002BC3AB /* GrCircleBlurFragmentProcessor.cpp */,
-				945B43CB2274BE24002BC3AB /* GrConstColorProcessor.h */,
+				945B43C02274BE24002BC3AB /* GrAARectEffect.h */,
 				945B43CC2274BE24002BC3AB /* GrAlphaThresholdFragmentProcessor.cpp */,
-				945B43CD2274BE24002BC3AB /* GrOverrideInputFragmentProcessor.h */,
-				945B43CE2274BE24002BC3AB /* GrCircleBlurFragmentProcessor.h */,
-				945B43CF2274BE24002BC3AB /* GrRectBlurEffect.h */,
+				945B43BA2274BE24002BC3AB /* GrAlphaThresholdFragmentProcessor.h */,
+				945B43C82274BE24002BC3AB /* GrBlurredEdgeFragmentProcessor.cpp */,
 				945B43D02274BE24002BC3AB /* GrBlurredEdgeFragmentProcessor.h */,
+				945B43CA2274BE24002BC3AB /* GrCircleBlurFragmentProcessor.cpp */,
+				945B43CE2274BE24002BC3AB /* GrCircleBlurFragmentProcessor.h */,
+				945B43B42274BE24002BC3AB /* GrCircleEffect.cpp */,
+				945B43B32274BE24002BC3AB /* GrCircleEffect.h */,
+				945B43B92274BE24002BC3AB /* GrComposeLerpEffect.cpp */,
+				945B43C12274BE24002BC3AB /* GrComposeLerpEffect.h */,
+				945B43B12274BE24002BC3AB /* GrComposeLerpRedEffect.cpp */,
+				945B43BD2274BE24002BC3AB /* GrComposeLerpRedEffect.h */,
+				945B43C62274BE24002BC3AB /* GrConfigConversionEffect.cpp */,
+				945B43C32274BE24002BC3AB /* GrConfigConversionEffect.h */,
+				945B43B62274BE24002BC3AB /* GrConstColorProcessor.cpp */,
+				945B43CB2274BE24002BC3AB /* GrConstColorProcessor.h */,
+				945B43C92274BE24002BC3AB /* GrEllipseEffect.cpp */,
 				945B43D12274BE24002BC3AB /* GrEllipseEffect.h */,
-				945B43D22274BE24002BC3AB /* GrMixerEffect.cpp */,
+				945B43B22274BE24002BC3AB /* GrLumaColorFilterEffect.cpp */,
+				945B43BB2274BE24002BC3AB /* GrLumaColorFilterEffect.h */,
 				945B43D32274BE24002BC3AB /* GrMagnifierEffect.cpp */,
 				945B43D42274BE24002BC3AB /* GrMagnifierEffect.h */,
+				945B43D22274BE24002BC3AB /* GrMixerEffect.cpp */,
+				945B43BF2274BE24002BC3AB /* GrMixerEffect.h */,
+				945B43C22274BE24002BC3AB /* GrOverrideInputFragmentProcessor.cpp */,
+				945B43CD2274BE24002BC3AB /* GrOverrideInputFragmentProcessor.h */,
+				945B43C42274BE24002BC3AB /* GrPremulInputFragmentProcessor.cpp */,
+				945B43B52274BE24002BC3AB /* GrPremulInputFragmentProcessor.h */,
+				945B43BC2274BE24002BC3AB /* GrRectBlurEffect.cpp */,
+				945B43CF2274BE24002BC3AB /* GrRectBlurEffect.h */,
+				945B43B82274BE24002BC3AB /* GrRRectBlurEffect.cpp */,
+				945B43B72274BE24002BC3AB /* GrRRectBlurEffect.h */,
+				945B43BE2274BE24002BC3AB /* GrSimpleTextureEffect.cpp */,
+				945B43C72274BE24002BC3AB /* GrSimpleTextureEffect.h */,
 			);
 			path = generated;
 			sourceTree = "<group>";
@@ -3288,35 +3215,35 @@
 		945B45E12274BE25002BC3AB /* sfnt */ = {
 			isa = PBXGroup;
 			children = (
-				945B45E22274BE25002BC3AB /* SkOTTableTypes.h */,
-				945B45E32274BE25002BC3AB /* SkOTTable_maxp_CFF.h */,
-				945B45E42274BE25002BC3AB /* SkOTTable_EBLC.h */,
-				945B45E52274BE25002BC3AB /* SkOTTable_OS_2_V2.h */,
-				945B45E62274BE25002BC3AB /* SkOTTable_fvar.h */,
-				945B45E72274BE25002BC3AB /* SkOTUtils.h */,
-				945B45E82274BE25002BC3AB /* SkOTUtils.cpp */,
-				945B45E92274BE25002BC3AB /* SkOTTable_OS_2_VA.h */,
-				945B45EA2274BE25002BC3AB /* SkOTTable_glyf.h */,
-				945B45EB2274BE25002BC3AB /* SkOTTable_name.cpp */,
-				945B45EC2274BE25002BC3AB /* SkOTTable_OS_2_V1.h */,
 				945B45ED2274BE25002BC3AB /* SkIBMFamilyClass.h */,
-				945B45EE2274BE25002BC3AB /* SkSFNTHeader.h */,
 				945B45EF2274BE25002BC3AB /* SkOTTable_EBDT.h */,
-				945B45F02274BE25002BC3AB /* SkTTCFHeader.h */,
-				945B45F12274BE25002BC3AB /* SkOTTable_OS_2_V0.h */,
-				945B45F22274BE25002BC3AB /* SkOTTable_OS_2_V4.h */,
-				945B45F32274BE25002BC3AB /* SkOTTable_maxp_TT.h */,
-				945B45F42274BE25002BC3AB /* SkOTTable_loca.h */,
-				945B45F52274BE25002BC3AB /* SkOTTable_OS_2.h */,
-				945B45F62274BE25002BC3AB /* SkOTTable_hhea.h */,
-				945B45F72274BE25002BC3AB /* SkOTTable_name.h */,
-				945B45F82274BE25002BC3AB /* SkOTTable_gasp.h */,
-				945B45F92274BE26002BC3AB /* SkOTTable_post.h */,
+				945B45E42274BE25002BC3AB /* SkOTTable_EBLC.h */,
 				945B45FA2274BE26002BC3AB /* SkOTTable_EBSC.h */,
-				945B45FB2274BE26002BC3AB /* SkOTTable_OS_2_V3.h */,
-				945B45FC2274BE26002BC3AB /* SkOTTable_maxp.h */,
-				945B45FD2274BE26002BC3AB /* SkPanose.h */,
+				945B45E62274BE25002BC3AB /* SkOTTable_fvar.h */,
+				945B45F82274BE25002BC3AB /* SkOTTable_gasp.h */,
+				945B45EA2274BE25002BC3AB /* SkOTTable_glyf.h */,
 				945B45FE2274BE26002BC3AB /* SkOTTable_head.h */,
+				945B45F62274BE25002BC3AB /* SkOTTable_hhea.h */,
+				945B45F42274BE25002BC3AB /* SkOTTable_loca.h */,
+				945B45E32274BE25002BC3AB /* SkOTTable_maxp_CFF.h */,
+				945B45F32274BE25002BC3AB /* SkOTTable_maxp_TT.h */,
+				945B45FC2274BE26002BC3AB /* SkOTTable_maxp.h */,
+				945B45EB2274BE25002BC3AB /* SkOTTable_name.cpp */,
+				945B45F72274BE25002BC3AB /* SkOTTable_name.h */,
+				945B45F12274BE25002BC3AB /* SkOTTable_OS_2_V0.h */,
+				945B45EC2274BE25002BC3AB /* SkOTTable_OS_2_V1.h */,
+				945B45E52274BE25002BC3AB /* SkOTTable_OS_2_V2.h */,
+				945B45FB2274BE26002BC3AB /* SkOTTable_OS_2_V3.h */,
+				945B45F22274BE25002BC3AB /* SkOTTable_OS_2_V4.h */,
+				945B45E92274BE25002BC3AB /* SkOTTable_OS_2_VA.h */,
+				945B45F52274BE25002BC3AB /* SkOTTable_OS_2.h */,
+				945B45F92274BE26002BC3AB /* SkOTTable_post.h */,
+				945B45E22274BE25002BC3AB /* SkOTTableTypes.h */,
+				945B45E82274BE25002BC3AB /* SkOTUtils.cpp */,
+				945B45E72274BE25002BC3AB /* SkOTUtils.h */,
+				945B45FD2274BE26002BC3AB /* SkPanose.h */,
+				945B45EE2274BE25002BC3AB /* SkSFNTHeader.h */,
+				945B45F02274BE25002BC3AB /* SkTTCFHeader.h */,
 			);
 			path = sfnt;
 			sourceTree = "<group>";
@@ -3324,14 +3251,14 @@
 		945B45FF2274BE26002BC3AB /* images */ = {
 			isa = PBXGroup;
 			children = (
-				945B46002274BE26002BC3AB /* SkJpegEncoder.cpp */,
-				945B46012274BE26002BC3AB /* SkImageEncoderFns.h */,
 				945B46022274BE26002BC3AB /* SkImageEncoder.cpp */,
+				945B46012274BE26002BC3AB /* SkImageEncoderFns.h */,
+				945B46072274BE26002BC3AB /* SkImageEncoderPriv.h */,
+				945B46002274BE26002BC3AB /* SkJpegEncoder.cpp */,
+				945B46062274BE26002BC3AB /* SkJPEGWriteUtility.cpp */,
+				945B46052274BE26002BC3AB /* SkJPEGWriteUtility.h */,
 				945B46032274BE26002BC3AB /* SkPngEncoder.cpp */,
 				945B46042274BE26002BC3AB /* SkWebpEncoder.cpp */,
-				945B46052274BE26002BC3AB /* SkJPEGWriteUtility.h */,
-				945B46062274BE26002BC3AB /* SkJPEGWriteUtility.cpp */,
-				945B46072274BE26002BC3AB /* SkImageEncoderPriv.h */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -3417,68 +3344,68 @@
 		945B464A2274BE26002BC3AB /* sksl */ = {
 			isa = PBXGroup;
 			children = (
-				945B464B2274BE26002BC3AB /* sksl_generic.inc */,
-				945B464C2274BE26002BC3AB /* SkSLCFGGenerator.cpp */,
-				945B464D2274BE26002BC3AB /* SkSLSectionAndParameterHelper.h */,
-				945B464E2274BE26002BC3AB /* SkSLByteCode.h */,
-				945B464F2274BE26002BC3AB /* sksl.inc */,
-				945B46502274BE26002BC3AB /* SkSLCPPUniformCTypes.h */,
-				945B46512274BE26002BC3AB /* lex */,
-				945B465F2274BE26002BC3AB /* sksl_vert.inc */,
-				945B46602274BE26002BC3AB /* SkSLOutputStream.cpp */,
-				945B46612274BE26002BC3AB /* SkSLMain.cpp */,
-				945B46622274BE26002BC3AB /* ir */,
-				945B469C2274BE26002BC3AB /* SkSLCodeGenerator.h */,
-				945B469D2274BE26002BC3AB /* SkSLHCodeGenerator.cpp */,
-				945B469E2274BE26002BC3AB /* SkSLFileOutputStream.h */,
-				945B469F2274BE26002BC3AB /* SkSLHCodeGenerator.h */,
-				945B46A02274BE26002BC3AB /* SkSLErrorReporter.h */,
-				945B46A12274BE26002BC3AB /* sksl_enums.inc */,
-				945B46A22274BE26002BC3AB /* SkSLString.h */,
-				945B46A32274BE26002BC3AB /* SkSLUtil.h */,
-				945B46A42274BE26002BC3AB /* SkSLPipelineStageCodeGenerator.cpp */,
-				945B46A52274BE26002BC3AB /* SkSLCPP.h */,
-				945B46A62274BE26002BC3AB /* SkSLPosition.h */,
-				945B46A72274BE26002BC3AB /* SkSLParser.cpp */,
-				945B46A82274BE26002BC3AB /* SkSLOutputStream.h */,
-				945B46A92274BE26002BC3AB /* SkSLJIT.cpp */,
-				945B46AA2274BE26002BC3AB /* README */,
-				945B46AB2274BE26002BC3AB /* SkSLJIT.h */,
-				945B46AC2274BE26002BC3AB /* SkSLCPPCodeGenerator.h */,
-				945B46AD2274BE26002BC3AB /* SkSLIRGenerator.h */,
-				945B46AE2274BE26002BC3AB /* SkSLSPIRVCodeGenerator.h */,
-				945B46AF2274BE26002BC3AB /* SkSLMetalCodeGenerator.h */,
-				945B46B02274BE26002BC3AB /* SkSLCPPCodeGenerator.cpp */,
-				945B46B12274BE26002BC3AB /* SkSLCFGGenerator.h */,
-				945B46B22274BE26002BC3AB /* SkSLMemoryLayout.h */,
-				945B46B32274BE26002BC3AB /* SkSLGLSLCodeGenerator.cpp */,
-				945B46B42274BE26002BC3AB /* sksl_mixer.inc */,
-				945B46B52274BE26002BC3AB /* spirv.h */,
-				945B46B62274BE26002BC3AB /* SkSLCompiler.h */,
-				945B46B72274BE26002BC3AB /* sksl_geom.inc */,
-				945B46B82274BE26002BC3AB /* SkSLUtil.cpp */,
-				945B46B92274BE26002BC3AB /* SkSLByteCodeGenerator.cpp */,
 				945B46BA2274BE26002BC3AB /* ast */,
+				945B46E82274BE26002BC3AB /* GLSL.std.450.h */,
+				945B46622274BE26002BC3AB /* ir */,
+				945B46512274BE26002BC3AB /* lex */,
+				945B46AA2274BE26002BC3AB /* README */,
+				945B46A12274BE26002BC3AB /* sksl_enums.inc */,
+				945B46F02274BE26002BC3AB /* sksl_fp.inc */,
+				945B46E72274BE26002BC3AB /* sksl_frag.inc */,
+				945B464B2274BE26002BC3AB /* sksl_generic.inc */,
+				945B46B72274BE26002BC3AB /* sksl_geom.inc */,
+				945B46B42274BE26002BC3AB /* sksl_mixer.inc */,
+				945B465F2274BE26002BC3AB /* sksl_vert.inc */,
+				945B464F2274BE26002BC3AB /* sksl.inc */,
+				945B464E2274BE26002BC3AB /* SkSLByteCode.h */,
+				945B46B92274BE26002BC3AB /* SkSLByteCodeGenerator.cpp */,
 				945B46E42274BE26002BC3AB /* SkSLByteCodeGenerator.h */,
+				945B464C2274BE26002BC3AB /* SkSLCFGGenerator.cpp */,
+				945B46B12274BE26002BC3AB /* SkSLCFGGenerator.h */,
+				945B469C2274BE26002BC3AB /* SkSLCodeGenerator.h */,
+				945B46EF2274BE26002BC3AB /* SkSLCompiler.cpp */,
+				945B46B62274BE26002BC3AB /* SkSLCompiler.h */,
+				945B46F42274BE26002BC3AB /* SkSLContext.h */,
+				945B46A52274BE26002BC3AB /* SkSLCPP.h */,
+				945B46B02274BE26002BC3AB /* SkSLCPPCodeGenerator.cpp */,
+				945B46AC2274BE26002BC3AB /* SkSLCPPCodeGenerator.h */,
+				945B46ED2274BE26002BC3AB /* SkSLCPPUniformCTypes.cpp */,
+				945B46502274BE26002BC3AB /* SkSLCPPUniformCTypes.h */,
+				945B46EA2274BE26002BC3AB /* SkSLDefines.h */,
+				945B46A02274BE26002BC3AB /* SkSLErrorReporter.h */,
+				945B469E2274BE26002BC3AB /* SkSLFileOutputStream.h */,
+				945B46B32274BE26002BC3AB /* SkSLGLSLCodeGenerator.cpp */,
+				945B46F12274BE26002BC3AB /* SkSLGLSLCodeGenerator.h */,
+				945B469D2274BE26002BC3AB /* SkSLHCodeGenerator.cpp */,
+				945B469F2274BE26002BC3AB /* SkSLHCodeGenerator.h */,
+				945B46F72274BE26002BC3AB /* SkSLInterpreter.cpp */,
 				945B46E52274BE26002BC3AB /* SkSLInterpreter.h */,
 				945B46E62274BE26002BC3AB /* SkSLIRGenerator.cpp */,
-				945B46E72274BE26002BC3AB /* sksl_frag.inc */,
-				945B46E82274BE26002BC3AB /* GLSL.std.450.h */,
-				945B46E92274BE26002BC3AB /* SkSLMetalCodeGenerator.cpp */,
-				945B46EA2274BE26002BC3AB /* SkSLDefines.h */,
-				945B46EB2274BE26002BC3AB /* SkSLPipelineStageCodeGenerator.h */,
-				945B46EC2274BE26002BC3AB /* SkSLStringStream.h */,
-				945B46ED2274BE26002BC3AB /* SkSLCPPUniformCTypes.cpp */,
+				945B46AD2274BE26002BC3AB /* SkSLIRGenerator.h */,
+				945B46A92274BE26002BC3AB /* SkSLJIT.cpp */,
+				945B46AB2274BE26002BC3AB /* SkSLJIT.h */,
 				945B46EE2274BE26002BC3AB /* SkSLLexer.cpp */,
-				945B46EF2274BE26002BC3AB /* SkSLCompiler.cpp */,
-				945B46F02274BE26002BC3AB /* sksl_fp.inc */,
-				945B46F12274BE26002BC3AB /* SkSLGLSLCodeGenerator.h */,
-				945B46F22274BE26002BC3AB /* SkSLSPIRVCodeGenerator.cpp */,
 				945B46F32274BE26002BC3AB /* SkSLLexer.h */,
-				945B46F42274BE26002BC3AB /* SkSLContext.h */,
-				945B46F52274BE26002BC3AB /* SkSLString.cpp */,
+				945B46612274BE26002BC3AB /* SkSLMain.cpp */,
+				945B46B22274BE26002BC3AB /* SkSLMemoryLayout.h */,
+				945B46E92274BE26002BC3AB /* SkSLMetalCodeGenerator.cpp */,
+				945B46AF2274BE26002BC3AB /* SkSLMetalCodeGenerator.h */,
+				945B46602274BE26002BC3AB /* SkSLOutputStream.cpp */,
+				945B46A82274BE26002BC3AB /* SkSLOutputStream.h */,
+				945B46A72274BE26002BC3AB /* SkSLParser.cpp */,
 				945B46F62274BE26002BC3AB /* SkSLParser.h */,
-				945B46F72274BE26002BC3AB /* SkSLInterpreter.cpp */,
+				945B46A42274BE26002BC3AB /* SkSLPipelineStageCodeGenerator.cpp */,
+				945B46EB2274BE26002BC3AB /* SkSLPipelineStageCodeGenerator.h */,
+				945B46A62274BE26002BC3AB /* SkSLPosition.h */,
+				945B464D2274BE26002BC3AB /* SkSLSectionAndParameterHelper.h */,
+				945B46F22274BE26002BC3AB /* SkSLSPIRVCodeGenerator.cpp */,
+				945B46AE2274BE26002BC3AB /* SkSLSPIRVCodeGenerator.h */,
+				945B46F52274BE26002BC3AB /* SkSLString.cpp */,
+				945B46A22274BE26002BC3AB /* SkSLString.h */,
+				945B46EC2274BE26002BC3AB /* SkSLStringStream.h */,
+				945B46B82274BE26002BC3AB /* SkSLUtil.cpp */,
+				945B46A32274BE26002BC3AB /* SkSLUtil.h */,
+				945B46B52274BE26002BC3AB /* spirv.h */,
 			);
 			path = sksl;
 			sourceTree = "<group>";
@@ -3486,19 +3413,19 @@
 		945B46512274BE26002BC3AB /* lex */ = {
 			isa = PBXGroup;
 			children = (
-				945B46522274BE26002BC3AB /* sksl.lex */,
-				945B46532274BE26002BC3AB /* RegexParser.cpp */,
-				945B46542274BE26002BC3AB /* NFAState.h */,
-				945B46552274BE26002BC3AB /* DFAState.h */,
-				945B46562274BE26002BC3AB /* RegexNode.cpp */,
-				945B46572274BE26002BC3AB /* RegexParser.h */,
 				945B46582274BE26002BC3AB /* DFA.h */,
+				945B46552274BE26002BC3AB /* DFAState.h */,
 				945B46592274BE26002BC3AB /* LexUtil.h */,
-				945B465A2274BE26002BC3AB /* NFA.cpp */,
-				945B465B2274BE26002BC3AB /* RegexNode.h */,
-				945B465C2274BE26002BC3AB /* NFA.h */,
-				945B465D2274BE26002BC3AB /* NFAtoDFA.h */,
 				945B465E2274BE26002BC3AB /* Main.cpp */,
+				945B465A2274BE26002BC3AB /* NFA.cpp */,
+				945B465C2274BE26002BC3AB /* NFA.h */,
+				945B46542274BE26002BC3AB /* NFAState.h */,
+				945B465D2274BE26002BC3AB /* NFAtoDFA.h */,
+				945B46562274BE26002BC3AB /* RegexNode.cpp */,
+				945B465B2274BE26002BC3AB /* RegexNode.h */,
+				945B46532274BE26002BC3AB /* RegexParser.cpp */,
+				945B46572274BE26002BC3AB /* RegexParser.h */,
+				945B46522274BE26002BC3AB /* sksl.lex */,
 			);
 			path = lex;
 			sourceTree = "<group>";
@@ -3506,63 +3433,63 @@
 		945B46622274BE26002BC3AB /* ir */ = {
 			isa = PBXGroup;
 			children = (
-				945B46632274BE26002BC3AB /* SkSLStatement.h */,
-				945B46642274BE26002BC3AB /* SkSLFieldAccess.h */,
-				945B46652274BE26002BC3AB /* SkSLIntLiteral.h */,
-				945B46662274BE26002BC3AB /* SkSLDiscardStatement.h */,
+				945B46722274BE26002BC3AB /* SkSLAppendStage.h */,
+				945B46862274BE26002BC3AB /* SkSLBinaryExpression.h */,
+				945B46892274BE26002BC3AB /* SkSLBlock.h */,
+				945B469A2274BE26002BC3AB /* SkSLBoolLiteral.h */,
 				945B46672274BE26002BC3AB /* SkSLBreakStatement.h */,
+				945B46822274BE26002BC3AB /* SkSLConstructor.h */,
+				945B468D2274BE26002BC3AB /* SkSLContinueStatement.h */,
+				945B46662274BE26002BC3AB /* SkSLDiscardStatement.h */,
+				945B46762274BE26002BC3AB /* SkSLDoStatement.h */,
+				945B46942274BE26002BC3AB /* SkSLEnum.h */,
+				945B467D2274BE26002BC3AB /* SkSLExpression.h */,
+				945B466F2274BE26002BC3AB /* SkSLExpressionStatement.h */,
+				945B46932274BE26002BC3AB /* SkSLExtension.h */,
+				945B46782274BE26002BC3AB /* SkSLField.h */,
+				945B46642274BE26002BC3AB /* SkSLFieldAccess.h */,
+				945B469B2274BE26002BC3AB /* SkSLFloatLiteral.h */,
+				945B466C2274BE26002BC3AB /* SkSLForStatement.h */,
+				945B468F2274BE26002BC3AB /* SkSLFunctionCall.h */,
+				945B46872274BE26002BC3AB /* SkSLFunctionDeclaration.h */,
+				945B46802274BE26002BC3AB /* SkSLFunctionDefinition.h */,
+				945B46832274BE26002BC3AB /* SkSLFunctionReference.h */,
+				945B467C2274BE26002BC3AB /* SkSLIfStatement.h */,
+				945B467E2274BE26002BC3AB /* SkSLIndexExpression.h */,
+				945B468E2274BE26002BC3AB /* SkSLInterfaceBlock.h */,
+				945B46652274BE26002BC3AB /* SkSLIntLiteral.h */,
 				945B46682274BE26002BC3AB /* SkSLIRNode.h */,
 				945B46692274BE26002BC3AB /* SkSLLayout.h */,
-				945B466A2274BE26002BC3AB /* SkSLVarDeclarationsStatement.h */,
-				945B466B2274BE26002BC3AB /* SkSLVarDeclarations.h */,
-				945B466C2274BE26002BC3AB /* SkSLForStatement.h */,
 				945B466D2274BE26002BC3AB /* SkSLModifiers.h */,
-				945B466E2274BE26002BC3AB /* SkSLPostfixExpression.h */,
-				945B466F2274BE26002BC3AB /* SkSLExpressionStatement.h */,
-				945B46702274BE26002BC3AB /* SkSLPrefixExpression.h */,
-				945B46712274BE26002BC3AB /* SkSLSetting.h */,
-				945B46722274BE26002BC3AB /* SkSLAppendStage.h */,
-				945B46732274BE26002BC3AB /* SkSLType.cpp */,
-				945B46742274BE26002BC3AB /* SkSLSetting.cpp */,
-				945B46752274BE26002BC3AB /* SkSLProgram.h */,
-				945B46762274BE26002BC3AB /* SkSLDoStatement.h */,
-				945B46772274BE26002BC3AB /* SkSLNop.h */,
-				945B46782274BE26002BC3AB /* SkSLField.h */,
-				945B46792274BE26002BC3AB /* SkSLWhileStatement.h */,
-				945B467A2274BE26002BC3AB /* SkSLSymbolTable.cpp */,
-				945B467B2274BE26002BC3AB /* SkSLProgramElement.h */,
-				945B467C2274BE26002BC3AB /* SkSLIfStatement.h */,
-				945B467D2274BE26002BC3AB /* SkSLExpression.h */,
-				945B467E2274BE26002BC3AB /* SkSLIndexExpression.h */,
-				945B467F2274BE26002BC3AB /* SkSLVariableReference.cpp */,
-				945B46802274BE26002BC3AB /* SkSLFunctionDefinition.h */,
-				945B46812274BE26002BC3AB /* SkSLUnresolvedFunction.h */,
-				945B46822274BE26002BC3AB /* SkSLConstructor.h */,
-				945B46832274BE26002BC3AB /* SkSLFunctionReference.h */,
-				945B46842274BE26002BC3AB /* SkSLNullLiteral.h */,
-				945B46852274BE26002BC3AB /* SkSLSwitchStatement.h */,
-				945B46862274BE26002BC3AB /* SkSLBinaryExpression.h */,
-				945B46872274BE26002BC3AB /* SkSLFunctionDeclaration.h */,
-				945B46882274BE26002BC3AB /* SkSLSymbolTable.h */,
-				945B46892274BE26002BC3AB /* SkSLBlock.h */,
-				945B468A2274BE26002BC3AB /* SkSLSwizzle.h */,
-				945B468B2274BE26002BC3AB /* SkSLReturnStatement.h */,
-				945B468C2274BE26002BC3AB /* SkSLSymbol.h */,
-				945B468D2274BE26002BC3AB /* SkSLContinueStatement.h */,
-				945B468E2274BE26002BC3AB /* SkSLInterfaceBlock.h */,
-				945B468F2274BE26002BC3AB /* SkSLFunctionCall.h */,
-				945B46902274BE26002BC3AB /* SkSLTernaryExpression.h */,
 				945B46912274BE26002BC3AB /* SkSLModifiersDeclaration.h */,
-				945B46922274BE26002BC3AB /* SkSLTypeReference.h */,
-				945B46932274BE26002BC3AB /* SkSLExtension.h */,
-				945B46942274BE26002BC3AB /* SkSLEnum.h */,
-				945B46952274BE26002BC3AB /* SkSLSwitchCase.h */,
+				945B46772274BE26002BC3AB /* SkSLNop.h */,
+				945B46842274BE26002BC3AB /* SkSLNullLiteral.h */,
+				945B466E2274BE26002BC3AB /* SkSLPostfixExpression.h */,
+				945B46702274BE26002BC3AB /* SkSLPrefixExpression.h */,
+				945B46752274BE26002BC3AB /* SkSLProgram.h */,
+				945B467B2274BE26002BC3AB /* SkSLProgramElement.h */,
+				945B468B2274BE26002BC3AB /* SkSLReturnStatement.h */,
 				945B46962274BE26002BC3AB /* SkSLSection.h */,
-				945B46972274BE26002BC3AB /* SkSLVariableReference.h */,
+				945B46742274BE26002BC3AB /* SkSLSetting.cpp */,
+				945B46712274BE26002BC3AB /* SkSLSetting.h */,
+				945B46632274BE26002BC3AB /* SkSLStatement.h */,
+				945B46952274BE26002BC3AB /* SkSLSwitchCase.h */,
+				945B46852274BE26002BC3AB /* SkSLSwitchStatement.h */,
+				945B468A2274BE26002BC3AB /* SkSLSwizzle.h */,
+				945B468C2274BE26002BC3AB /* SkSLSymbol.h */,
+				945B467A2274BE26002BC3AB /* SkSLSymbolTable.cpp */,
+				945B46882274BE26002BC3AB /* SkSLSymbolTable.h */,
+				945B46902274BE26002BC3AB /* SkSLTernaryExpression.h */,
+				945B46732274BE26002BC3AB /* SkSLType.cpp */,
 				945B46982274BE26002BC3AB /* SkSLType.h */,
+				945B46922274BE26002BC3AB /* SkSLTypeReference.h */,
+				945B46812274BE26002BC3AB /* SkSLUnresolvedFunction.h */,
+				945B466B2274BE26002BC3AB /* SkSLVarDeclarations.h */,
+				945B466A2274BE26002BC3AB /* SkSLVarDeclarationsStatement.h */,
 				945B46992274BE26002BC3AB /* SkSLVariable.h */,
-				945B469A2274BE26002BC3AB /* SkSLBoolLiteral.h */,
-				945B469B2274BE26002BC3AB /* SkSLFloatLiteral.h */,
+				945B467F2274BE26002BC3AB /* SkSLVariableReference.cpp */,
+				945B46972274BE26002BC3AB /* SkSLVariableReference.h */,
+				945B46792274BE26002BC3AB /* SkSLWhileStatement.h */,
 			);
 			path = ir;
 			sourceTree = "<group>";
@@ -3570,47 +3497,47 @@
 		945B46BA2274BE26002BC3AB /* ast */ = {
 			isa = PBXGroup;
 			children = (
-				945B46BB2274BE26002BC3AB /* SkSLASTInterfaceBlock.h */,
-				945B46BC2274BE26002BC3AB /* SkSLASTPositionNode.h */,
-				945B46BD2274BE26002BC3AB /* SkSLASTSwitchCase.h */,
-				945B46BE2274BE26002BC3AB /* SkSLASTSuffixExpression.h */,
-				945B46BF2274BE26002BC3AB /* SkSLASTBoolLiteral.h */,
-				945B46C02274BE26002BC3AB /* SkSLASTFloatLiteral.h */,
-				945B46C12274BE26002BC3AB /* SkSLASTSuffix.h */,
-				945B46C22274BE26002BC3AB /* SkSLASTExpressionStatement.h */,
 				945B46C32274BE26002BC3AB /* SkSLASTBinaryExpression.h */,
-				945B46C42274BE26002BC3AB /* SkSLASTExtension.h */,
-				945B46C52274BE26002BC3AB /* SkSLASTNullLiteral.h */,
-				945B46C62274BE26002BC3AB /* SkSLASTVarDeclarationStatement.h */,
-				945B46C72274BE26002BC3AB /* SkSLASTIndexSuffix.h */,
-				945B46C82274BE26002BC3AB /* SkSLASTIdentifier.h */,
-				945B46C92274BE26002BC3AB /* SkSLASTFunction.h */,
-				945B46CA2274BE26002BC3AB /* SkSLASTDeclaration.h */,
-				945B46CB2274BE26002BC3AB /* SkSLASTVarDeclaration.h */,
-				945B46CC2274BE26002BC3AB /* SkSLASTForStatement.h */,
-				945B46CD2274BE26002BC3AB /* SkSLASTPrefixExpression.h */,
-				945B46CE2274BE26002BC3AB /* SkSLASTExpression.h */,
-				945B46CF2274BE26002BC3AB /* SkSLASTFieldSuffix.h */,
 				945B46D02274BE26002BC3AB /* SkSLASTBlock.h */,
-				945B46D12274BE26002BC3AB /* SkSLASTType.h */,
-				945B46D22274BE26002BC3AB /* SkSLASTStatement.h */,
-				945B46D32274BE26002BC3AB /* SkSLASTSwitchStatement.h */,
-				945B46D42274BE26002BC3AB /* SkSLASTContinueStatement.h */,
-				945B46D52274BE26002BC3AB /* SkSLASTIfStatement.h */,
-				945B46D62274BE26002BC3AB /* SkSLASTEnum.h */,
+				945B46BF2274BE26002BC3AB /* SkSLASTBoolLiteral.h */,
 				945B46D72274BE26002BC3AB /* SkSLASTBreakStatement.h */,
-				945B46D82274BE26002BC3AB /* SkSLASTDoStatement.h */,
-				945B46D92274BE26002BC3AB /* SkSLASTPrecision.h */,
-				945B46DA2274BE26002BC3AB /* SkSLASTReturnStatement.h */,
-				945B46DB2274BE26002BC3AB /* SkSLASTModifiersDeclaration.h */,
-				945B46DC2274BE26002BC3AB /* SkSLASTDiscardStatement.h */,
-				945B46DD2274BE26002BC3AB /* SkSLASTParameter.h */,
-				945B46DE2274BE26002BC3AB /* SkSLASTTernaryExpression.h */,
-				945B46DF2274BE26002BC3AB /* SkSLASTSection.h */,
-				945B46E02274BE26002BC3AB /* SkSLASTWhileStatement.h */,
-				945B46E12274BE26002BC3AB /* SkSLASTIntLiteral.h */,
-				945B46E22274BE26002BC3AB /* SkSLASTNode.h */,
 				945B46E32274BE26002BC3AB /* SkSLASTCallSuffix.h */,
+				945B46D42274BE26002BC3AB /* SkSLASTContinueStatement.h */,
+				945B46CA2274BE26002BC3AB /* SkSLASTDeclaration.h */,
+				945B46DC2274BE26002BC3AB /* SkSLASTDiscardStatement.h */,
+				945B46D82274BE26002BC3AB /* SkSLASTDoStatement.h */,
+				945B46D62274BE26002BC3AB /* SkSLASTEnum.h */,
+				945B46CE2274BE26002BC3AB /* SkSLASTExpression.h */,
+				945B46C22274BE26002BC3AB /* SkSLASTExpressionStatement.h */,
+				945B46C42274BE26002BC3AB /* SkSLASTExtension.h */,
+				945B46CF2274BE26002BC3AB /* SkSLASTFieldSuffix.h */,
+				945B46C02274BE26002BC3AB /* SkSLASTFloatLiteral.h */,
+				945B46CC2274BE26002BC3AB /* SkSLASTForStatement.h */,
+				945B46C92274BE26002BC3AB /* SkSLASTFunction.h */,
+				945B46C82274BE26002BC3AB /* SkSLASTIdentifier.h */,
+				945B46D52274BE26002BC3AB /* SkSLASTIfStatement.h */,
+				945B46C72274BE26002BC3AB /* SkSLASTIndexSuffix.h */,
+				945B46BB2274BE26002BC3AB /* SkSLASTInterfaceBlock.h */,
+				945B46E12274BE26002BC3AB /* SkSLASTIntLiteral.h */,
+				945B46DB2274BE26002BC3AB /* SkSLASTModifiersDeclaration.h */,
+				945B46E22274BE26002BC3AB /* SkSLASTNode.h */,
+				945B46C52274BE26002BC3AB /* SkSLASTNullLiteral.h */,
+				945B46DD2274BE26002BC3AB /* SkSLASTParameter.h */,
+				945B46BC2274BE26002BC3AB /* SkSLASTPositionNode.h */,
+				945B46D92274BE26002BC3AB /* SkSLASTPrecision.h */,
+				945B46CD2274BE26002BC3AB /* SkSLASTPrefixExpression.h */,
+				945B46DA2274BE26002BC3AB /* SkSLASTReturnStatement.h */,
+				945B46DF2274BE26002BC3AB /* SkSLASTSection.h */,
+				945B46D22274BE26002BC3AB /* SkSLASTStatement.h */,
+				945B46C12274BE26002BC3AB /* SkSLASTSuffix.h */,
+				945B46BE2274BE26002BC3AB /* SkSLASTSuffixExpression.h */,
+				945B46BD2274BE26002BC3AB /* SkSLASTSwitchCase.h */,
+				945B46D32274BE26002BC3AB /* SkSLASTSwitchStatement.h */,
+				945B46DE2274BE26002BC3AB /* SkSLASTTernaryExpression.h */,
+				945B46D12274BE26002BC3AB /* SkSLASTType.h */,
+				945B46CB2274BE26002BC3AB /* SkSLASTVarDeclaration.h */,
+				945B46C62274BE26002BC3AB /* SkSLASTVarDeclarationStatement.h */,
+				945B46E02274BE26002BC3AB /* SkSLASTWhileStatement.h */,
 			);
 			path = ast;
 			sourceTree = "<group>";
@@ -3618,55 +3545,55 @@
 		945B46F82274BE26002BC3AB /* pdf */ = {
 			isa = PBXGroup;
 			children = (
-				945B46F92274BE26002BC3AB /* SkJpegInfo.h */,
-				945B46FA2274BE26002BC3AB /* SkPDFTypes.h */,
-				945B46FB2274BE26002BC3AB /* SkPDFFont.h */,
-				945B46FC2274BE26002BC3AB /* SkPDFDocument.cpp */,
-				945B46FD2274BE26002BC3AB /* SkPDFTag.h */,
-				945B46FE2274BE26002BC3AB /* SkPDFUtils.h */,
-				945B46FF2274BE26002BC3AB /* SkClusterator.cpp */,
-				945B47002274BE26002BC3AB /* SkPDFType1Font.cpp */,
-				945B47012274BE26002BC3AB /* SkPDFMakeToUnicodeCmap.cpp */,
-				945B47022274BE26002BC3AB /* SkPDFMetadata.cpp */,
-				945B47032274BE26002BC3AB /* SkPDFMakeCIDGlyphWidthsArray.h */,
-				945B47042274BE26002BC3AB /* SkPDFFormXObject.cpp */,
-				945B47052274BE26002BC3AB /* SkPDFDocumentPriv.h */,
-				945B47062274BE26002BC3AB /* SkPDFGradientShader.h */,
-				945B47072274BE26002BC3AB /* SkPDFUtils.cpp */,
-				945B47082274BE26002BC3AB /* SkPDFTypes.cpp */,
-				945B47092274BE26002BC3AB /* SkPDFGraphicState.h */,
 				945B470A2274BE26002BC3AB /* SkBitmapKey.h */,
-				945B470B2274BE26002BC3AB /* SkPDFGraphicStackState.h */,
-				945B470C2274BE26002BC3AB /* SkPDFBitmap.h */,
-				945B470D2274BE26002BC3AB /* SkPDFGlyphUse.h */,
-				945B470E2274BE26002BC3AB /* SkKeyedImage.cpp */,
-				945B470F2274BE26002BC3AB /* SkJpegInfo.cpp */,
-				945B47102274BE26002BC3AB /* SkPDFDevice.h */,
-				945B47112274BE26002BC3AB /* SkPDFShader.h */,
+				945B46FF2274BE26002BC3AB /* SkClusterator.cpp */,
 				945B47122274BE26002BC3AB /* SkClusterator.h */,
-				945B47132274BE26002BC3AB /* SkPDFBitmap.cpp */,
-				945B47142274BE26002BC3AB /* SkPDFGradientShader.cpp */,
-				945B47152274BE26002BC3AB /* SkDeflate.h */,
-				945B47162274BE26002BC3AB /* SkPDFGraphicState.cpp */,
-				945B47172274BE26002BC3AB /* SkPDFResourceDict.h */,
-				945B47182274BE26002BC3AB /* SkPDFMakeCIDGlyphWidthsArray.cpp */,
-				945B47192274BE26002BC3AB /* SkPDFTag.cpp */,
 				945B471A2274BE26002BC3AB /* SkDeflate.cpp */,
-				945B471B2274BE26002BC3AB /* SkPDFDevice.cpp */,
-				945B471C2274BE26002BC3AB /* SkPDFGraphicStackState.cpp */,
-				945B471D2274BE26002BC3AB /* SkPDFUnion.h */,
-				945B471E2274BE26002BC3AB /* SkKeyedImage.h */,
-				945B471F2274BE26002BC3AB /* SkPDFSubsetFont.cpp */,
-				945B47202274BE26002BC3AB /* SkUUID.h */,
-				945B47212274BE26002BC3AB /* SkPDFFormXObject.h */,
+				945B47152274BE26002BC3AB /* SkDeflate.h */,
 				945B47222274BE26002BC3AB /* SkDocument_PDF_None.cpp */,
-				945B47232274BE26002BC3AB /* SkPDFMetadata.h */,
-				945B47242274BE26002BC3AB /* SkPDFShader.cpp */,
-				945B47252274BE26002BC3AB /* SkPDFResourceDict.cpp */,
-				945B47262274BE26002BC3AB /* SkPDFSubsetFont.h */,
-				945B47272274BE26002BC3AB /* SkPDFMakeToUnicodeCmap.h */,
-				945B47282274BE26002BC3AB /* SkPDFType1Font.h */,
+				945B470F2274BE26002BC3AB /* SkJpegInfo.cpp */,
+				945B46F92274BE26002BC3AB /* SkJpegInfo.h */,
+				945B470E2274BE26002BC3AB /* SkKeyedImage.cpp */,
+				945B471E2274BE26002BC3AB /* SkKeyedImage.h */,
+				945B47132274BE26002BC3AB /* SkPDFBitmap.cpp */,
+				945B470C2274BE26002BC3AB /* SkPDFBitmap.h */,
+				945B471B2274BE26002BC3AB /* SkPDFDevice.cpp */,
+				945B47102274BE26002BC3AB /* SkPDFDevice.h */,
+				945B46FC2274BE26002BC3AB /* SkPDFDocument.cpp */,
+				945B47052274BE26002BC3AB /* SkPDFDocumentPriv.h */,
 				945B47292274BE26002BC3AB /* SkPDFFont.cpp */,
+				945B46FB2274BE26002BC3AB /* SkPDFFont.h */,
+				945B47042274BE26002BC3AB /* SkPDFFormXObject.cpp */,
+				945B47212274BE26002BC3AB /* SkPDFFormXObject.h */,
+				945B470D2274BE26002BC3AB /* SkPDFGlyphUse.h */,
+				945B47142274BE26002BC3AB /* SkPDFGradientShader.cpp */,
+				945B47062274BE26002BC3AB /* SkPDFGradientShader.h */,
+				945B471C2274BE26002BC3AB /* SkPDFGraphicStackState.cpp */,
+				945B470B2274BE26002BC3AB /* SkPDFGraphicStackState.h */,
+				945B47162274BE26002BC3AB /* SkPDFGraphicState.cpp */,
+				945B47092274BE26002BC3AB /* SkPDFGraphicState.h */,
+				945B47182274BE26002BC3AB /* SkPDFMakeCIDGlyphWidthsArray.cpp */,
+				945B47032274BE26002BC3AB /* SkPDFMakeCIDGlyphWidthsArray.h */,
+				945B47012274BE26002BC3AB /* SkPDFMakeToUnicodeCmap.cpp */,
+				945B47272274BE26002BC3AB /* SkPDFMakeToUnicodeCmap.h */,
+				945B47022274BE26002BC3AB /* SkPDFMetadata.cpp */,
+				945B47232274BE26002BC3AB /* SkPDFMetadata.h */,
+				945B47252274BE26002BC3AB /* SkPDFResourceDict.cpp */,
+				945B47172274BE26002BC3AB /* SkPDFResourceDict.h */,
+				945B47242274BE26002BC3AB /* SkPDFShader.cpp */,
+				945B47112274BE26002BC3AB /* SkPDFShader.h */,
+				945B471F2274BE26002BC3AB /* SkPDFSubsetFont.cpp */,
+				945B47262274BE26002BC3AB /* SkPDFSubsetFont.h */,
+				945B47192274BE26002BC3AB /* SkPDFTag.cpp */,
+				945B46FD2274BE26002BC3AB /* SkPDFTag.h */,
+				945B47002274BE26002BC3AB /* SkPDFType1Font.cpp */,
+				945B47282274BE26002BC3AB /* SkPDFType1Font.h */,
+				945B47082274BE26002BC3AB /* SkPDFTypes.cpp */,
+				945B46FA2274BE26002BC3AB /* SkPDFTypes.h */,
+				945B471D2274BE26002BC3AB /* SkPDFUnion.h */,
+				945B47072274BE26002BC3AB /* SkPDFUtils.cpp */,
+				945B46FE2274BE26002BC3AB /* SkPDFUtils.h */,
+				945B47202274BE26002BC3AB /* SkUUID.h */,
 			);
 			path = pdf;
 			sourceTree = "<group>";
@@ -3761,8 +3688,8 @@
 			isa = PBXGroup;
 			children = (
 				945B47612274BE26002BC3AB /* SkCreateCGImageRef.cpp */,
-				945B47622274BE26002BC3AB /* SkUniqueCFRef.h */,
 				945B47632274BE26002BC3AB /* SkStream_mac.cpp */,
+				945B47622274BE26002BC3AB /* SkUniqueCFRef.h */,
 			);
 			path = mac;
 			sourceTree = "<group>";
@@ -3770,23 +3697,23 @@
 		945B47762274BE26002BC3AB /* image */ = {
 			isa = PBXGroup;
 			children = (
-				945B47772274BE26002BC3AB /* SkImage_Lazy.cpp */,
 				945B47782274BE26002BC3AB /* SkImage_Base.h */,
-				945B47792274BE26002BC3AB /* SkSurface.cpp */,
-				945B477A2274BE26002BC3AB /* SkImage_GpuYUVA.cpp */,
-				945B477B2274BE26002BC3AB /* SkImage_Gpu.h */,
-				945B477C2274BE26002BC3AB /* SkImage.cpp */,
-				945B477D2274BE26002BC3AB /* SkSurface_Gpu.h */,
-				945B477E2274BE26002BC3AB /* SkImage_Lazy.h */,
-				945B477F2274BE26002BC3AB /* SkSurface_Gpu.cpp */,
-				945B47802274BE26002BC3AB /* SkImage_GpuYUVA.h */,
-				945B47812274BE26002BC3AB /* SkImage_GpuBase.h */,
-				945B47822274BE26002BC3AB /* SkImage_GpuBase.cpp */,
 				945B47832274BE26002BC3AB /* SkImage_Gpu.cpp */,
-				945B47842274BE26002BC3AB /* SkSurface_Raster.cpp */,
-				945B47852274BE26002BC3AB /* SkSurface_Base.h */,
+				945B477B2274BE26002BC3AB /* SkImage_Gpu.h */,
+				945B47822274BE26002BC3AB /* SkImage_GpuBase.cpp */,
+				945B47812274BE26002BC3AB /* SkImage_GpuBase.h */,
+				945B477A2274BE26002BC3AB /* SkImage_GpuYUVA.cpp */,
+				945B47802274BE26002BC3AB /* SkImage_GpuYUVA.h */,
+				945B47772274BE26002BC3AB /* SkImage_Lazy.cpp */,
+				945B477E2274BE26002BC3AB /* SkImage_Lazy.h */,
 				945B47862274BE26002BC3AB /* SkImage_Raster.cpp */,
+				945B477C2274BE26002BC3AB /* SkImage.cpp */,
 				945B47872274BE26002BC3AB /* SkReadPixelsRec.h */,
+				945B47852274BE26002BC3AB /* SkSurface_Base.h */,
+				945B477F2274BE26002BC3AB /* SkSurface_Gpu.cpp */,
+				945B477D2274BE26002BC3AB /* SkSurface_Gpu.h */,
+				945B47842274BE26002BC3AB /* SkSurface_Raster.cpp */,
+				945B47792274BE26002BC3AB /* SkSurface.cpp */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -3794,12 +3721,12 @@
 		945B47882274BE26002BC3AB /* xml */ = {
 			isa = PBXGroup;
 			children = (
+				945B478D2274BE26002BC3AB /* SkDOM.cpp */,
+				945B478C2274BE26002BC3AB /* SkDOM.h */,
+				945B478B2274BE26002BC3AB /* SkXMLParser.cpp */,
+				945B478E2274BE26002BC3AB /* SkXMLParser.h */,
 				945B47892274BE26002BC3AB /* SkXMLWriter.cpp */,
 				945B478A2274BE26002BC3AB /* SkXMLWriter.h */,
-				945B478B2274BE26002BC3AB /* SkXMLParser.cpp */,
-				945B478C2274BE26002BC3AB /* SkDOM.h */,
-				945B478D2274BE26002BC3AB /* SkDOM.cpp */,
-				945B478E2274BE26002BC3AB /* SkXMLParser.h */,
 			);
 			path = xml;
 			sourceTree = "<group>";
@@ -3829,29 +3756,29 @@
 		945B47992274BE26002BC3AB /* shaders */ = {
 			isa = PBXGroup;
 			children = (
-				945B479A2274BE26002BC3AB /* SkLights.h */,
-				945B479B2274BE26002BC3AB /* SkColorFilterShader.cpp */,
-				945B479C2274BE26002BC3AB /* SkColorShader.h */,
-				945B479D2274BE26002BC3AB /* SkLights.cpp */,
-				945B479E2274BE26002BC3AB /* SkLightingShader.h */,
-				945B479F2274BE26002BC3AB /* SkShader.cpp */,
-				945B47A02274BE26002BC3AB /* SkBitmapProcShader.h */,
-				945B47A12274BE26002BC3AB /* SkColorShader.cpp */,
-				945B47A22274BE26002BC3AB /* SkEmptyShader.h */,
-				945B47A32274BE26002BC3AB /* SkLocalMatrixShader.cpp */,
-				945B47A42274BE26002BC3AB /* SkComposeShader.h */,
-				945B47A52274BE26002BC3AB /* SkPictureShader.h */,
-				945B47A62274BE26002BC3AB /* SkImageShader.cpp */,
-				945B47A72274BE26002BC3AB /* SkShaderBase.h */,
-				945B47A82274BE26002BC3AB /* SkPerlinNoiseShader.cpp */,
-				945B47A92274BE26002BC3AB /* SkComposeShader.cpp */,
 				945B47AA2274BE26002BC3AB /* gradients */,
 				945B47BA2274BE26002BC3AB /* SkBitmapProcShader.cpp */,
-				945B47BB2274BE26002BC3AB /* SkLocalMatrixShader.h */,
-				945B47BC2274BE26002BC3AB /* SkPictureShader.cpp */,
+				945B47A02274BE26002BC3AB /* SkBitmapProcShader.h */,
+				945B479B2274BE26002BC3AB /* SkColorFilterShader.cpp */,
+				945B47BF2274BE26002BC3AB /* SkColorFilterShader.h */,
+				945B47A12274BE26002BC3AB /* SkColorShader.cpp */,
+				945B479C2274BE26002BC3AB /* SkColorShader.h */,
+				945B47A92274BE26002BC3AB /* SkComposeShader.cpp */,
+				945B47A42274BE26002BC3AB /* SkComposeShader.h */,
+				945B47A22274BE26002BC3AB /* SkEmptyShader.h */,
+				945B47A62274BE26002BC3AB /* SkImageShader.cpp */,
 				945B47BD2274BE26002BC3AB /* SkImageShader.h */,
 				945B47BE2274BE26002BC3AB /* SkLightingShader.cpp */,
-				945B47BF2274BE26002BC3AB /* SkColorFilterShader.h */,
+				945B479E2274BE26002BC3AB /* SkLightingShader.h */,
+				945B479D2274BE26002BC3AB /* SkLights.cpp */,
+				945B479A2274BE26002BC3AB /* SkLights.h */,
+				945B47A32274BE26002BC3AB /* SkLocalMatrixShader.cpp */,
+				945B47BB2274BE26002BC3AB /* SkLocalMatrixShader.h */,
+				945B47A82274BE26002BC3AB /* SkPerlinNoiseShader.cpp */,
+				945B47BC2274BE26002BC3AB /* SkPictureShader.cpp */,
+				945B47A52274BE26002BC3AB /* SkPictureShader.h */,
+				945B479F2274BE26002BC3AB /* SkShader.cpp */,
+				945B47A72274BE26002BC3AB /* SkShaderBase.h */,
 			);
 			path = shaders;
 			sourceTree = "<group>";
@@ -3859,21 +3786,21 @@
 		945B47AA2274BE26002BC3AB /* gradients */ = {
 			isa = PBXGroup;
 			children = (
-				945B47AB2274BE26002BC3AB /* SkSweepGradient.cpp */,
-				945B47AC2274BE26002BC3AB /* SkTwoPointConicalGradient.h */,
+				945B47B82274BE26002BC3AB /* Sk4fGradientBase.cpp */,
 				945B47AD2274BE26002BC3AB /* Sk4fGradientBase.h */,
-				945B47AE2274BE26002BC3AB /* SkSweepGradient.h */,
+				945B47B62274BE26002BC3AB /* Sk4fGradientPriv.h */,
+				945B47B22274BE26002BC3AB /* Sk4fLinearGradient.cpp */,
+				945B47B72274BE26002BC3AB /* Sk4fLinearGradient.h */,
+				945B47B92274BE26002BC3AB /* SkGradientShader.cpp */,
+				945B47B42274BE26002BC3AB /* SkGradientShaderPriv.h */,
+				945B47B32274BE26002BC3AB /* SkLinearGradient.cpp */,
+				945B47B52274BE26002BC3AB /* SkLinearGradient.h */,
 				945B47AF2274BE26002BC3AB /* SkRadialGradient.cpp */,
 				945B47B02274BE26002BC3AB /* SkRadialGradient.h */,
+				945B47AB2274BE26002BC3AB /* SkSweepGradient.cpp */,
+				945B47AE2274BE26002BC3AB /* SkSweepGradient.h */,
 				945B47B12274BE26002BC3AB /* SkTwoPointConicalGradient.cpp */,
-				945B47B22274BE26002BC3AB /* Sk4fLinearGradient.cpp */,
-				945B47B32274BE26002BC3AB /* SkLinearGradient.cpp */,
-				945B47B42274BE26002BC3AB /* SkGradientShaderPriv.h */,
-				945B47B52274BE26002BC3AB /* SkLinearGradient.h */,
-				945B47B62274BE26002BC3AB /* Sk4fGradientPriv.h */,
-				945B47B72274BE26002BC3AB /* Sk4fLinearGradient.h */,
-				945B47B82274BE26002BC3AB /* Sk4fGradientBase.cpp */,
-				945B47B92274BE26002BC3AB /* SkGradientShader.cpp */,
+				945B47AC2274BE26002BC3AB /* SkTwoPointConicalGradient.h */,
 			);
 			path = gradients;
 			sourceTree = "<group>";
@@ -3881,23 +3808,23 @@
 		945B47C02274BE26002BC3AB /* opts */ = {
 			isa = PBXGroup;
 			children = (
-				945B47C12274BE26002BC3AB /* Sk4px_SSE2.h */,
-				945B47C22274BE26002BC3AB /* SkOpts_ssse3.cpp */,
-				945B47C32274BE26002BC3AB /* SkXfermode_opts.h */,
-				945B47C42274BE26002BC3AB /* SkOpts_avx.cpp */,
-				945B47C52274BE26002BC3AB /* SkUtils_opts.h */,
-				945B47C62274BE26002BC3AB /* Sk4px_none.h */,
-				945B47C72274BE26002BC3AB /* SkBlitRow_opts.h */,
 				945B47C82274BE26002BC3AB /* Sk4px_NEON.h */,
-				945B47C92274BE26002BC3AB /* SkBlitMask_opts.h */,
-				945B47CA2274BE26002BC3AB /* SkSwizzler_opts.h */,
-				945B47CB2274BE26002BC3AB /* SkChecksum_opts.h */,
-				945B47CC2274BE26002BC3AB /* SkRasterPipeline_opts.h */,
+				945B47C62274BE26002BC3AB /* Sk4px_none.h */,
+				945B47C12274BE26002BC3AB /* Sk4px_SSE2.h */,
 				945B47CD2274BE26002BC3AB /* SkBitmapProcState_opts.h */,
+				945B47C92274BE26002BC3AB /* SkBlitMask_opts.h */,
+				945B47C72274BE26002BC3AB /* SkBlitRow_opts.h */,
+				945B47CB2274BE26002BC3AB /* SkChecksum_opts.h */,
+				945B47C42274BE26002BC3AB /* SkOpts_avx.cpp */,
 				945B47CE2274BE26002BC3AB /* SkOpts_crc32.cpp */,
-				945B47CF2274BE26002BC3AB /* SkOpts_sse41.cpp */,
 				945B47D02274BE26002BC3AB /* SkOpts_hsw.cpp */,
+				945B47CF2274BE26002BC3AB /* SkOpts_sse41.cpp */,
 				945B47D12274BE26002BC3AB /* SkOpts_sse42.cpp */,
+				945B47C22274BE26002BC3AB /* SkOpts_ssse3.cpp */,
+				945B47CC2274BE26002BC3AB /* SkRasterPipeline_opts.h */,
+				945B47CA2274BE26002BC3AB /* SkSwizzler_opts.h */,
+				945B47C52274BE26002BC3AB /* SkUtils_opts.h */,
+				945B47C32274BE26002BC3AB /* SkXfermode_opts.h */,
 			);
 			path = opts;
 			sourceTree = "<group>";
@@ -3914,32 +3841,32 @@
 		945B47D52274BE26002BC3AB /* effects */ = {
 			isa = PBXGroup;
 			children = (
-				945B47D62274BE26002BC3AB /* SkEmbossMask.h */,
-				945B47D72274BE26002BC3AB /* SkCornerPathEffect.cpp */,
-				945B47D82274BE26002BC3AB /* SkPackBits.cpp */,
-				945B47D92274BE26002BC3AB /* SkTrimPathEffect.cpp */,
-				945B47DA2274BE26002BC3AB /* SkHighContrastFilter.cpp */,
-				945B47DB2274BE26002BC3AB /* SkLumaColorFilter.cpp */,
-				945B47DC2274BE26002BC3AB /* SkColorMatrixFilter.cpp */,
-				945B47DD2274BE26002BC3AB /* SkShaderMaskFilter.cpp */,
-				945B47DE2274BE26002BC3AB /* SkDashPathEffect.cpp */,
-				945B47DF2274BE26002BC3AB /* SkDashImpl.h */,
-				945B47E02274BE26002BC3AB /* SkTableColorFilter.cpp */,
 				945B47E12274BE26002BC3AB /* imagefilters */,
-				945B47F42274BE26002BC3AB /* Sk2DPathEffect.cpp */,
-				945B47F52274BE26002BC3AB /* SkOpPathEffect.cpp */,
-				945B47F62274BE26002BC3AB /* SkEmbossMaskFilter.h */,
-				945B47F72274BE26002BC3AB /* SkEmbossMaskFilter.cpp */,
-				945B47F82274BE26002BC3AB /* SkLayerDrawLooper.cpp */,
-				945B47F92274BE26002BC3AB /* SkPackBits.h */,
-				945B47FA2274BE26002BC3AB /* SkDiscretePathEffect.cpp */,
-				945B47FB2274BE26002BC3AB /* SkTrimPE.h */,
-				945B47FC2274BE26002BC3AB /* SkEmbossMask.cpp */,
 				945B47FD2274BE26002BC3AB /* Sk1DPathEffect.cpp */,
-				945B47FE2274BE26002BC3AB /* SkTableMaskFilter.cpp */,
+				945B47F42274BE26002BC3AB /* Sk2DPathEffect.cpp */,
 				945B47FF2274BE26002BC3AB /* SkColorMatrix.cpp */,
+				945B47DC2274BE26002BC3AB /* SkColorMatrixFilter.cpp */,
+				945B47D72274BE26002BC3AB /* SkCornerPathEffect.cpp */,
+				945B47DF2274BE26002BC3AB /* SkDashImpl.h */,
+				945B47DE2274BE26002BC3AB /* SkDashPathEffect.cpp */,
+				945B47FA2274BE26002BC3AB /* SkDiscretePathEffect.cpp */,
+				945B47FC2274BE26002BC3AB /* SkEmbossMask.cpp */,
+				945B47D62274BE26002BC3AB /* SkEmbossMask.h */,
+				945B47F72274BE26002BC3AB /* SkEmbossMaskFilter.cpp */,
+				945B47F62274BE26002BC3AB /* SkEmbossMaskFilter.h */,
+				945B47DA2274BE26002BC3AB /* SkHighContrastFilter.cpp */,
+				945B47F82274BE26002BC3AB /* SkLayerDrawLooper.cpp */,
+				945B47DB2274BE26002BC3AB /* SkLumaColorFilter.cpp */,
+				945B47F52274BE26002BC3AB /* SkOpPathEffect.cpp */,
 				945B48002274BE26002BC3AB /* SkOpPE.h */,
 				945B48012274BE26002BC3AB /* SkOverdrawColorFilter.cpp */,
+				945B47D82274BE26002BC3AB /* SkPackBits.cpp */,
+				945B47F92274BE26002BC3AB /* SkPackBits.h */,
+				945B47DD2274BE26002BC3AB /* SkShaderMaskFilter.cpp */,
+				945B47E02274BE26002BC3AB /* SkTableColorFilter.cpp */,
+				945B47FE2274BE26002BC3AB /* SkTableMaskFilter.cpp */,
+				945B47D92274BE26002BC3AB /* SkTrimPathEffect.cpp */,
+				945B47FB2274BE26002BC3AB /* SkTrimPE.h */,
 			);
 			path = effects;
 			sourceTree = "<group>";
@@ -3947,24 +3874,24 @@
 		945B47E12274BE26002BC3AB /* imagefilters */ = {
 			isa = PBXGroup;
 			children = (
-				945B47E22274BE26002BC3AB /* SkOffsetImageFilter.cpp */,
-				945B47E32274BE26002BC3AB /* SkXfermodeImageFilter.cpp */,
 				945B47E42274BE26002BC3AB /* SkAlphaThresholdFilter.cpp */,
-				945B47E52274BE26002BC3AB /* SkMatrixConvolutionImageFilter.cpp */,
-				945B47E62274BE26002BC3AB /* SkDisplacementMapEffect.cpp */,
-				945B47E72274BE26002BC3AB /* SkComposeImageFilter.cpp */,
-				945B47E82274BE26002BC3AB /* SkTileImageFilter.cpp */,
-				945B47E92274BE26002BC3AB /* SkMorphologyImageFilter.cpp */,
-				945B47EA2274BE26002BC3AB /* SkMergeImageFilter.cpp */,
-				945B47EB2274BE26002BC3AB /* SkLightingImageFilter.cpp */,
 				945B47EC2274BE26002BC3AB /* SkArithmeticImageFilter.cpp */,
-				945B47ED2274BE26002BC3AB /* SkDropShadowImageFilter.cpp */,
-				945B47EE2274BE26002BC3AB /* SkPaintImageFilter.cpp */,
 				945B47EF2274BE26002BC3AB /* SkBlurImageFilter.cpp */,
-				945B47F02274BE26002BC3AB /* SkMagnifierImageFilter.cpp */,
-				945B47F12274BE26002BC3AB /* SkPictureImageFilter.cpp */,
 				945B47F22274BE26002BC3AB /* SkColorFilterImageFilter.cpp */,
+				945B47E72274BE26002BC3AB /* SkComposeImageFilter.cpp */,
+				945B47E62274BE26002BC3AB /* SkDisplacementMapEffect.cpp */,
+				945B47ED2274BE26002BC3AB /* SkDropShadowImageFilter.cpp */,
 				945B47F32274BE26002BC3AB /* SkImageSource.cpp */,
+				945B47EB2274BE26002BC3AB /* SkLightingImageFilter.cpp */,
+				945B47F02274BE26002BC3AB /* SkMagnifierImageFilter.cpp */,
+				945B47E52274BE26002BC3AB /* SkMatrixConvolutionImageFilter.cpp */,
+				945B47EA2274BE26002BC3AB /* SkMergeImageFilter.cpp */,
+				945B47E92274BE26002BC3AB /* SkMorphologyImageFilter.cpp */,
+				945B47E22274BE26002BC3AB /* SkOffsetImageFilter.cpp */,
+				945B47EE2274BE26002BC3AB /* SkPaintImageFilter.cpp */,
+				945B47F12274BE26002BC3AB /* SkPictureImageFilter.cpp */,
+				945B47E82274BE26002BC3AB /* SkTileImageFilter.cpp */,
+				945B47E32274BE26002BC3AB /* SkXfermodeImageFilter.cpp */,
 			);
 			path = imagefilters;
 			sourceTree = "<group>";
@@ -3972,64 +3899,64 @@
 		945B48022274BE26002BC3AB /* ports */ = {
 			isa = PBXGroup;
 			children = (
-				945B48032274BE26002BC3AB /* SkImageGenerator_skia.cpp */,
-				945B48042274BE26002BC3AB /* SkOSLibrary.h */,
-				945B48052274BE26002BC3AB /* SkFontConfigInterface.cpp */,
-				945B48062274BE26002BC3AB /* SkFontConfigInterface_direct_factory.cpp */,
-				945B48072274BE26002BC3AB /* SkFontMgr_android_parser.cpp */,
-				945B48082274BE26002BC3AB /* SkScalerContext_win_dw.h */,
-				945B48092274BE26002BC3AB /* SkFontMgr_android.cpp */,
-				945B480A2274BE26002BC3AB /* SkFontMgr_android_factory.cpp */,
-				945B480B2274BE26002BC3AB /* SkOSFile_ios.h */,
-				945B480C2274BE26002BC3AB /* SkFontMgr_custom_directory.cpp */,
-				945B480D2274BE26002BC3AB /* SkImageEncoder_WIC.cpp */,
-				945B480E2274BE26002BC3AB /* SkTLS_none.cpp */,
-				945B480F2274BE26002BC3AB /* SkFontMgr_custom_embedded.cpp */,
-				945B48102274BE26002BC3AB /* SkOSFile_stdio.cpp */,
-				945B48112274BE26002BC3AB /* SkOSFile_posix.cpp */,
-				945B48122274BE26002BC3AB /* SkOSLibrary_posix.cpp */,
-				945B48132274BE26002BC3AB /* SkFontMgr_fuchsia.cpp */,
-				945B48142274BE26002BC3AB /* SkFontHost_win.cpp */,
-				945B48152274BE26002BC3AB /* SkFontHost_FreeType_common.cpp */,
 				945B48162274BE26002BC3AB /* SkDebug_android.cpp */,
-				945B48172274BE26002BC3AB /* SkTypeface_win_dw.h */,
-				945B48182274BE26002BC3AB /* SkTypeface_win_dw.cpp */,
-				945B48192274BE26002BC3AB /* SkFontMgr_FontConfigInterface_factory.cpp */,
-				945B481A2274BE26002BC3AB /* SkOSLibrary_win.cpp */,
+				945B48352274BE26002BC3AB /* SkDebug_stdio.cpp */,
+				945B483B2274BE26002BC3AB /* SkDebug_win.cpp */,
+				945B48362274BE26002BC3AB /* SkDiscardableMemory_none.cpp */,
+				945B48062274BE26002BC3AB /* SkFontConfigInterface_direct_factory.cpp */,
+				945B48382274BE26002BC3AB /* SkFontConfigInterface_direct.cpp */,
+				945B48342274BE26002BC3AB /* SkFontConfigInterface_direct.h */,
+				945B48052274BE26002BC3AB /* SkFontConfigInterface.cpp */,
+				945B483A2274BE26002BC3AB /* SkFontConfigTypeface.h */,
+				945B48152274BE26002BC3AB /* SkFontHost_FreeType_common.cpp */,
 				945B481B2274BE26002BC3AB /* SkFontHost_FreeType_common.h */,
+				945B48252274BE26002BC3AB /* SkFontHost_FreeType.cpp */,
+				945B481F2274BE26002BC3AB /* SkFontHost_mac.cpp */,
+				945B48142274BE26002BC3AB /* SkFontHost_win.cpp */,
+				945B480A2274BE26002BC3AB /* SkFontMgr_android_factory.cpp */,
+				945B48072274BE26002BC3AB /* SkFontMgr_android_parser.cpp */,
+				945B482C2274BE26002BC3AB /* SkFontMgr_android_parser.h */,
+				945B48092274BE26002BC3AB /* SkFontMgr_android.cpp */,
+				945B48282274BE26002BC3AB /* SkFontMgr_custom_directory_factory.cpp */,
+				945B480C2274BE26002BC3AB /* SkFontMgr_custom_directory.cpp */,
+				945B48312274BE26002BC3AB /* SkFontMgr_custom_embedded_factory.cpp */,
+				945B480F2274BE26002BC3AB /* SkFontMgr_custom_embedded.cpp */,
+				945B48222274BE26002BC3AB /* SkFontMgr_custom_empty_factory.cpp */,
+				945B482F2274BE26002BC3AB /* SkFontMgr_custom_empty.cpp */,
 				945B481C2274BE26002BC3AB /* SkFontMgr_custom.cpp */,
+				945B48232274BE26002BC3AB /* SkFontMgr_custom.h */,
+				945B482A2274BE26002BC3AB /* SkFontMgr_empty_factory.cpp */,
+				945B482E2274BE26002BC3AB /* SkFontMgr_fontconfig_factory.cpp */,
+				945B48262274BE26002BC3AB /* SkFontMgr_fontconfig.cpp */,
+				945B48192274BE26002BC3AB /* SkFontMgr_FontConfigInterface_factory.cpp */,
+				945B48202274BE26002BC3AB /* SkFontMgr_FontConfigInterface.cpp */,
+				945B48132274BE26002BC3AB /* SkFontMgr_fuchsia.cpp */,
+				945B48322274BE26002BC3AB /* SkFontMgr_win_dw_factory.cpp */,
+				945B48272274BE26002BC3AB /* SkFontMgr_win_dw.cpp */,
+				945B483C2274BE26002BC3AB /* SkGlobalInitialization_default.cpp */,
+				945B48332274BE26002BC3AB /* SkImageEncoder_CG.cpp */,
+				945B480D2274BE26002BC3AB /* SkImageEncoder_WIC.cpp */,
+				945B482B2274BE26002BC3AB /* SkImageGenerator_none.cpp */,
+				945B48032274BE26002BC3AB /* SkImageGenerator_skia.cpp */,
+				945B48392274BE26002BC3AB /* SkImageGeneratorCG.cpp */,
+				945B482D2274BE26002BC3AB /* SkImageGeneratorWIC.cpp */,
 				945B481D2274BE26002BC3AB /* SkMemory_malloc.cpp */,
 				945B481E2274BE26002BC3AB /* SkMemory_mozalloc.cpp */,
-				945B481F2274BE26002BC3AB /* SkFontHost_mac.cpp */,
-				945B48202274BE26002BC3AB /* SkFontMgr_FontConfigInterface.cpp */,
-				945B48212274BE26002BC3AB /* SkRemotableFontMgr_win_dw.cpp */,
-				945B48222274BE26002BC3AB /* SkFontMgr_custom_empty_factory.cpp */,
-				945B48232274BE26002BC3AB /* SkFontMgr_custom.h */,
-				945B48242274BE26002BC3AB /* SkTLS_pthread.cpp */,
-				945B48252274BE26002BC3AB /* SkFontHost_FreeType.cpp */,
-				945B48262274BE26002BC3AB /* SkFontMgr_fontconfig.cpp */,
-				945B48272274BE26002BC3AB /* SkFontMgr_win_dw.cpp */,
-				945B48282274BE26002BC3AB /* SkFontMgr_custom_directory_factory.cpp */,
+				945B480B2274BE26002BC3AB /* SkOSFile_ios.h */,
+				945B48112274BE26002BC3AB /* SkOSFile_posix.cpp */,
+				945B48102274BE26002BC3AB /* SkOSFile_stdio.cpp */,
 				945B48292274BE26002BC3AB /* SkOSFile_win.cpp */,
-				945B482A2274BE26002BC3AB /* SkFontMgr_empty_factory.cpp */,
-				945B482B2274BE26002BC3AB /* SkImageGenerator_none.cpp */,
-				945B482C2274BE26002BC3AB /* SkFontMgr_android_parser.h */,
-				945B482D2274BE26002BC3AB /* SkImageGeneratorWIC.cpp */,
-				945B482E2274BE26002BC3AB /* SkFontMgr_fontconfig_factory.cpp */,
-				945B482F2274BE26002BC3AB /* SkFontMgr_custom_empty.cpp */,
-				945B48302274BE26002BC3AB /* SkTLS_win.cpp */,
-				945B48312274BE26002BC3AB /* SkFontMgr_custom_embedded_factory.cpp */,
-				945B48322274BE26002BC3AB /* SkFontMgr_win_dw_factory.cpp */,
-				945B48332274BE26002BC3AB /* SkImageEncoder_CG.cpp */,
-				945B48342274BE26002BC3AB /* SkFontConfigInterface_direct.h */,
-				945B48352274BE26002BC3AB /* SkDebug_stdio.cpp */,
-				945B48362274BE26002BC3AB /* SkDiscardableMemory_none.cpp */,
+				945B48122274BE26002BC3AB /* SkOSLibrary_posix.cpp */,
+				945B481A2274BE26002BC3AB /* SkOSLibrary_win.cpp */,
+				945B48042274BE26002BC3AB /* SkOSLibrary.h */,
+				945B48212274BE26002BC3AB /* SkRemotableFontMgr_win_dw.cpp */,
 				945B48372274BE26002BC3AB /* SkScalerContext_win_dw.cpp */,
-				945B48382274BE26002BC3AB /* SkFontConfigInterface_direct.cpp */,
-				945B48392274BE26002BC3AB /* SkImageGeneratorCG.cpp */,
-				945B483A2274BE26002BC3AB /* SkFontConfigTypeface.h */,
-				945B483B2274BE26002BC3AB /* SkDebug_win.cpp */,
-				945B483C2274BE26002BC3AB /* SkGlobalInitialization_default.cpp */,
+				945B48082274BE26002BC3AB /* SkScalerContext_win_dw.h */,
+				945B480E2274BE26002BC3AB /* SkTLS_none.cpp */,
+				945B48242274BE26002BC3AB /* SkTLS_pthread.cpp */,
+				945B48302274BE26002BC3AB /* SkTLS_win.cpp */,
+				945B48182274BE26002BC3AB /* SkTypeface_win_dw.cpp */,
+				945B48172274BE26002BC3AB /* SkTypeface_win_dw.h */,
 			);
 			path = ports;
 			sourceTree = "<group>";
@@ -4056,89 +3983,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		945B4BD42275B306002BC3AB /* PathOpsSwift */ = {
-			isa = PBXGroup;
-			children = (
-				945B4BDC2275B37F002BC3AB /* CGPath+PathOps.swift */,
-				945B4BD62275B306002BC3AB /* Info.plist */,
-				945B4BD52275B306002BC3AB /* PathOpsSwift.h */,
-			);
-			path = PathOpsSwift;
-			sourceTree = "<group>";
-		};
 		945B4BE32275B841002BC3AB /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				945B4BE42275B841002BC3AB /* AppDelegate.swift */,
-				945B4BE62275B841002BC3AB /* ViewController.swift */,
-				945B4BE82275B841002BC3AB /* Main.storyboard */,
 				945B4BEB2275B843002BC3AB /* Assets.xcassets */,
-				945B4BED2275B843002BC3AB /* LaunchScreen.storyboard */,
+				94A9DCF422799A54007A2A01 /* Example-Bridging-Header.h */,
 				945B4BF02275B843002BC3AB /* Info.plist */,
+				945B4BED2275B843002BC3AB /* LaunchScreen.storyboard */,
+				945B4BE82275B841002BC3AB /* Main.storyboard */,
+				945B4BE62275B841002BC3AB /* ViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		945B3E302274A547002BC3AB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945B4BA62275A70A002BC3AB /* PathOps.h in Headers */,
-				945B4BA72275A753002BC3AB /* SKPath.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		945B4BCE2275B306002BC3AB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945B4BD72275B306002BC3AB /* PathOpsSwift.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		945B3E342274A547002BC3AB /* PathOps */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 945B3E3D2274A547002BC3AB /* Build configuration list for PBXNativeTarget "PathOps" */;
-			buildPhases = (
-				945B3E302274A547002BC3AB /* Headers */,
-				945B3E312274A547002BC3AB /* Sources */,
-				945B3E322274A547002BC3AB /* Frameworks */,
-				945B3E332274A547002BC3AB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PathOps;
-			productName = PathOps;
-			productReference = 945B3E352274A547002BC3AB /* PathOps.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		945B4BD22275B306002BC3AB /* PathOpsSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 945B4BD82275B306002BC3AB /* Build configuration list for PBXNativeTarget "PathOpsSwift" */;
-			buildPhases = (
-				945B4BCE2275B306002BC3AB /* Headers */,
-				945B4BCF2275B306002BC3AB /* Sources */,
-				945B4BD02275B306002BC3AB /* Frameworks */,
-				945B4BD12275B306002BC3AB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				945B4BFB2275BBD9002BC3AB /* PBXTargetDependency */,
-			);
-			name = PathOpsSwift;
-			productName = PathOpsSwift;
-			productReference = 945B4BD32275B306002BC3AB /* PathOpsSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		945B4BE12275B840002BC3AB /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 945B4BF32275B843002BC3AB /* Build configuration list for PBXNativeTarget "Example" */;
@@ -4146,13 +4007,10 @@
 				945B4BDE2275B840002BC3AB /* Sources */,
 				945B4BDF2275B840002BC3AB /* Frameworks */,
 				945B4BE02275B840002BC3AB /* Resources */,
-				945B4C0D2275BCA7002BC3AB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				945B4C082275BCA7002BC3AB /* PBXTargetDependency */,
-				945B4C0C2275BCA7002BC3AB /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -4169,14 +4027,6 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = kbinani;
 				TargetAttributes = {
-					945B3E342274A547002BC3AB = {
-						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
-					};
-					945B4BD22275B306002BC3AB = {
-						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
-					};
 					945B4BE12275B840002BC3AB = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -4195,28 +4045,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				945B3E342274A547002BC3AB /* PathOps */,
-				945B4BD22275B306002BC3AB /* PathOpsSwift */,
 				945B4BE12275B840002BC3AB /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		945B3E332274A547002BC3AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		945B4BD12275B306002BC3AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		945B4BE02275B840002BC3AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4230,116 +4064,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		945B3E312274A547002BC3AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945B4A022274C9A2002BC3AB /* SkOpts_hsw.cpp in Sources */,
-				94A9DC8B22760F66007A2A01 /* SkStroke.cpp in Sources */,
-				945B4B782274CC8D002BC3AB /* SkPoint.cpp in Sources */,
-				945B4B812274CEC4002BC3AB /* SkMath.cpp in Sources */,
-				945B49FB2274C962002BC3AB /* SkOSFile_stdio.cpp in Sources */,
-				945B4B772274CC72002BC3AB /* SkPathRef.cpp in Sources */,
-				945B4B7A2274CCA5002BC3AB /* SkBuffer.cpp in Sources */,
-				945B484F2274BE4F002BC3AB /* SkOpCubicHull.cpp in Sources */,
-				945B485A2274BE4F002BC3AB /* SkPathWriter.cpp in Sources */,
-				945B48472274BE4F002BC3AB /* SkReduceOrder.cpp in Sources */,
-				945B48582274BE4F002BC3AB /* SkPathOpsOp.cpp in Sources */,
-				945B4A032274C9A2002BC3AB /* SkOpts_sse42.cpp in Sources */,
-				945B48562274BE4F002BC3AB /* SkDConicLineIntersection.cpp in Sources */,
-				945B48522274BE4F002BC3AB /* SkOpAngle.cpp in Sources */,
-				945B4B7F2274CDBB002BC3AB /* SkMemory_malloc.cpp in Sources */,
-				945B4BF52275BA4A002BC3AB /* SkOpts_crc32.cpp in Sources */,
-				945B48612274BE4F002BC3AB /* SkOpBuilder.cpp in Sources */,
-				94A9DC8A22760E7A007A2A01 /* SkStrokeRec.cpp in Sources */,
-				945B484D2274BE4F002BC3AB /* SkDCubicLineIntersection.cpp in Sources */,
-				945B4B712274CBF6002BC3AB /* SkString.cpp in Sources */,
-				945B48492274BE4F002BC3AB /* SkPathOpsQuad.cpp in Sources */,
-				94A9DC8D22760FC5007A2A01 /* SkStrokerPriv.cpp in Sources */,
-				94A9DC8F22761149007A2A01 /* skia_stub.mm in Sources */,
-				945B4B6E2274CBC2002BC3AB /* SkSemaphore.cpp in Sources */,
-				945B4B852274D033002BC3AB /* SKPath.mm in Sources */,
-				945B4B7D2274CD2B002BC3AB /* SkColor.cpp in Sources */,
-				945B4B822274CEE1002BC3AB /* SkCpu.cpp in Sources */,
-				945B4B6F2274CBCF002BC3AB /* SkPath.cpp in Sources */,
-				945B4B6D2274CBAC002BC3AB /* SkOpts.cpp in Sources */,
-				945B4B752274CC5A002BC3AB /* SkMatrix.cpp in Sources */,
-				945B484C2274BE4F002BC3AB /* SkPathOpsSimplify.cpp in Sources */,
-				945B484A2274BE4F002BC3AB /* SkPathOpsCommon.cpp in Sources */,
-				945B48462274BE4F002BC3AB /* SkIntersections.cpp in Sources */,
-				945B484B2274BE4F002BC3AB /* SkPathOpsLine.cpp in Sources */,
-				945B48622274BE4F002BC3AB /* SkPathOpsRect.cpp in Sources */,
-				945B485D2274BE4F002BC3AB /* SkOpContour.cpp in Sources */,
-				945B484E2274BE4F002BC3AB /* SkPathOpsTSect.cpp in Sources */,
-				945B48632274BE4F002BC3AB /* SkAddIntersections.cpp in Sources */,
-				945B48602274BE4F002BC3AB /* SkOpSpan.cpp in Sources */,
-				945B485F2274BE4F002BC3AB /* SkDLineIntersection.cpp in Sources */,
-				945B48552274BE4F002BC3AB /* SkPathOpsTightBounds.cpp in Sources */,
-				945B48442274BE4F002BC3AB /* SkPathOpsAsWinding.cpp in Sources */,
-				945B4B742274CC4C002BC3AB /* SkGeometry.cpp in Sources */,
-				945B48592274BE4F002BC3AB /* SkPathOpsConic.cpp in Sources */,
-				945B4B7E2274CD4E002BC3AB /* SkUtils.cpp in Sources */,
-				945B48512274BE4F002BC3AB /* SkOpEdgeBuilder.cpp in Sources */,
-				945B48502274BE4F002BC3AB /* SkPathOpsCubic.cpp in Sources */,
-				945B48482274BE4F002BC3AB /* SkPathOpsDebug.cpp in Sources */,
-				945B48542274BE4F002BC3AB /* SkOpSegment.cpp in Sources */,
-				945B4A012274C9A2002BC3AB /* SkOpts_sse41.cpp in Sources */,
-				945B4B762274CC68002BC3AB /* SkRRect.cpp in Sources */,
-				945B485E2274BE4F002BC3AB /* SkDCubicToQuads.cpp in Sources */,
-				945B485B2274BE4F002BC3AB /* SkDQuadLineIntersection.cpp in Sources */,
-				945B485C2274BE4F002BC3AB /* SkOpCoincidence.cpp in Sources */,
-				945B4A002274C9A2002BC3AB /* SkOpts_avx.cpp in Sources */,
-				945B49FC2274C965002BC3AB /* SkOSFile_posix.cpp in Sources */,
-				945B3E412274A61A002BC3AB /* skia_compat.mm in Sources */,
-				945B4B722274CC03002BC3AB /* SkThreadID.cpp in Sources */,
-				945B4B702274CBDE002BC3AB /* SkRect.cpp in Sources */,
-				945B4B7C2274CCDA002BC3AB /* SkStringUtils.cpp in Sources */,
-				945B4B832274CF13002BC3AB /* SkDebug_stdio.cpp in Sources */,
-				945B48532274BE4F002BC3AB /* SkPathOpsCurve.cpp in Sources */,
-				945B48452274BE4F002BC3AB /* SkPathOpsWinding.cpp in Sources */,
-				945B4B792274CC9C002BC3AB /* SkArenaAlloc.cpp in Sources */,
-				945B48572274BE4F002BC3AB /* SkPathOpsTypes.cpp in Sources */,
-				945B4B7B2274CCCA002BC3AB /* SkCubicClipper.cpp in Sources */,
-				945B4A0A2274CA84002BC3AB /* SkUTF.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		945B4BCF2275B306002BC3AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945B4BDD2275B37F002BC3AB /* CGPath+PathOps.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		945B4BDE2275B840002BC3AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A9DCE0227996DD007A2A01 /* SkPathOpsOp.cpp in Sources */,
+				94A9DCE8227996F1007A2A01 /* SkPathWriter.cpp in Sources */,
+				94A9DCE5227996EA007A2A01 /* SkPathOpsTSect.cpp in Sources */,
+				94A9DCEB2279970B007A2A01 /* SkOSFile_posix.cpp in Sources */,
+				94A9DCB72279934B007A2A01 /* SkOpts.cpp in Sources */,
+				94A9DCDF227996DB007A2A01 /* SkPathOpsLine.cpp in Sources */,
+				94A9DCDE227996D8007A2A01 /* SkPathOpsDebug.cpp in Sources */,
 				945B4BE72275B841002BC3AB /* ViewController.swift in Sources */,
+				94A9DCF222799977007A2A01 /* skia_stub.mm in Sources */,
+				94A9DCBE227993AC007A2A01 /* SkString.cpp in Sources */,
+				94A9DCD7227996C8007A2A01 /* SkOpSegment.cpp in Sources */,
+				94A9DCB822799354007A2A01 /* SkPath.cpp in Sources */,
+				94A9DCB42279930C007A2A01 /* SkGeometry.cpp in Sources */,
+				94A9DCD9227996CD007A2A01 /* SkPathOpsAsWinding.cpp in Sources */,
+				94A9DCCF227996B4007A2A01 /* SkDQuadLineIntersection.cpp in Sources */,
+				94A9DCBF227993AE007A2A01 /* SkStringUtils.cpp in Sources */,
+				94A9DCD6227996C5007A2A01 /* SkOpEdgeBuilder.cpp in Sources */,
+				94A9DCD4227996C1007A2A01 /* SkOpContour.cpp in Sources */,
+				94A9DCF122799974007A2A01 /* skia_compat.mm in Sources */,
+				94A9DCB0227992AD007A2A01 /* SkBuffer.cpp in Sources */,
+				94A9DCD3227996BE007A2A01 /* SkOpCoincidence.cpp in Sources */,
+				94A9DCBD2279939D007A2A01 /* SkSemaphore.cpp in Sources */,
+				94A9DCE4227996E8007A2A01 /* SkPathOpsTightBounds.cpp in Sources */,
+				94A9DCB2227992D8007A2A01 /* SkCpu.cpp in Sources */,
+				94A9DCC722799584007A2A01 /* SkOpts_sse41.cpp in Sources */,
+				94A9DCE2227996E3007A2A01 /* SkPathOpsRect.cpp in Sources */,
+				94A9DCBB2279937F007A2A01 /* SkRect.cpp in Sources */,
+				94A9DCC1227993B4007A2A01 /* SkStrokeRec.cpp in Sources */,
+				94A9DCC4227993CF007A2A01 /* SkUtils.cpp in Sources */,
+				94A9DCC922799588007A2A01 /* SkOpts_sse42.cpp in Sources */,
+				94A9DCDD227996D6007A2A01 /* SkPathOpsCurve.cpp in Sources */,
+				94A9DCB3227992DB007A2A01 /* SkCubicClipper.cpp in Sources */,
+				94A9DCCD227996AF007A2A01 /* SkDCubicToQuads.cpp in Sources */,
+				94A9DCDC227996D3007A2A01 /* SkPathOpsCubic.cpp in Sources */,
+				94A9DCE9227996F3007A2A01 /* SkReduceOrder.cpp in Sources */,
+				94A9DCF022799874007A2A01 /* CGPath+PathOps.swift in Sources */,
+				94A9DCC0227993B1007A2A01 /* SkStroke.cpp in Sources */,
+				94A9DCEA22799708007A2A01 /* SkOSFile_stdio.cpp in Sources */,
+				94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */,
+				94A9DCB1227992CB007A2A01 /* SkColor.cpp in Sources */,
+				94A9DCC822799586007A2A01 /* SkOpts_hsw.cpp in Sources */,
+				94A9DCD0227996B6007A2A01 /* SkIntersections.cpp in Sources */,
+				94A9DCDA227996CF007A2A01 /* SkPathOpsCommon.cpp in Sources */,
+				94A9DCB622799338007A2A01 /* SkMatrix.cpp in Sources */,
+				94A9DCBC22799388007A2A01 /* SkRRect.cpp in Sources */,
+				94A9DCEC2279971D007A2A01 /* SkDebug_stdio.cpp in Sources */,
+				94A9DCD1227996B9007A2A01 /* SkOpAngle.cpp in Sources */,
+				94A9DCCC227996AD007A2A01 /* SkDCubicLineIntersection.cpp in Sources */,
+				94A9DCC622799582007A2A01 /* SkOpts_crc32.cpp in Sources */,
 				945B4BE52275B841002BC3AB /* AppDelegate.swift in Sources */,
+				94A9DCED22799740007A2A01 /* SkMemory_malloc.cpp in Sources */,
+				94A9DCE6227996EC007A2A01 /* SkPathOpsTypes.cpp in Sources */,
+				94A9DCCB227996AB007A2A01 /* SkDConicLineIntersection.cpp in Sources */,
+				94A9DCD8227996CB007A2A01 /* SkOpSpan.cpp in Sources */,
+				94A9DCCA227996A8007A2A01 /* SkAddIntersections.cpp in Sources */,
+				94A9DCC52279957E007A2A01 /* SkOpts_avx.cpp in Sources */,
+				94A9DCD2227996BB007A2A01 /* SkOpBuilder.cpp in Sources */,
+				94A9DCD5227996C3007A2A01 /* SkOpCubicHull.cpp in Sources */,
+				94A9DCCE227996B1007A2A01 /* SkDLineIntersection.cpp in Sources */,
+				94A9DCC3227993C1007A2A01 /* SkThreadID.cpp in Sources */,
+				94A9DCBA2279936A007A2A01 /* SkPoint.cpp in Sources */,
+				94A9DCDB227996D1007A2A01 /* SkPathOpsConic.cpp in Sources */,
+				94A9DCF322799979007A2A01 /* SKPath.mm in Sources */,
+				94A9DCAF22799289007A2A01 /* SkArenaAlloc.cpp in Sources */,
+				94A9DCE7227996EE007A2A01 /* SkPathOpsWinding.cpp in Sources */,
+				94A9DCB522799334007A2A01 /* SkMath.cpp in Sources */,
+				94A9DCB92279935A007A2A01 /* SkPathRef.cpp in Sources */,
+				94A9DCE3227996E5007A2A01 /* SkPathOpsSimplify.cpp in Sources */,
+				94A9DCC2227993B7007A2A01 /* SkStrokerPriv.cpp in Sources */,
+				94A9DCE1227996E1007A2A01 /* SkPathOpsQuad.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		945B4BFB2275BBD9002BC3AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 945B3E342274A547002BC3AB /* PathOps */;
-			targetProxy = 945B4BFA2275BBD9002BC3AB /* PBXContainerItemProxy */;
-		};
-		945B4C082275BCA7002BC3AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 945B3E342274A547002BC3AB /* PathOps */;
-			targetProxy = 945B4C072275BCA7002BC3AB /* PBXContainerItemProxy */;
-		};
-		945B4C0C2275BCA7002BC3AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 945B4BD22275B306002BC3AB /* PathOpsSwift */;
-			targetProxy = 945B4C0B2275BCA7002BC3AB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		945B4BE82275B841002BC3AB /* Main.storyboard */ = {
@@ -4483,129 +4285,17 @@
 			};
 			name = Release;
 		};
-		945B3E3E2274A547002BC3AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XM695N4A7T;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/PathOps/third_party/skia",
-					"$(SRCROOT)/PathOps/third_party/skia/third_party/skcms",
-					"$(SRCROOT)/PathOps/third_party",
-				);
-				INFOPLIST_FILE = PathOps/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.PathOps;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		945B3E3F2274A547002BC3AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XM695N4A7T;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/PathOps/third_party/skia",
-					"$(SRCROOT)/PathOps/third_party/skia/third_party/skcms",
-					"$(SRCROOT)/PathOps/third_party",
-				);
-				INFOPLIST_FILE = PathOps/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.PathOps;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		945B4BD92275B306002BC3AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XM695N4A7T;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PathOpsSwift/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.PathOpsSwift;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		945B4BDA2275B306002BC3AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XM695N4A7T;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PathOpsSwift/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.PathOpsSwift;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		945B4BF12275B843002BC3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM695N4A7T;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Source/third_party/skia",
+					"$(SRCROOT)/Source/third_party/skia/third_party/skcms",
+					"$(SRCROOT)/Source/third_party",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4613,6 +4303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4621,10 +4312,14 @@
 		945B4BF22275B843002BC3AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM695N4A7T;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Source/third_party/skia",
+					"$(SRCROOT)/Source/third_party/skia/third_party/skcms",
+					"$(SRCROOT)/Source/third_party",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4632,6 +4327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.kbinani.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4645,24 +4341,6 @@
 			buildConfigurations = (
 				945B3E3B2274A547002BC3AB /* Debug */,
 				945B3E3C2274A547002BC3AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		945B3E3D2274A547002BC3AB /* Build configuration list for PBXNativeTarget "PathOps" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				945B3E3E2274A547002BC3AB /* Debug */,
-				945B3E3F2274A547002BC3AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		945B4BD82275B306002BC3AB /* Build configuration list for PBXNativeTarget "PathOpsSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				945B4BD92275B306002BC3AB /* Debug */,
-				945B4BDA2275B306002BC3AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

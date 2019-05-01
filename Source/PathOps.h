@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PathOps.h"
 
 //! Project version number for PathOps.
 FOUNDATION_EXPORT double PathOpsVersionNumber;

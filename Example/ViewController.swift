@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PathOpsSwift
 
 @IBDesignable
 class ContentView : UIView {
