@@ -38,11 +38,14 @@
                 break;
             }
             case kCGPathElementAddQuadCurveToPoint: {
-                [self addQuadCurveWithControlPoint: element->points[0] to: element->points[1]];
+                [self addQuadCurveWithControlPoint: element->points[0]
+                                                to: element->points[1]];
                 break;
             }
             case kCGPathElementAddCurveToPoint: {
-                [self addCurveWithControlPoint1: element->points[0] andControlPoint2: element->points[1] to: element->points[2]];
+                [self addCurveWithControlPoint1: element->points[0]
+                               andControlPoint2: element->points[1]
+                                             to: element->points[2]];
                 break;
             }
             case kCGPathElementCloseSubpath: {
@@ -100,8 +103,9 @@
 {
     CGMutablePathRef p = CGPathCreateMutable();
     SkPath::Iter iter(self->path, false);
-    SkPoint pts[4];
-    for (SkPath::Verb v = iter.next(pts); v != SkPath::Verb::kDone_Verb; v = iter.next(pts)) {
+    while (true) {
+        SkPoint pts[4];
+        SkPath::Verb v = iter.next(pts, true, true);
         switch (v) {
             case SkPath::Verb::kLine_Verb: {
                 CGPathAddLineToPoint(p, nil, pts[1].x(), pts[1].y());
@@ -156,9 +160,9 @@ end:
 
 - (void)simplify
 {
-    SkPath p;
-    Simplify(self->path, &p);
-    self->path.swap(p);
+    SKPath *p = [[SKPath alloc] init];
+    Simplify(self->path, &p->path);
+    self->path.swap(p->path);
 }
 
 
