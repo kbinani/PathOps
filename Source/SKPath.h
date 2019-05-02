@@ -19,7 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (SKPath*)copyStrokingWithWidth:(CGFloat)width lineCap:(CGLineCap)lineCap lineJoin:(CGLineJoin)lineJoin miterLimit:(CGFloat)miterLimit resolutionScale:(CGFloat)resolutionScale;
 
 - (SKPath*)subtracted:(SKPath*)path;
-- (SKPath*)unionWith:(SKPath*)path;
+- (SKPath*)unionedWith:(SKPath*)path;
+
+- (void)subtract:(SKPath*)path;
+- (void)unionWith:(SKPath*)path;
 @end
 
 NS_ASSUME_NONNULL_END

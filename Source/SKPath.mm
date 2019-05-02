@@ -162,7 +162,13 @@ end:
 {
     SKPath *p = [[SKPath alloc] init];
     Simplify(self->path, &p->path);
-    self->path.swap(p->path);
+    if (p->path.getFillType() == SkPath::FillType::kWinding_FillType) {
+        self->path.swap(p->path);
+    } else {
+        SkPath tmp;
+        AsWinding(p->path, &tmp);
+        tmp.swap(self->path);
+    }
 }
 
 
@@ -170,15 +176,52 @@ end:
 {
     SKPath *sk = [[SKPath alloc] init];
     Op(self->path, path->path, SkPathOp::kDifference_SkPathOp, &sk->path);
+    if (sk->path.getFillType() != SkPath::FillType::kWinding_FillType) {
+        SkPath tmp;
+        AsWinding(sk->path, &tmp);
+        tmp.swap(sk->path);
+    }
     return sk;
 }
 
 
-- (SKPath*)unionWith:(SKPath*)path
+- (void)subtract:(SKPath*)path
+{
+    SkPath tmp;
+    Op(self->path, path->path, SkPathOp::kDifference_SkPathOp, &tmp);
+    if (tmp.getFillType() != SkPath::FillType::kWinding_FillType) {
+        SkPath converted;
+        AsWinding(tmp, &converted);
+        self->path.swap(converted);
+    } else {
+        self->path.swap(tmp);
+    }
+}
+
+
+- (SKPath*)unionedWith:(SKPath*)path
 {
     SKPath *sk = [[SKPath alloc] init];
     Op(self->path, path->path, SkPathOp::kUnion_SkPathOp, &sk->path);
+    if (sk->path.getFillType() != SkPath::FillType::kWinding_FillType) {
+        SkPath tmp;
+        AsWinding(sk->path, &tmp);
+        tmp.swap(sk->path);
+    }
     return sk;
+}
+
+- (void)unionWith:(SKPath*)path
+{
+    SkPath tmp;
+    Op(self->path, path->path, SkPathOp::kUnion_SkPathOp, &tmp);
+    if (tmp.getFillType() == SkPath::FillType::kWinding_FillType) {
+        self->path.swap(tmp);
+    } else {
+        SkPath t;
+        AsWinding(tmp, &t);
+        t.swap(self->path);
+    }
 }
 
 
@@ -219,9 +262,10 @@ end:
     }
     stroker.setJoin(join);
     stroker.setResScale(resolutionScale);
-    stroker.setDoFill(true);
+    SkPath tmp;
+    stroker.strokePath(self->path, &tmp);
     SKPath *p = [[SKPath alloc] init];
-    stroker.strokePath(self->path, &p->path);
+    AsWinding(tmp, &p->path);
     return p;
 }
 

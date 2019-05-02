@@ -11,7 +11,7 @@ extension CGPath {
     public func union(with path: CGPath) -> CGPath {
         let skPath = SKPath(cgPath: path)
         let skSelf = SKPath(cgPath: self)
-        return skSelf.union(with: skPath).toCGPath().takeRetainedValue()
+        return skSelf.unioned(with: skPath).toCGPath().takeRetainedValue()
     }
 
     public func simplify() -> CGPath {
