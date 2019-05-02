@@ -99,7 +99,24 @@
 }
 
 
-- (CGPathRef)toCGPath
+- (int)__fillRule
+{
+    switch (self->path.getFillType()) {
+        case SkPath::FillType::kWinding_FillType:
+            return 1;
+        case SkPath::FillType::kEvenOdd_FillType:
+            return 2;
+        case SkPath::FillType::kInverseWinding_FillType:
+            return 3;
+        case SkPath::FillType::kInverseEvenOdd_FillType:
+            return 4;
+        default:
+            return 0;
+    }
+}
+
+
+- (CGPathRef)__toCGPath
 {
     CGMutablePathRef p = CGPathCreateMutable();
     SkPath::Iter iter(self->path, false);
@@ -162,13 +179,7 @@ end:
 {
     SKPath *p = [[SKPath alloc] init];
     Simplify(self->path, &p->path);
-    if (p->path.getFillType() == SkPath::FillType::kWinding_FillType) {
-        self->path.swap(p->path);
-    } else {
-        SkPath tmp;
-        AsWinding(p->path, &tmp);
-        tmp.swap(self->path);
-    }
+    self->path.swap(p->path);
 }
 
 
@@ -176,11 +187,6 @@ end:
 {
     SKPath *sk = [[SKPath alloc] init];
     Op(self->path, path->path, SkPathOp::kDifference_SkPathOp, &sk->path);
-    if (sk->path.getFillType() != SkPath::FillType::kWinding_FillType) {
-        SkPath tmp;
-        AsWinding(sk->path, &tmp);
-        tmp.swap(sk->path);
-    }
     return sk;
 }
 
@@ -189,13 +195,7 @@ end:
 {
     SkPath tmp;
     Op(self->path, path->path, SkPathOp::kDifference_SkPathOp, &tmp);
-    if (tmp.getFillType() != SkPath::FillType::kWinding_FillType) {
-        SkPath converted;
-        AsWinding(tmp, &converted);
-        self->path.swap(converted);
-    } else {
-        self->path.swap(tmp);
-    }
+    self->path.swap(tmp);
 }
 
 
@@ -203,11 +203,6 @@ end:
 {
     SKPath *sk = [[SKPath alloc] init];
     Op(self->path, path->path, SkPathOp::kUnion_SkPathOp, &sk->path);
-    if (sk->path.getFillType() != SkPath::FillType::kWinding_FillType) {
-        SkPath tmp;
-        AsWinding(sk->path, &tmp);
-        tmp.swap(sk->path);
-    }
     return sk;
 }
 
@@ -215,13 +210,7 @@ end:
 {
     SkPath tmp;
     Op(self->path, path->path, SkPathOp::kUnion_SkPathOp, &tmp);
-    if (tmp.getFillType() == SkPath::FillType::kWinding_FillType) {
-        self->path.swap(tmp);
-    } else {
-        SkPath t;
-        AsWinding(tmp, &t);
-        t.swap(self->path);
-    }
+    self->path.swap(tmp);
 }
 
 
@@ -262,10 +251,9 @@ end:
     }
     stroker.setJoin(join);
     stroker.setResScale(resolutionScale);
-    SkPath tmp;
-    stroker.strokePath(self->path, &tmp);
+
     SKPath *p = [[SKPath alloc] init];
-    AsWinding(tmp, &p->path);
+    stroker.strokePath(self->path, &p->path);
     return p;
 }
 

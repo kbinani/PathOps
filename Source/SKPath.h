@@ -6,6 +6,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SKPath : NSObject
 - (instancetype)initWithCGPath:(CGPathRef)path;
 - (instancetype)init;
+
 - (void)addRect:(CGRect)rect;
 - (void)moveTo:(CGPoint)point;
 - (void)addLineTo:(CGPoint)point;
@@ -13,8 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addCurveWithControlPoint1:(CGPoint)cp1 andControlPoint2:(CGPoint)cp2 to:(CGPoint)destination;
 - (void)closeSubpath;
 
-- (CGPathRef)toCGPath;
+- (CGPathRef)__toCGPath;
 - (void)simplify;
+- (int)__fillRule;
 
 - (SKPath*)copyStrokingWithWidth:(CGFloat)width lineCap:(CGLineCap)lineCap lineJoin:(CGLineJoin)lineJoin miterLimit:(CGFloat)miterLimit resolutionScale:(CGFloat)resolutionScale;
 
