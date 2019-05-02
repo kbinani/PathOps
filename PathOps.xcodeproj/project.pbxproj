@@ -86,6 +86,7 @@
 		94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */; };
 		94A9DD002279FE33007A2A01 /* CGFloat+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */; };
 		94A9DD04227A0E9B007A2A01 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DD03227A0E9B007A2A01 /* RoundedButton.swift */; };
+		94A9DD06227B6D5C007A2A01 /* SKPath+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DD05227B6D5C007A2A01 /* SKPath+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1818,6 +1819,7 @@
 		94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
 		94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Math.swift"; sourceTree = "<group>"; };
 		94A9DD03227A0E9B007A2A01 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		94A9DD05227B6D5C007A2A01 /* SKPath+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKPath+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1859,6 +1861,7 @@
 				94A9DC8E22761149007A2A01 /* skia_stub.mm */,
 				945B4B862274D0A1002BC3AB /* SKPath.h */,
 				945B4B842274D033002BC3AB /* SKPath.mm */,
+				94A9DD05227B6D5C007A2A01 /* SKPath+Util.swift */,
 				945B41652274BDED002BC3AB /* third_party */,
 			);
 			path = Source;
@@ -4113,6 +4116,7 @@
 				94A9DCB2227992D8007A2A01 /* SkCpu.cpp in Sources */,
 				94A9DCC722799584007A2A01 /* SkOpts_sse41.cpp in Sources */,
 				94A9DCE2227996E3007A2A01 /* SkPathOpsRect.cpp in Sources */,
+				94A9DD06227B6D5C007A2A01 /* SKPath+Util.swift in Sources */,
 				94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */,
 				94A9DCBB2279937F007A2A01 /* SkRect.cpp in Sources */,
 				94A9DCC1227993B4007A2A01 /* SkStrokeRec.cpp in Sources */,
