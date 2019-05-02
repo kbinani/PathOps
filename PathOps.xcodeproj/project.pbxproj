@@ -82,7 +82,6 @@
 		94A9DCF322799979007A2A01 /* SKPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B4B842274D033002BC3AB /* SKPath.mm */; };
 		94A9DCF62279D5C9007A2A01 /* CatmulRomStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */; };
 		94A9DCF82279FB3F007A2A01 /* NamedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCF72279FB3F007A2A01 /* NamedColor.swift */; };
-		94A9DCFA2279FB64007A2A01 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCF92279FB64007A2A01 /* PickerViewController.swift */; };
 		94A9DCFC2279FB88007A2A01 /* DrawingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */; };
 		94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */; };
 		94A9DD002279FE33007A2A01 /* CGFloat+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */; };
@@ -1815,7 +1814,6 @@
 		94A9DCF422799A54007A2A01 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmulRomStroke.swift; sourceTree = "<group>"; };
 		94A9DCF72279FB3F007A2A01 /* NamedColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedColor.swift; sourceTree = "<group>"; };
-		94A9DCF92279FB64007A2A01 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		94A9DCFB2279FB88007A2A01 /* DrawingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvas.swift; sourceTree = "<group>"; };
 		94A9DCFD2279FE16007A2A01 /* CGPoint+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
 		94A9DCFF2279FE33007A2A01 /* CGFloat+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Math.swift"; sourceTree = "<group>"; };
@@ -4011,7 +4009,6 @@
 				945B4BED2275B843002BC3AB /* LaunchScreen.storyboard */,
 				945B4BE82275B841002BC3AB /* Main.storyboard */,
 				94A9DCF72279FB3F007A2A01 /* NamedColor.swift */,
-				94A9DCF92279FB64007A2A01 /* PickerViewController.swift */,
 				94A9DD03227A0E9B007A2A01 /* RoundedButton.swift */,
 				945B4BE62275B841002BC3AB /* ViewController.swift */,
 			);
@@ -4134,7 +4131,6 @@
 				94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */,
 				94A9DCB1227992CB007A2A01 /* SkColor.cpp in Sources */,
 				94A9DCC822799586007A2A01 /* SkOpts_hsw.cpp in Sources */,
-				94A9DCFA2279FB64007A2A01 /* PickerViewController.swift in Sources */,
 				94A9DCD0227996B6007A2A01 /* SkIntersections.cpp in Sources */,
 				94A9DD002279FE33007A2A01 /* CGFloat+Math.swift in Sources */,
 				94A9DCDA227996CF007A2A01 /* SkPathOpsCommon.cpp in Sources */,

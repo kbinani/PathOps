@@ -5,6 +5,7 @@ class CatmulRomStroke {
     let alpha: CGFloat
 
     private var _path: CGPath? = nil
+    private var _hairlinePath: CGPath? = nil
 
     var color: UIColor {
         return _color.withAlphaComponent(alpha)
@@ -19,10 +20,11 @@ class CatmulRomStroke {
     func push(_ point: CGPoint) {
         self.points.append(point)
         self._path = nil
+        self._hairlinePath = nil
     }
 
-    var path: CGPath {
-        if let p = self._path {
+    var hairlinePath: CGPath {
+        if let p = self._hairlinePath {
             return p
         }
         let result = CGMutablePath()
@@ -37,7 +39,34 @@ class CatmulRomStroke {
                 result.addLine(to: p)
             }
         }
-        let p = result.copy(strokingWithWidth: width, lineCap: .round, lineJoin: .round, miterLimit: 0)
+        self._hairlinePath = result
+        return result
+    }
+
+    func eachPathSegment(_ callback: (_ path: CGPath) -> Void) {
+        guard self.points.count >= 2 else {
+            return
+        }
+        for idx in 1 ..< self.points.count - 1 {
+            let p0 = self.points[idx - 1]
+            let p1 = self.points[idx]
+            let item = CGMutablePath()
+            item.move(to: p0)
+            if let control = CatmulRomStroke.controlPoint(points: self.points, index: idx) {
+                item.addCurve(to: p1, control1: control.point1, control2: control.point2)
+            } else {
+                item.addLine(to: p1)
+            }
+            callback(item.copy(strokingWithWidth: width, lineCap: .round, lineJoin: .round, miterLimit: 0))
+        }
+    }
+
+    var path: CGPath {
+        if let p = self._path {
+            return p
+        }
+        let hairlinePath = self.hairlinePath
+        let p = hairlinePath.copy(strokingWithWidth: width, lineCap: .round, lineJoin: .round, miterLimit: 0).simplify()
         self._path = p
         return p
     }

@@ -8,15 +8,25 @@ class DrawingCanvas : UIView {
     var color: NamedColor = .black
     var strokeAlpha: CGFloat = 1
 
+    enum Mode : CaseIterable {
+        case reference
+        case fill
+        case frame
+    }
+
+    var mode: Mode = .fill {
+        didSet {
+            guard mode != oldValue else {
+                return
+            }
+            setNeedsDisplay()
+        }
+    }
+
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         guard let ctx = UIGraphicsGetCurrentContext() else {
             return
-        }
-
-        ctx.saveGState()
-        defer {
-            ctx.restoreGState()
         }
 
         var strokes = self.strokes
@@ -24,20 +34,79 @@ class DrawingCanvas : UIView {
             strokes.append(w)
         }
 
-        strokes.enumerated().filter({ $0.element.alpha > 0 }).forEach({ (it) in
-            let clearPath = CGMutablePath()
-            strokes.dropFirst(it.offset + 1).filter({ $0.alpha <= 0 }).forEach({ (c) in
-                clearPath.addPath(c.path)
-            })
-            ctx.saveGState()
-            defer {
-                ctx.restoreGState()
+        ctx.saveGState()
+        defer {
+            ctx.restoreGState()
+            ctx.resetClip()
+        }
+
+        switch mode {
+        case .reference:
+            let boundingBox = strokes.reduce(into: rect) { (last, it) in
+                return last.union(it.path.boundingBox)
             }
-            let p = it.element.path.subtract(path: clearPath)
-            ctx.setFillColor(it.element.color.cgColor)
-            ctx.addPath(p)
-            ctx.fillPath()
-        })
+
+            var stateCount: Int = 0
+            strokes.filter({ $0.alpha <= 0 }).forEach { (it) in
+                ctx.saveGState()
+                stateCount += 1
+                it.eachPathSegment({ (c) in
+                    ctx.addRect(boundingBox)
+                    ctx.addPath(c)
+                    ctx.clip(using: .evenOdd)
+                })
+            }
+            strokes.forEach { (it) in
+                if it.alpha > 0 {
+                    ctx.saveGState()
+                    defer {
+                        ctx.restoreGState()
+                    }
+                    ctx.setStrokeColor(it.color.cgColor)
+                    ctx.setLineWidth(it.width)
+                    ctx.addPath(it.hairlinePath)
+                    ctx.setLineCap(.round)
+                    ctx.setLineJoin(.round)
+                    ctx.strokePath()
+                } else {
+                    ctx.restoreGState()
+                    stateCount -= 1
+                }
+            }
+            assert(stateCount == 0)
+        case .fill:
+            strokes.enumerated().filter({ $0.element.alpha > 0 }).forEach({ (it) in
+                var p = it.element.path
+                strokes.dropFirst(it.offset + 1).filter({ $0.alpha <= 0 }).forEach({ (c) in
+                    p = p.subtract(path: c.path)
+                })
+
+                ctx.saveGState()
+                defer {
+                    ctx.restoreGState()
+                }
+
+                ctx.setFillColor(it.element.color.cgColor)
+                ctx.addPath(p)
+                ctx.fillPath()
+            })
+        case .frame:
+            strokes.enumerated().filter({ $0.element.alpha > 0 }).forEach({ (it) in
+                let clearPath = CGMutablePath()
+                strokes.dropFirst(it.offset + 1).filter({ $0.alpha <= 0 }).forEach({ (c) in
+                    clearPath.addPath(c.path)
+                })
+                ctx.saveGState()
+                defer {
+                    ctx.restoreGState()
+                }
+                let p = it.element.path.subtract(path: clearPath)
+                ctx.setLineWidth(1 / UIScreen.main.scale)
+                ctx.setStrokeColor(it.element.color.cgColor)
+                ctx.addPath(p)
+                ctx.strokePath()
+            })
+        }
     }
 
     override func layoutSubviews() {

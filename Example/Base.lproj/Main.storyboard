@@ -29,40 +29,49 @@
                                         <rect key="frame" x="14" y="44" width="386" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0N2-UA-dDs" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="5" width="55" height="40"/>
+                                                <rect key="frame" x="0.0" y="5" width="67" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                 <state key="normal" title="color"/>
                                                 <connections>
                                                     <action selector="colorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhw-n4-C5R"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRP-cl-RBD" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
-                                                <rect key="frame" x="60" y="5" width="58" height="40"/>
+                                                <rect key="frame" x="72" y="5" width="70" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                 <state key="normal" title="width"/>
                                                 <connections>
                                                     <action selector="widthButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfS-y7-dKe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hef-of-O1P" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
-                                                <rect key="frame" x="123" y="5" width="58" height="40"/>
+                                                <rect key="frame" x="147" y="5" width="70" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                 <state key="normal" title="alpha"/>
                                                 <connections>
                                                     <action selector="alphaButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOg-74-wZE"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-BX-pcM" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="5" width="71" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                <state key="normal" title="mode"/>
+                                                <connections>
+                                                    <action selector="modeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XWo-I5-i5M"/>
+                                                </connections>
+                                            </button>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-Ek-hJr">
-                                                <rect key="frame" x="186" y="0.0" width="141" height="50"/>
+                                                <rect key="frame" x="298" y="0.0" width="17" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lt5-Sl-Kok" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
-                                                <rect key="frame" x="332" y="5" width="54" height="40"/>
+                                                <rect key="frame" x="320" y="5" width="66" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                 <state key="normal" title="clear"/>
                                                 <connections>
                                                     <action selector="clearButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agZ-Xm-WFM"/>
@@ -72,6 +81,7 @@
                                         <constraints>
                                             <constraint firstItem="FRP-cl-RBD" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="eOZ-T1-N38"/>
                                             <constraint firstItem="0N2-UA-dDs" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="s7z-Rg-8Xr"/>
+                                            <constraint firstItem="XDw-BX-pcM" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="tga-IX-nDk"/>
                                             <constraint firstAttribute="height" constant="50" id="u6B-IA-dUA"/>
                                             <constraint firstItem="hef-of-O1P" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="xcP-wu-G6t"/>
                                             <constraint firstItem="lt5-Sl-Kok" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="y0C-MF-ov9"/>
@@ -103,6 +113,7 @@
                         <outlet property="alphaButton" destination="hef-of-O1P" id="gAg-pt-VsS"/>
                         <outlet property="colorButton" destination="0N2-UA-dDs" id="5gV-IF-Zpk"/>
                         <outlet property="contentView" destination="EWT-b7-KXa" id="zD4-U7-VGG"/>
+                        <outlet property="modeButton" destination="XDw-BX-pcM" id="rBo-K0-hLT"/>
                         <outlet property="widthButton" destination="FRP-cl-RBD" id="iSF-oO-m2l"/>
                     </connections>
                 </viewController>

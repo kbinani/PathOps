@@ -1,14 +1,6 @@
-struct NamedColor : CustomStringConvertible, Equatable {
+struct NamedColor {
     let name: String
     let color: UIColor
-
-    var description: String {
-        return name
-    }
-
-    static func == (_ a: NamedColor, _ b: NamedColor) -> Bool {
-        return a.color == b.color
-    }
 
     static let black = NamedColor(name: "black", color: UIColor.black)
     static let red = NamedColor(name: "red", color: UIColor.red)
@@ -17,4 +9,18 @@ struct NamedColor : CustomStringConvertible, Equatable {
     static let green = NamedColor(name: "green", color: UIColor.green)
     static let gray = NamedColor(name: "gray", color: UIColor.gray)
     static let darkGray = NamedColor(name: "darkGray", color: UIColor.darkGray)
+}
+
+
+extension NamedColor : CustomStringConvertible {
+    var description: String {
+        return name
+    }
+}
+
+
+extension NamedColor : Equatable {
+    static func == (_ a: NamedColor, _ b: NamedColor) -> Bool {
+        return a.color == b.color
+    }
 }
