@@ -7,6 +7,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithCGPath:(CGPathRef)path;
 - (instancetype)init;
 
+@property(nonatomic, readonly) CGRect boundingBox;
+@property(nonatomic, readonly) CGRect boundingBoxOfPath;
+
 - (void)addRect:(CGRect)rect;
 - (void)moveTo:(CGPoint)point;
 - (void)addLineTo:(CGPoint)point;
@@ -25,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)subtract:(SKPath*)path;
 - (void)unionWith:(SKPath*)path;
+
+- (BOOL)intersects:(SKPath*)other;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -10,12 +10,18 @@
 @implementation SKPath
 {
     SkPath path;
+    BOOL fBoundingBoxDirty;
+    CGRect fBoundingBox;
 }
 
 
 - (instancetype)init
 {
     self = [super init];
+    if (!self) {
+        return nil;
+    }
+    self->fBoundingBoxDirty = YES;
     return self;
 }
 
@@ -26,6 +32,7 @@
     if (!self) {
         return nil;
     }
+    self->fBoundingBoxDirty = YES;
     CGPathApplyWithBlock(path, ^(const CGPathElement * _Nonnull element) {
         CGPathElementType type = element->type;
         switch (type) {
@@ -66,36 +73,42 @@
     r.fRight = CGRectGetMaxX(rect);
     r.fBottom = CGRectGetMaxY(rect);
     path.addRect(r);
+    fBoundingBoxDirty = YES;
 }
 
 
 - (void)moveTo:(CGPoint)point
 {
     path.moveTo(point.x, point.y);
+    fBoundingBoxDirty = YES;
 }
 
 
 - (void)addLineTo:(CGPoint)point
 {
     path.lineTo(point.x, point.y);
+    fBoundingBoxDirty = YES;
 }
 
 
 - (void)addQuadCurveWithControlPoint:(CGPoint)cp to:(CGPoint)destination
 {
     path.quadTo(cp.x, cp.y, destination.x, destination.y);
+    fBoundingBoxDirty = YES;
 }
 
 
 - (void)addCurveWithControlPoint1:(CGPoint)cp1 andControlPoint2:(CGPoint)cp2 to:(CGPoint)destination
 {
     path.cubicTo(cp1.x, cp1.y, cp2.x, cp2.y, destination.x, destination.y);
+    fBoundingBoxDirty = YES;
 }
 
 
 - (void)closeSubpath
 {
     path.close();
+    fBoundingBoxDirty = YES;
 }
 
 
@@ -180,6 +193,7 @@ end:
     SKPath *p = [[SKPath alloc] init];
     Simplify(self->path, &p->path);
     self->path.swap(p->path);
+    fBoundingBoxDirty = YES;
 }
 
 
@@ -193,9 +207,13 @@ end:
 
 - (void)subtract:(SKPath*)path
 {
+    if (![self intersects:path]) {
+        return;
+    }
     SkPath tmp;
     Op(self->path, path->path, SkPathOp::kDifference_SkPathOp, &tmp);
     self->path.swap(tmp);
+    fBoundingBoxDirty = YES;
 }
 
 
@@ -208,9 +226,13 @@ end:
 
 - (void)unionWith:(SKPath*)path
 {
+    if (![self intersects:path]) {
+        return;
+    }
     SkPath tmp;
     Op(self->path, path->path, SkPathOp::kUnion_SkPathOp, &tmp);
     self->path.swap(tmp);
+    fBoundingBoxDirty = YES;
 }
 
 
@@ -255,6 +277,30 @@ end:
     SKPath *p = [[SKPath alloc] init];
     stroker.strokePath(self->path, &p->path);
     return p;
+}
+
+
+- (BOOL)intersects:(SKPath*)other
+{
+    return CGRectIntersectsRect(self.boundingBoxOfPath, other.boundingBoxOfPath);
+}
+
+
+- (CGRect)boundingBox
+{
+    SkRect const& bounds = self->path.getBounds();
+    return CGRectMake(bounds.x(), bounds.y(), bounds.width(), bounds.height());
+}
+
+
+- (CGRect)boundingBoxOfPath
+{
+    if (self->fBoundingBoxDirty) {
+        SkRect bounds = self->path.computeTightBounds();
+        self->fBoundingBox = CGRectMake(bounds.x(), bounds.y(), bounds.width(), bounds.height());
+        self->fBoundingBoxDirty = NO;
+    }
+    return self->fBoundingBox;
 }
 
 @end
