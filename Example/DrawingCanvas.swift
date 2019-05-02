@@ -81,14 +81,18 @@ class DrawingCanvas : UIView {
                     p.subtract(SKPath(cgPath: c.path))
                 })
 
+                guard let converted = p.toCGPath() else {
+                    return
+                }
+
                 ctx.saveGState()
                 defer {
                     ctx.restoreGState()
                 }
 
                 ctx.setFillColor(it.element.color.cgColor)
-                ctx.addPath(p.toCGPath().takeRetainedValue())
-                ctx.fillPath()
+                ctx.addPath(converted.path)
+                ctx.fillPath(using: converted.fillRule)
             })
         case .frame:
             strokes.enumerated().filter({ $0.element.alpha > 0 }).forEach({ (it) in
@@ -97,6 +101,10 @@ class DrawingCanvas : UIView {
                     p.subtract(SKPath(cgPath: c.path))
                 })
 
+                guard let converted = p.toCGPath() else {
+                    return
+                }
+
                 ctx.saveGState()
                 defer {
                     ctx.restoreGState()
@@ -104,7 +112,7 @@ class DrawingCanvas : UIView {
 
                 ctx.setLineWidth(1 / UIScreen.main.scale)
                 ctx.setStrokeColor(it.element.color.cgColor)
-                ctx.addPath(p.toCGPath().takeRetainedValue())
+                ctx.addPath(converted.path)
                 ctx.strokePath()
             })
         }

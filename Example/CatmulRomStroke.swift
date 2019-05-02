@@ -52,7 +52,7 @@ class CatmulRomStroke {
             let p1 = self.points[idx]
             let item = CGMutablePath()
             item.move(to: p0)
-            if let control = CatmulRomStroke.controlPoint(points: self.points, index: idx) {
+            if let control = CatmulRomStroke.controlPoint(points: self.points, index: idx), (control.point1 != p0 || control.point2 != p1) {
                 item.addCurve(to: p1, control1: control.point1, control2: control.point2)
             } else {
                 item.addLine(to: p1)
@@ -66,7 +66,7 @@ class CatmulRomStroke {
             return p
         }
         let hairlinePath = self.hairlinePath
-        let p = hairlinePath.copy(strokingWithWidth: width, lineCap: .round, lineJoin: .round, miterLimit: 0).simplify()
+        let p = hairlinePath.copy(strokingWithWidth: width, lineCap: .round, lineJoin: .round, miterLimit: 0)
         self._path = p
         return p
     }
