@@ -14,7 +14,10 @@ Pod::Spec.new do |spec|
 
   spec.source = { :git => "https://github.com/kbinani/PathOps.git", :tag => "#{spec.version}" }
   spec.source_files = ["Source/*.{h,mm,swift}"] + third_party_source_files
-  spec.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/Source/third_party/skia $(PODS_TARGET_SRCROOT)/Source/third_party/skia/third_party/skcms $(PODS_TARGET_SRCROOT)/Source/third_party' }
+  spec.pod_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/Source/third_party/skia $(PODS_TARGET_SRCROOT)/Source/third_party/skia/third_party/skcms $(PODS_TARGET_SRCROOT)/Source/third_party',
+    'OTHER_CFLAGS' => '-Wno-documentation',
+  }
 
   spec.frameworks = "Foundation", "CoreGraphics"
 end
