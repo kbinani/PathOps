@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addCurveWithControlPoint1:(CGPoint)cp1 andControlPoint2:(CGPoint)cp2 to:(CGPoint)destination;
 - (void)closeSubpath;
 
-- (CGPathRef)__toCGPath;
+- (CGPathRef)__toCGPathWith:(CGFloat)resolution;
 - (void)simplify;
 - (int)__fillRule;
 
@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)unionWith:(SKPath*)path;
 
 - (BOOL)intersects:(SKPath*)other;
+
+- (void)addPath:(SKPath*)other;
 @end
 
 NS_ASSUME_NONNULL_END

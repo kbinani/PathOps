@@ -81,7 +81,7 @@ class DrawingCanvas : UIView {
                     p.subtract(SKPath(cgPath: c.path))
                 })
 
-                guard let converted = p.toCGPath() else {
+                guard let converted = p.toCGPath(with: CGFloat.ulpOfOne) else {
                     return
                 }
 
@@ -101,7 +101,7 @@ class DrawingCanvas : UIView {
                     p.subtract(SKPath(cgPath: c.path))
                 })
 
-                guard let converted = p.toCGPath() else {
+                guard let converted = p.toCGPath(with: CGFloat.ulpOfOne) else {
                     return
                 }
 
