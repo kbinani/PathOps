@@ -7,6 +7,17 @@ if [ -z "$version" ]; then
 	exit 1
 fi
 
+if git diff --exit-code --quiet; then
+	echo >/dev/null
+else
+	echo "Commit your changes"
+	exit 1
+fi
+
+sed -i '' "s/spec.version = \"\([^\"]*\)\"/spec.version = \"$version\"/g" PathOps.podspec
+git add PathOps.podspec
+git commit -m "Bump version to $version"
+
 dir=$(cd "$(dirname "$0")/.."; pwd)
 tmp=$(mktemp -d)
 origin=$(cd "$dir"; git remote get-url origin)
