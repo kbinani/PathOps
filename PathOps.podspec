@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   Boolean operation library for CGPath with skia https://skia.org/ backend
                    DESC
   spec.homepage = "https://github.com/kbinani/PathOps"
-  spec.license = "MIT"
+  spec.license = "BSD"
   spec.author = { "kbinani" => "kbinani.bt@gmail.com" }
 
   spec.source = { :git => "https://github.com/kbinani/PathOps.git", :tag => "#{spec.version}" }
