@@ -76,7 +76,6 @@
 		94A9DCEC2279971D007A2A01 /* SkDebug_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48352274BE26002BC3AB /* SkDebug_stdio.cpp */; };
 		94A9DCED22799740007A2A01 /* SkMemory_malloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B481D2274BE26002BC3AB /* SkMemory_malloc.cpp */; };
 		94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47382274BE26002BC3AB /* SkUTF.cpp */; };
-		94A9DCF022799874007A2A01 /* CGPath+PathOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DCEF22799874007A2A01 /* CGPath+PathOps.swift */; };
 		94A9DCF122799974007A2A01 /* skia_compat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B3E402274A61A002BC3AB /* skia_compat.mm */; };
 		94A9DCF222799977007A2A01 /* skia_stub.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DC8E22761149007A2A01 /* skia_stub.mm */; };
 		94A9DCF322799979007A2A01 /* SKPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B4B842274D033002BC3AB /* SKPath.mm */; };
@@ -1811,7 +1810,6 @@
 		945B4BEE2275B843002BC3AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		945B4BF02275B843002BC3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94A9DC8E22761149007A2A01 /* skia_stub.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = skia_stub.mm; sourceTree = "<group>"; };
-		94A9DCEF22799874007A2A01 /* CGPath+PathOps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPath+PathOps.swift"; sourceTree = "<group>"; };
 		94A9DCF422799A54007A2A01 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		94A9DCF52279D5C9007A2A01 /* CatmulRomStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmulRomStroke.swift; sourceTree = "<group>"; };
 		94A9DCF72279FB3F007A2A01 /* NamedColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedColor.swift; sourceTree = "<group>"; };
@@ -1854,7 +1852,6 @@
 		945B3E372274A547002BC3AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				94A9DCEF22799874007A2A01 /* CGPath+PathOps.swift */,
 				945B3E392274A547002BC3AB /* Info.plist */,
 				945B4BA122759713002BC3AB /* PathOps.h */,
 				945B3E402274A61A002BC3AB /* skia_compat.mm */,
@@ -4128,7 +4125,6 @@
 				94A9DCCD227996AF007A2A01 /* SkDCubicToQuads.cpp in Sources */,
 				94A9DCDC227996D3007A2A01 /* SkPathOpsCubic.cpp in Sources */,
 				94A9DCE9227996F3007A2A01 /* SkReduceOrder.cpp in Sources */,
-				94A9DCF022799874007A2A01 /* CGPath+PathOps.swift in Sources */,
 				94A9DD04227A0E9B007A2A01 /* RoundedButton.swift in Sources */,
 				94A9DCC0227993B1007A2A01 /* SkStroke.cpp in Sources */,
 				94A9DCEA22799708007A2A01 /* SkOSFile_stdio.cpp in Sources */,

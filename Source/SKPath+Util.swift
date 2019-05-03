@@ -10,11 +10,11 @@ extension SKPath {
         }
     }
 
-    public func toCGPath() -> (path: CGPath, fillRule: CGPathFillRule)? {
+    public func toCGPath(with resolution: CGFloat) -> (path: CGPath, fillRule: CGPathFillRule)? {
         guard let fillRule = self.fillRule else {
             return nil
         }
-        let p = self.__toCGPath().takeRetainedValue()
+        let p = self.__toCGPath(with: resolution).takeRetainedValue()
         return (path: p, fillRule: fillRule)
     }
 }

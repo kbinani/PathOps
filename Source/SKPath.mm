@@ -148,7 +148,7 @@ static void cgpath_applier_function(void *info, CGPathElement const* element)
 }
 
 
-- (CGPathRef)__toCGPath
+- (CGPathRef)__toCGPath:(CGFloat)resolution
 {
     CGMutablePathRef p = CGPathCreateMutable();
     SkPath::Iter iter(self->path, false);
@@ -183,7 +183,7 @@ static void cgpath_applier_function(void *info, CGPathElement const* element)
                 if (weight == 1) {
                     CGPathAddQuadCurveToPoint(p, nil, control.x(), control.y(), end.x(), end.y());
                 } else if (SkScalarIsFinite(weight)) {
-                    SkScalar tolerance = 1e-10; //TODO: make this configurable
+                    SkScalar tolerance = resolution;
                     SkAutoConicToQuads converter;
                     SkPoint const* quads = converter.computeQuads(pts, weight, tolerance);
                     for (int i = 0; i < converter.countQuads(); ++i) {
@@ -242,6 +242,7 @@ end:
     Op(self->path, path->path, SkPathOp::kUnion_SkPathOp, &sk->path);
     return sk;
 }
+
 
 - (void)unionWith:(SKPath*)path
 {
