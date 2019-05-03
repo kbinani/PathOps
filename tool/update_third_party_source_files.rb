@@ -13,7 +13,7 @@ third_party_source_files = target.source_build_phase.files_references.map { |r|
   "#{subdir}/#{s.to_s}"
 }.sort
 
-def find_header(file, result)
+def find_header(file, result, prefix)
   files = File.open(file, "r") { |fp|
     fp.read
   }.lines.select { |line|
@@ -23,14 +23,13 @@ def find_header(file, result)
   }.select { |line|
     not line.include?('<')
   }.map { |line|
-    "Source/third_party/skia/#{line.chomp.gsub(/"/, '')}"
+    "#{prefix}/#{line.chomp.gsub(/"/, '')}"
   }.select { |line|
     File.exist?(line)
   }.sort.uniq
 
   result << files
   result.flatten!
-  result.sort!
   result.uniq!
 end
 
@@ -38,10 +37,21 @@ result = third_party_source_files.select { |file|
   file.start_with?('Source/third_party/skia')
 }.uniq.sort
 
+t = []
+`git ls-files | grep -e '\\.mm$' -e '\\.h$'`.lines.map { |f|
+  f.chomp
+}.each { |f|
+  find_header(f, t, "Source/third_party")
+  find_header(f, t, "Source/third_party/skia")
+}
+result << t
+result.flatten!
+result.uniq!
+
 while true do
   tmp = result
   result.each { |file|
-    find_header(file, tmp)
+    find_header(file, tmp, "Source/third_party/skia")
   }
   break if tmp == result
   result = tmp
