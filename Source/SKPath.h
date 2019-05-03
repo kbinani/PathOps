@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)unionWith:(SKPath*)path;
 
 - (BOOL)intersects:(SKPath*)other;
+
+- (void)addPath:(SKPath*)other;
 @end
 
 NS_ASSUME_NONNULL_END
