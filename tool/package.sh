@@ -9,13 +9,16 @@ fi
 
 dir=$(cd "$(dirname "$0")/.."; pwd)
 tmp=$(mktemp -d)
+origin=$(cd "$dir"; git remote get-url origin)
 
 (
 	cd "$tmp"
 	git clone "$dir" PathOps
 	(
 		cd PathOps
-		git checkout release
+		git remote add github "$origin"
+		git fetch github
+		git checkout -b release github/release
 	)
 )
 
@@ -42,8 +45,8 @@ tmp=$(mktemp -d)
 	git add . -A
 	git commit -m "Package version $version"
 	git push origin release
-	git tag "$version"
-	git push origin "$version"
+	git tag -f "$version"
+	git push -f origin "$version"
 )
 
 if [ -n "$tmp" ]; then
