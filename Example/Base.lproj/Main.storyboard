@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-b7-KXa" customClass="DrawingCanvas" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14c-SQ-W77">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7mo-ua-WQH">
+                                        <rect key="frame" x="14" y="44" width="386" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0N2-UA-dDs" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="5" width="67" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                <state key="normal" title="color"/>
+                                                <connections>
+                                                    <action selector="colorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhw-n4-C5R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRP-cl-RBD" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="72" y="5" width="70" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                <state key="normal" title="width"/>
+                                                <connections>
+                                                    <action selector="widthButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfS-y7-dKe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hef-of-O1P" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="147" y="5" width="70" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                <state key="normal" title="alpha"/>
+                                                <connections>
+                                                    <action selector="alphaButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOg-74-wZE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-BX-pcM" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="5" width="71" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                <state key="normal" title="mode"/>
+                                                <connections>
+                                                    <action selector="modeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XWo-I5-i5M"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-Ek-hJr">
+                                                <rect key="frame" x="298" y="0.0" width="17" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lt5-Sl-Kok" customClass="RoundedButton" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="320" y="5" width="66" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                <state key="normal" title="clear"/>
+                                                <connections>
+                                                    <action selector="clearButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agZ-Xm-WFM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FRP-cl-RBD" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="eOZ-T1-N38"/>
+                                            <constraint firstItem="0N2-UA-dDs" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="s7z-Rg-8Xr"/>
+                                            <constraint firstItem="XDw-BX-pcM" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="tga-IX-nDk"/>
+                                            <constraint firstAttribute="height" constant="50" id="u6B-IA-dUA"/>
+                                            <constraint firstItem="hef-of-O1P" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="xcP-wu-G6t"/>
+                                            <constraint firstItem="lt5-Sl-Kok" firstAttribute="height" secondItem="7mo-ua-WQH" secondAttribute="height" multiplier="0.8" id="y0C-MF-ov9"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7mo-ua-WQH" firstAttribute="leading" secondItem="14c-SQ-W77" secondAttribute="leading" constant="14" id="Erk-pw-3bd"/>
+                                    <constraint firstAttribute="bottom" secondItem="7mo-ua-WQH" secondAttribute="bottom" id="G7w-ga-cYw"/>
+                                    <constraint firstAttribute="trailing" secondItem="7mo-ua-WQH" secondAttribute="trailing" constant="14" id="lv8-29-AtM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EWT-b7-KXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="39g-48-qWW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="14c-SQ-W77" secondAttribute="trailing" id="9QF-Rg-2c0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EWT-b7-KXa" secondAttribute="bottom" id="Ag5-8a-UJ4"/>
+                            <constraint firstItem="14c-SQ-W77" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="T37-8Y-5Il"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EWT-b7-KXa" secondAttribute="trailing" id="WTd-02-pVE"/>
+                            <constraint firstItem="14c-SQ-W77" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bwa-e5-nS0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="7mo-ua-WQH" secondAttribute="top" id="oCN-d7-ZJg"/>
+                            <constraint firstItem="EWT-b7-KXa" firstAttribute="top" secondItem="14c-SQ-W77" secondAttribute="bottom" id="qaP-jZ-Xt4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="alphaButton" destination="hef-of-O1P" id="gAg-pt-VsS"/>
+                        <outlet property="colorButton" destination="0N2-UA-dDs" id="5gV-IF-Zpk"/>
+                        <outlet property="contentView" destination="EWT-b7-KXa" id="zD4-U7-VGG"/>
+                        <outlet property="modeButton" destination="XDw-BX-pcM" id="rBo-K0-hLT"/>
+                        <outlet property="widthButton" destination="FRP-cl-RBD" id="iSF-oO-m2l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
