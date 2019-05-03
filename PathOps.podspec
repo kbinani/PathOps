@@ -20,5 +20,7 @@ Pod::Spec.new do |spec|
     'OTHER_CFLAGS' => '-Wno-documentation',
   }
 
+  spec.ios.deployment_target = "9.0"
+
   spec.frameworks = "Foundation", "CoreGraphics"
 end
