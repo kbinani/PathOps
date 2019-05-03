@@ -7,6 +7,8 @@
 #include "skia/src/core/SkStroke.h"
 #include "skia/src/core/SkGeometry.h"
 
+static void cgpath_applier_function(void *info, CGPathElement const* element);
+
 @implementation SKPath
 {
     SkPath path;
@@ -33,35 +35,52 @@
         return nil;
     }
     self->fBoundingBoxDirty = YES;
-    CGPathApplyWithBlock(path, ^(const CGPathElement * _Nonnull element) {
-        CGPathElementType type = element->type;
-        switch (type) {
-            case kCGPathElementMoveToPoint: {
-                [self moveTo: element->points[0]];
-                break;
-            }
-            case kCGPathElementAddLineToPoint: {
-                [self addLineTo: element->points[0]];
-                break;
-            }
-            case kCGPathElementAddQuadCurveToPoint: {
-                [self addQuadCurveWithControlPoint: element->points[0]
-                                                to: element->points[1]];
-                break;
-            }
-            case kCGPathElementAddCurveToPoint: {
-                [self addCurveWithControlPoint1: element->points[0]
-                               andControlPoint2: element->points[1]
-                                             to: element->points[2]];
-                break;
-            }
-            case kCGPathElementCloseSubpath: {
-                [self closeSubpath];
-                break;
-            }
-        }
-    });
+    if (@available(iOS 11.0, *)) {
+        CGPathApplyWithBlock(path, ^(const CGPathElement * _Nonnull element) {
+            [self _apply:element];
+        });
+    } else {
+        CGPathApply(path, (void*)self, cgpath_applier_function);
+    }
     return self;
+}
+
+
+- (void)_apply:(CGPathElement const*)element
+{
+    CGPathElementType type = element->type;
+    switch (type) {
+        case kCGPathElementMoveToPoint: {
+            [self moveTo: element->points[0]];
+            break;
+        }
+        case kCGPathElementAddLineToPoint: {
+            [self addLineTo: element->points[0]];
+            break;
+        }
+        case kCGPathElementAddQuadCurveToPoint: {
+            [self addQuadCurveWithControlPoint: element->points[0]
+                                            to: element->points[1]];
+            break;
+        }
+        case kCGPathElementAddCurveToPoint: {
+            [self addCurveWithControlPoint1: element->points[0]
+                           andControlPoint2: element->points[1]
+                                         to: element->points[2]];
+            break;
+        }
+        case kCGPathElementCloseSubpath: {
+            [self closeSubpath];
+            break;
+        }
+    }
+}
+
+
+static void cgpath_applier_function(void *info, CGPathElement const* element)
+{
+    SKPath *path = (__bridge SKPath *)info;
+    [path _apply:element];
 }
 
 
