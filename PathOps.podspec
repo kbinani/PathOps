@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
     'OTHER_CFLAGS' => '-Wno-documentation',
     'GCC_PREPROCESSOR_DEFINITIONS' => 'SK_RELEASE=1',
   }
+  spec.header_mappings_dir = "Source/third_party"
 
   spec.ios.deployment_target = "9.0"
 
