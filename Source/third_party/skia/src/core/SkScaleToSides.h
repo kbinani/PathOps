@@ -23,12 +23,12 @@ public:
     static void AdjustRadii(double limit, double scale, SkScalar* a, SkScalar* b) {
         SkASSERTF(scale < 1.0 && scale > 0.0, "scale: %g", scale);
 
-        *a = (float)((double)*a * scale);
-        *b = (float)((double)*b * scale);
+        *a = (SkScalar)((double)*a * scale);
+        *b = (SkScalar)((double)*b * scale);
 
         if (*a + *b > limit) {
-            float* minRadius = a;
-            float* maxRadius = b;
+            SkScalar* minRadius = a;
+            SkScalar* maxRadius = b;
 
             // Force minRadius to be the smaller of the two.
             if (*minRadius > *maxRadius) {
@@ -41,11 +41,11 @@ public:
             // is 1/2 the ratio of minRadius : (minRadius + maxRadius), therefore in the resulting
             // division, minRadius can be no larger than 1/2 limit + ULP. The newMinRadius can be
             // 1/2 a ULP off at this point.
-            float newMinRadius = *minRadius;
+            SkScalar newMinRadius = *minRadius;
 
             // Because newMaxRadius is the result of a double to float conversion, it can be larger
             // than limit, but only by one ULP.
-            float newMaxRadius = (float)(limit - newMinRadius);
+            SkScalar newMaxRadius = (SkScalar)(limit - newMinRadius);
 
             // The total sum of newMinRadius and newMaxRadius can be upto 1.5 ULPs off. If the
             // sum is greater than the limit then newMaxRadius may have to be reduced twice.

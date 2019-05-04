@@ -9,22 +9,29 @@
 #define SkScalar_DEFINED
 
 #include "include/private/SkFloatingPoint.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 #undef SK_SCALAR_IS_FLOAT
-#define SK_SCALAR_IS_FLOAT  1
+#undef SK_SCALAR_IS_DOUBLE
+#define SK_SCALAR_IS_DOUBLE 1
+typedef CGFloat SkScalar;
 
-typedef float SkScalar;
+#undef SK_MSCALAR_IS_FLOAT
+#undef SK_MSCALAR_IS_DOUBLE
+#define SK_MSCALAR_IS_DOUBLE 1
 
-#define SK_Scalar1                  1.0f
-#define SK_ScalarHalf               0.5f
-#define SK_ScalarSqrt2              SK_FloatSqrt2
-#define SK_ScalarPI                 SK_FloatPI
+#define SK_Scalar1                  ((SkScalar)1)
+#define SK_ScalarHalf               ((SkScalar)0.5)
+#define SK_ScalarSqrt2              1.414213562373095
+#define SK_ScalarPI                 3.141592653589793
 #define SK_ScalarTanPIOver8         0.414213562f
 #define SK_ScalarRoot2Over2         0.707106781f
 #define SK_ScalarMax                3.402823466e+38f
 #define SK_ScalarInfinity           SK_FloatInfinity
 #define SK_ScalarNegativeInfinity   SK_FloatNegativeInfinity
 #define SK_ScalarNaN                SK_FloatNaN
+
+#if defined(SK_SCALAR_IS_FLOAT)
 
 #define SkScalarFloorToScalar(x)    sk_float_floor(x)
 #define SkScalarCeilToScalar(x)     sk_float_ceil(x)
@@ -50,6 +57,39 @@ typedef float SkScalar;
 #define SkScalarExp(x)              (float)sk_float_exp(x)
 #define SkScalarLog(x)              (float)sk_float_log(x)
 #define SkScalarLog2(x)             (float)sk_float_log2(x)
+
+#define SK_ScalarEpsilon            FLT_EPSILON
+
+#else
+
+#define SkScalarFloorToScalar(x)    sk_double_floor(x)
+#define SkScalarCeilToScalar(x)     sk_double_ceil(x)
+#define SkScalarRoundToScalar(x)    sk_double_floor((x) + 0.5)
+#define SkScalarTruncToScalar(x)    trunc(x)
+
+#define SkScalarFloorToInt(x)       sk_double_floor2int(x)
+#define SkScalarCeilToInt(x)        sk_double_ceil2int(x)
+#define SkScalarRoundToInt(x)       sk_double_round2int(x)
+
+#define SkScalarAbs(x)              fabs(x)
+#define SkScalarCopySign(x, y)      copysign(x, y)
+#define SkScalarMod(x, y)           sk_double_mod(x,y)
+#define SkScalarSqrt(x)             sqrt(x)
+#define SkScalarPow(b, e)           pow(b, e)
+
+#define SkScalarSin(radians)        sin(radians)
+#define SkScalarCos(radians)        cos(radians)
+#define SkScalarTan(radians)        tan(radians)
+#define SkScalarASin(val)           asin(val)
+#define SkScalarACos(val)           acos(val)
+#define SkScalarATan2(y, x)         atan2(y,x)
+#define SkScalarExp(x)              exp(x)
+#define SkScalarLog(x)              log(x)
+#define SkScalarLog2(x)             log2(x)
+
+#define SK_ScalarEpsilon            DBL_EPSILON
+
+#endif
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 

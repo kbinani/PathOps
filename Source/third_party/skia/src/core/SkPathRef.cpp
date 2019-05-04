@@ -870,6 +870,7 @@ uint8_t SkPathRef::Iter::peek() const {
 }
 
 
+#if 0
 bool SkPathRef::isValid() const {
     if (static_cast<ptrdiff_t>(fFreeSpace) < 0) {
         return false;
@@ -943,3 +944,4 @@ bool SkPathRef::isValid() const {
     }
     return true;
 }
+#endif

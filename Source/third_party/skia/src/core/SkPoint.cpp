@@ -83,11 +83,11 @@ SkScalar SkPoint::Length(SkScalar dx, SkScalar dy) {
     }
 }
 
-bool SkPoint::setLength(float x, float y, float length) {
+bool SkPoint::setLength(SkScalar x, SkScalar y, SkScalar length) {
     return set_point_length<false>(this, x, y, length);
 }
 
-bool SkPointPriv::SetLengthFast(SkPoint* pt, float length) {
+bool SkPointPriv::SetLengthFast(SkPoint* pt, SkScalar length) {
     return set_point_length<true>(pt, pt->fX, pt->fY, length);
 }
 

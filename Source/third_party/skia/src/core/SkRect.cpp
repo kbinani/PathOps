@@ -37,42 +37,68 @@ void SkRect::toQuad(SkPoint quad[4]) const {
     quad[3].set(fLeft, fBottom);
 }
 
-#include "include/private/SkNx.h"
+//bool SkRect::setBoundsCheck(const SkPoint pts[], int count) {
+//    SkASSERT((pts && count > 0) || count == 0);
+//
+//    if (count <= 0) {
+//        this->setEmpty();
+//        return true;
+//    }
+//
+//    Sk4s min, max;
+//    if (count & 1) {
+//        min = max = Sk4s(pts->fX, pts->fY,
+//                         pts->fX, pts->fY);
+//        pts   += 1;
+//        count -= 1;
+//    } else {
+//        min = max = Sk4s::Load(pts);
+//        pts   += 2;
+//        count -= 2;
+//    }
+//
+//    Sk4s accum = min * 0;
+//    while (count) {
+//        Sk4s xy = Sk4s::Load(pts);
+//        accum = accum * xy;
+//        min = Sk4s::Min(min, xy);
+//        max = Sk4s::Max(max, xy);
+//        pts   += 2;
+//        count -= 2;
+//    }
+//
+//    bool all_finite = (accum * 0 == 0).allTrue();
+//    if (all_finite) {
+//        this->set(SkTMin(min[0], min[2]), SkTMin(min[1], min[3]),
+//                  SkTMax(max[0], max[2]), SkTMax(max[1], max[3]));
+//    } else {
+//        this->setEmpty();
+//    }
+//    return all_finite;
+//}
 
 bool SkRect::setBoundsCheck(const SkPoint pts[], int count) {
     SkASSERT((pts && count > 0) || count == 0);
-
+    
     if (count <= 0) {
         this->setEmpty();
         return true;
     }
+    
+    SkPoint min, max;
+    min = max = pts[0];
 
-    Sk4s min, max;
-    if (count & 1) {
-        min = max = Sk4s(pts->fX, pts->fY,
-                         pts->fX, pts->fY);
-        pts   += 1;
-        count -= 1;
-    } else {
-        min = max = Sk4s::Load(pts);
-        pts   += 2;
-        count -= 2;
+    SkPoint accum = min * 0;
+    for (int i = 1; i < count; i++) {
+        SkPoint xy = pts[i];
+        accum = SkPoint::Make(accum.fX * xy.fX, accum.fY * xy.fY);
+        min = SkPoint::Make(SkMinScalar(xy.fX, min.fX), SkMinScalar(xy.fY, min.fY));
+        max = SkPoint::Make(SkMaxScalar(xy.fX, max.fX), SkMaxScalar(xy.fY, max.fY));
     }
-
-    Sk4s accum = min * 0;
-    while (count) {
-        Sk4s xy = Sk4s::Load(pts);
-        accum = accum * xy;
-        min = Sk4s::Min(min, xy);
-        max = Sk4s::Max(max, xy);
-        pts   += 2;
-        count -= 2;
-    }
-
-    bool all_finite = (accum * 0 == 0).allTrue();
+    
+    bool all_finite = accum.fX * 0 == 0 && accum.fY * 0 == 0;
     if (all_finite) {
-        this->set(SkTMin(min[0], min[2]), SkTMin(min[1], min[3]),
-                  SkTMax(max[0], max[2]), SkTMax(max[1], max[3]));
+        this->set(min.fX, min.fY, max.fX, max.fY);
     } else {
         this->setEmpty();
     }

@@ -623,7 +623,8 @@ static inline float muladdmul(float a, float b, float c, float d) {
     return sk_double_to_float((double)a * b + (double)c * d);
 }
 
-static inline float rowcol3(const float row[], const float col[]) {
+template <typename T>
+static inline T rowcol3(const T row[], const T col[]) {
     return row[0] * col[0] + row[1] * col[3] + row[2] * col[6];
 }
 
@@ -740,7 +741,7 @@ static inline SkScalar dcross_dscale(double a, double b,
     return SkDoubleToScalar(dcross(a, b, c, d) * scale);
 }
 
-static double sk_inv_determinant(const float mat[9], int isPerspective) {
+static double sk_inv_determinant(const SkScalar mat[9], int isPerspective) {
     double det;
 
     if (isPerspective) {
@@ -1553,6 +1554,7 @@ namespace {
 // SkMatrix is C++11 POD (trivial and standard-layout), but not aggregate (it has private fields).
 struct AggregateMatrix {
     SkScalar matrix[9];
+    uint32_t dummy;
     uint32_t typemask;
 
     const SkMatrix& asSkMatrix() const { return *reinterpret_cast<const SkMatrix*>(this); }

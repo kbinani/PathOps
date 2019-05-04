@@ -91,7 +91,7 @@ public:
         RotateCW(*pt, pt);
     }
 
-    static bool SetLengthFast(SkPoint* pt, float length);
+    static bool SetLengthFast(SkPoint* pt, SkScalar length);
 
     static SkPoint MakeOrthog(const SkPoint& vec, Side side = kLeft_Side) {
         SkASSERT(side == kRight_Side || side == kLeft_Side);

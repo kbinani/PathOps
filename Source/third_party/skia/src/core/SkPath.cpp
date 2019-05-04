@@ -1453,7 +1453,7 @@ SkPath& SkPath::arcTo(SkScalar rx, SkScalar ry, SkScalar angle, SkPath::ArcSize 
     SkVector delta = unitPts[1] - unitPts[0];
 
     SkScalar d = delta.fX * delta.fX + delta.fY * delta.fY;
-    SkScalar scaleFactorSquared = SkTMax(1 / d - 0.25f, 0.f);
+    SkScalar scaleFactorSquared = SkTMax(1 / d - SkScalar(0.25), SkScalar(0.0));
 
     SkScalar scaleFactor = SkScalarSqrt(scaleFactorSquared);
     if (SkToBool(arcSweep) != SkToBool(arcLarge)) {  // flipped from the original implementation

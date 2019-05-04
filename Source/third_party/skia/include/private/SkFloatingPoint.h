@@ -87,8 +87,9 @@ static inline bool sk_floats_are_finite(float a, float b) {
     return sk_float_isfinite(a) && sk_float_isfinite(b);
 }
 
-static inline bool sk_floats_are_finite(const float array[], int count) {
-    float prod = 0;
+template <typename T>
+static inline bool sk_floats_are_finite(const T array[], int count) {
+    T prod = 0;
     for (int i = 0; i < count; ++i) {
         prod *= array[i];
     }

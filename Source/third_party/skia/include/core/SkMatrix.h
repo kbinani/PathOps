@@ -41,6 +41,7 @@ public:
     */
     constexpr SkMatrix()
         : fMat{1,0,0, 0,1,0, 0,0,1}
+        , fDummy(0)
         , fTypeMask{kIdentity_Mask} {}
 
     /** Sets SkMatrix to scale by (sx, sy). Returned matrix is:
@@ -1730,6 +1731,7 @@ private:
                                      kRectStaysRect_Mask;
 
     SkScalar         fMat[9];
+    uint32_t         fDummy;
     mutable uint32_t fTypeMask;
 
     static void ComputeInv(SkScalar dst[9], const SkScalar src[9], double invDet, bool isPersp);
