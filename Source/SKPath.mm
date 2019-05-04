@@ -323,11 +323,4 @@ end:
     return self->fBoundingBox;
 }
 
-
-- (void)addPath:(SKPath*)other
-{
-    self->path.addPath(other->path);
-    self->fBoundingBoxDirty = YES;
-}
-
 @end
