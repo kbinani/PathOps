@@ -148,7 +148,7 @@ static void cgpath_applier_function(void *info, CGPathElement const* element)
 }
 
 
-- (CGPathRef)__toCGPath:(CGFloat)resolution
+- (CGPathRef)__toCGPathWith:(CGFloat)resolution
 {
     CGMutablePathRef p = CGPathCreateMutable();
     SkPath::Iter iter(self->path, false);
