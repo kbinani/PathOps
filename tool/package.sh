@@ -14,13 +14,16 @@ else
 	exit 1
 fi
 
-sed -i '' "s/spec.version = \"\([^\"]*\)\"/spec.version = \"$version\"/g" PathOps.podspec
-git add PathOps.podspec
-git commit -m "Bump version to $version"
-
 dir=$(cd "$(dirname "$0")/.."; pwd)
 tmp=$(mktemp -d)
 origin=$(cd "$dir"; git remote get-url origin)
+
+(
+	cd "$dir"
+	sed -i '' "s/spec.version = \"\([^\"]*\)\"/spec.version = \"$version\"/g" PathOps.podspec
+	git add PathOps.podspec
+	git commit -m "Bump version to $version"
+)
 
 (
 	cd "$tmp"
