@@ -30,6 +30,7 @@ origin=$(cd "$dir"; git remote get-url origin)
 		git remote add github "$origin"
 		git fetch github
 		git checkout -b release github/release
+		git ls-files | xargs rm -rf
 	)
 )
 
