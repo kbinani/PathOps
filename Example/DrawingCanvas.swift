@@ -76,11 +76,11 @@ class DrawingCanvas : UIView {
             assert(stateCount == 0)
         case .fill:
             strokes.enumerated().filter({ $0.element.alpha > 0 }).forEach({ (it) in
-                var p = SKPath(cgPath: it.element.path)
+                let p = SKPath(cgPath: it.element.path)
                 strokes.dropFirst(it.offset + 1).filter({ $0.alpha <= 0 }).forEach({ (c) in
-                    p.subtract(SKPath(cgPath: c.path))
+                    p.subtract(c.path)
                 })
-
+                
                 guard let converted = p.toCGPath(with: CGFloat.ulpOfOne) else {
                     return
                 }
