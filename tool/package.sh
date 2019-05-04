@@ -57,7 +57,7 @@ origin=$(cd "$dir"; git remote get-url origin)
 	done
 
 	git add . -A
-	git commit -m "Package version $version"
+	git commit -m "Version $version"
 	git push origin release
 	git tag -f "$version"
 	git push -f origin "$version"
