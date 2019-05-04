@@ -12,70 +12,61 @@
 		945B4BEA2275B841002BC3AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945B4BE82275B841002BC3AB /* Main.storyboard */; };
 		945B4BEC2275B843002BC3AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945B4BEB2275B843002BC3AB /* Assets.xcassets */; };
 		945B4BEF2275B843002BC3AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945B4BED2275B843002BC3AB /* LaunchScreen.storyboard */; };
-		94A9DCAF22799289007A2A01 /* SkArenaAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B453B2274BE25002BC3AB /* SkArenaAlloc.cpp */; };
-		94A9DCB0227992AD007A2A01 /* SkBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B446D2274BE25002BC3AB /* SkBuffer.cpp */; };
-		94A9DCB1227992CB007A2A01 /* SkColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44F12274BE25002BC3AB /* SkColor.cpp */; };
-		94A9DCB2227992D8007A2A01 /* SkCpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44872274BE25002BC3AB /* SkCpu.cpp */; };
-		94A9DCB3227992DB007A2A01 /* SkCubicClipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B456D2274BE25002BC3AB /* SkCubicClipper.cpp */; };
-		94A9DCB42279930C007A2A01 /* SkGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452A2274BE25002BC3AB /* SkGeometry.cpp */; };
-		94A9DCB522799334007A2A01 /* SkMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44682274BE25002BC3AB /* SkMath.cpp */; };
-		94A9DCB622799338007A2A01 /* SkMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B459D2274BE25002BC3AB /* SkMatrix.cpp */; };
-		94A9DCB72279934B007A2A01 /* SkOpts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B447C2274BE25002BC3AB /* SkOpts.cpp */; };
-		94A9DCB822799354007A2A01 /* SkPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B455E2274BE25002BC3AB /* SkPath.cpp */; };
-		94A9DCB92279935A007A2A01 /* SkPathRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458F2274BE25002BC3AB /* SkPathRef.cpp */; };
-		94A9DCBA2279936A007A2A01 /* SkPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45262274BE25002BC3AB /* SkPoint.cpp */; };
-		94A9DCBB2279937F007A2A01 /* SkRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B454E2274BE25002BC3AB /* SkRect.cpp */; };
-		94A9DCBC22799388007A2A01 /* SkRRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458E2274BE25002BC3AB /* SkRRect.cpp */; };
-		94A9DCBD2279939D007A2A01 /* SkSemaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44532274BE25002BC3AB /* SkSemaphore.cpp */; };
-		94A9DCBE227993AC007A2A01 /* SkString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B448C2274BE25002BC3AB /* SkString.cpp */; };
-		94A9DCBF227993AE007A2A01 /* SkStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44A62274BE25002BC3AB /* SkStringUtils.cpp */; };
-		94A9DCC0227993B1007A2A01 /* SkStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452B2274BE25002BC3AB /* SkStroke.cpp */; };
-		94A9DCC1227993B4007A2A01 /* SkStrokeRec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B445D2274BE25002BC3AB /* SkStrokeRec.cpp */; };
-		94A9DCC2227993B7007A2A01 /* SkStrokerPriv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45242274BE25002BC3AB /* SkStrokerPriv.cpp */; };
-		94A9DCC3227993C1007A2A01 /* SkThreadID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45822274BE25002BC3AB /* SkThreadID.cpp */; };
-		94A9DCC4227993CF007A2A01 /* SkUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44582274BE25002BC3AB /* SkUtils.cpp */; };
-		94A9DCC52279957E007A2A01 /* SkOpts_avx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47C42274BE26002BC3AB /* SkOpts_avx.cpp */; };
-		94A9DCC622799582007A2A01 /* SkOpts_crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CE2274BE26002BC3AB /* SkOpts_crc32.cpp */; };
-		94A9DCC722799584007A2A01 /* SkOpts_sse41.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CF2274BE26002BC3AB /* SkOpts_sse41.cpp */; };
-		94A9DCC822799586007A2A01 /* SkOpts_hsw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D02274BE26002BC3AB /* SkOpts_hsw.cpp */; };
-		94A9DCC922799588007A2A01 /* SkOpts_sse42.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D12274BE26002BC3AB /* SkOpts_sse42.cpp */; };
-		94A9DCCA227996A8007A2A01 /* SkAddIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DF2274BE25002BC3AB /* SkAddIntersections.cpp */; };
-		94A9DCCB227996AB007A2A01 /* SkDConicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C82274BE25002BC3AB /* SkDConicLineIntersection.cpp */; };
-		94A9DCCC227996AD007A2A01 /* SkDCubicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B72274BE25002BC3AB /* SkDCubicLineIntersection.cpp */; };
-		94A9DCCD227996AF007A2A01 /* SkDCubicToQuads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D82274BE25002BC3AB /* SkDCubicToQuads.cpp */; };
-		94A9DCCE227996B1007A2A01 /* SkDLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DB2274BE25002BC3AB /* SkDLineIntersection.cpp */; };
-		94A9DCCF227996B4007A2A01 /* SkDQuadLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D22274BE25002BC3AB /* SkDQuadLineIntersection.cpp */; };
-		94A9DCD0227996B6007A2A01 /* SkIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AA2274BE25002BC3AB /* SkIntersections.cpp */; };
-		94A9DCD1227996B9007A2A01 /* SkOpAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C12274BE25002BC3AB /* SkOpAngle.cpp */; };
-		94A9DCD2227996BB007A2A01 /* SkOpBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DD2274BE25002BC3AB /* SkOpBuilder.cpp */; };
-		94A9DCD3227996BE007A2A01 /* SkOpCoincidence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D32274BE25002BC3AB /* SkOpCoincidence.cpp */; };
-		94A9DCD4227996C1007A2A01 /* SkOpContour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D62274BE25002BC3AB /* SkOpContour.cpp */; };
-		94A9DCD5227996C3007A2A01 /* SkOpCubicHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BB2274BE25002BC3AB /* SkOpCubicHull.cpp */; };
-		94A9DCD6227996C5007A2A01 /* SkOpEdgeBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BF2274BE25002BC3AB /* SkOpEdgeBuilder.cpp */; };
-		94A9DCD7227996C8007A2A01 /* SkOpSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C52274BE25002BC3AB /* SkOpSegment.cpp */; };
-		94A9DCD8227996CB007A2A01 /* SkOpSpan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DC2274BE25002BC3AB /* SkOpSpan.cpp */; };
-		94A9DCD9227996CD007A2A01 /* SkPathOpsAsWinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45A82274BE25002BC3AB /* SkPathOpsAsWinding.cpp */; };
-		94A9DCDA227996CF007A2A01 /* SkPathOpsCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AF2274BE25002BC3AB /* SkPathOpsCommon.cpp */; };
-		94A9DCDB227996D1007A2A01 /* SkPathOpsConic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CF2274BE25002BC3AB /* SkPathOpsConic.cpp */; };
-		94A9DCDC227996D3007A2A01 /* SkPathOpsCubic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BE2274BE25002BC3AB /* SkPathOpsCubic.cpp */; };
-		94A9DCDD227996D6007A2A01 /* SkPathOpsCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C22274BE25002BC3AB /* SkPathOpsCurve.cpp */; };
-		94A9DCDE227996D8007A2A01 /* SkPathOpsDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AC2274BE25002BC3AB /* SkPathOpsDebug.cpp */; };
-		94A9DCDF227996DB007A2A01 /* SkPathOpsLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B52274BE25002BC3AB /* SkPathOpsLine.cpp */; };
-		94A9DCE0227996DD007A2A01 /* SkPathOpsOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CD2274BE25002BC3AB /* SkPathOpsOp.cpp */; };
-		94A9DCE1227996E1007A2A01 /* SkPathOpsQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AE2274BE25002BC3AB /* SkPathOpsQuad.cpp */; };
-		94A9DCE2227996E3007A2A01 /* SkPathOpsRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DE2274BE25002BC3AB /* SkPathOpsRect.cpp */; };
-		94A9DCE3227996E5007A2A01 /* SkPathOpsSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B62274BE25002BC3AB /* SkPathOpsSimplify.cpp */; };
-		94A9DCE4227996E8007A2A01 /* SkPathOpsTightBounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C62274BE25002BC3AB /* SkPathOpsTightBounds.cpp */; };
-		94A9DCE5227996EA007A2A01 /* SkPathOpsTSect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BA2274BE25002BC3AB /* SkPathOpsTSect.cpp */; };
-		94A9DCE6227996EC007A2A01 /* SkPathOpsTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CC2274BE25002BC3AB /* SkPathOpsTypes.cpp */; };
-		94A9DCE7227996EE007A2A01 /* SkPathOpsWinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45A92274BE25002BC3AB /* SkPathOpsWinding.cpp */; };
-		94A9DCE8227996F1007A2A01 /* SkPathWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D02274BE25002BC3AB /* SkPathWriter.cpp */; };
-		94A9DCE9227996F3007A2A01 /* SkReduceOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AB2274BE25002BC3AB /* SkReduceOrder.cpp */; };
+		948852BB227D8D7F0006E535 /* SkPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45262274BE25002BC3AB /* SkPoint.cpp */; };
+		948852BC227D8D970006E535 /* SkRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B454E2274BE25002BC3AB /* SkRect.cpp */; };
+		948852C1227D8DE10006E535 /* SkStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452B2274BE25002BC3AB /* SkStroke.cpp */; };
+		948852C4227D8E140006E535 /* SkUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44582274BE25002BC3AB /* SkUtils.cpp */; };
+		948852C5227D8E330006E535 /* SkAddIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DF2274BE25002BC3AB /* SkAddIntersections.cpp */; };
+		948852C6227D8E380006E535 /* SkDConicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C82274BE25002BC3AB /* SkDConicLineIntersection.cpp */; };
+		948852C7227D8E3C0006E535 /* SkDCubicLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B72274BE25002BC3AB /* SkDCubicLineIntersection.cpp */; };
+		948852C8227D8E500006E535 /* SkDLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DB2274BE25002BC3AB /* SkDLineIntersection.cpp */; };
+		948852C9227D8E560006E535 /* SkDQuadLineIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D22274BE25002BC3AB /* SkDQuadLineIntersection.cpp */; };
+		948852CA227D8E600006E535 /* SkIntersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AA2274BE25002BC3AB /* SkIntersections.cpp */; };
+		948852CB227D8E670006E535 /* SkOpAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C12274BE25002BC3AB /* SkOpAngle.cpp */; };
+		948852CC227D8E750006E535 /* SkOpCoincidence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D32274BE25002BC3AB /* SkOpCoincidence.cpp */; };
+		948852CD227D8E7D0006E535 /* SkOpContour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D62274BE25002BC3AB /* SkOpContour.cpp */; };
+		948852CE227D8E840006E535 /* SkOpCubicHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BB2274BE25002BC3AB /* SkOpCubicHull.cpp */; };
+		948852CF227D8E8A0006E535 /* SkOpEdgeBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BF2274BE25002BC3AB /* SkOpEdgeBuilder.cpp */; };
+		948852D0227D8E910006E535 /* SkOpSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C52274BE25002BC3AB /* SkOpSegment.cpp */; };
+		948852D1227D8E960006E535 /* SkOpSpan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DC2274BE25002BC3AB /* SkOpSpan.cpp */; };
+		948852D2227D8EA40006E535 /* SkPathOpsCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AF2274BE25002BC3AB /* SkPathOpsCommon.cpp */; };
+		948852D3227D8EAB0006E535 /* SkPathOpsConic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CF2274BE25002BC3AB /* SkPathOpsConic.cpp */; };
+		948852D4227D8EB10006E535 /* SkPathOpsCubic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BE2274BE25002BC3AB /* SkPathOpsCubic.cpp */; };
+		948852D5227D8EBA0006E535 /* SkPathOpsCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45C22274BE25002BC3AB /* SkPathOpsCurve.cpp */; };
+		948852D6227D8EBF0006E535 /* SkPathOpsDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AC2274BE25002BC3AB /* SkPathOpsDebug.cpp */; };
+		948852D7227D8EC40006E535 /* SkPathOpsLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B52274BE25002BC3AB /* SkPathOpsLine.cpp */; };
+		948852D8227D8ECD0006E535 /* SkPathOpsOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CD2274BE25002BC3AB /* SkPathOpsOp.cpp */; };
+		948852D9227D8ED10006E535 /* SkPathOpsQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AE2274BE25002BC3AB /* SkPathOpsQuad.cpp */; };
+		948852DA227D8ED60006E535 /* SkPathOpsRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45DE2274BE25002BC3AB /* SkPathOpsRect.cpp */; };
+		948852DB227D8EDD0006E535 /* SkPathOpsSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45B62274BE25002BC3AB /* SkPathOpsSimplify.cpp */; };
+		948852DC227D8EEC0006E535 /* SkPathOpsTSect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45BA2274BE25002BC3AB /* SkPathOpsTSect.cpp */; };
+		948852DD227D8EF10006E535 /* SkPathOpsTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45CC2274BE25002BC3AB /* SkPathOpsTypes.cpp */; };
+		948852DE227D8EF70006E535 /* SkPathOpsWinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45A92274BE25002BC3AB /* SkPathOpsWinding.cpp */; };
+		948852DF227D8EFC0006E535 /* SkPathWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45D02274BE25002BC3AB /* SkPathWriter.cpp */; };
+		948852E0227D8F030006E535 /* SkReduceOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45AB2274BE25002BC3AB /* SkReduceOrder.cpp */; };
+		948852E1227D8F130006E535 /* SkDebug_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48352274BE26002BC3AB /* SkDebug_stdio.cpp */; };
+		948852E4227D91AF0006E535 /* SkArenaAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B453B2274BE25002BC3AB /* SkArenaAlloc.cpp */; };
+		948852E9227D92520006E535 /* SkUTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47382274BE26002BC3AB /* SkUTF.cpp */; };
+		948852EA227D92A00006E535 /* SkStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44A62274BE25002BC3AB /* SkStringUtils.cpp */; };
+		948852EB227D92A90006E535 /* SkString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B448C2274BE25002BC3AB /* SkString.cpp */; };
+		948852ED227D92E80006E535 /* SkBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B446D2274BE25002BC3AB /* SkBuffer.cpp */; };
+		948852EE227D931B0006E535 /* SkOpts_crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CE2274BE26002BC3AB /* SkOpts_crc32.cpp */; };
+		948852EF227D939F0006E535 /* SkColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44F12274BE25002BC3AB /* SkColor.cpp */; };
+		948852F0227D93A70006E535 /* SkCpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44872274BE25002BC3AB /* SkCpu.cpp */; };
+		948852F3227D941F0006E535 /* SkCubicClipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B456D2274BE25002BC3AB /* SkCubicClipper.cpp */; };
+		948852F4227D942E0006E535 /* SkGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B452A2274BE25002BC3AB /* SkGeometry.cpp */; };
+		948852F6227D944E0006E535 /* SkMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B459D2274BE25002BC3AB /* SkMatrix.cpp */; };
+		948852F7227D94720006E535 /* SkPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B455E2274BE25002BC3AB /* SkPath.cpp */; };
+		948852F9227D948C0006E535 /* SkPathRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458F2274BE25002BC3AB /* SkPathRef.cpp */; };
+		948852FA227D949E0006E535 /* SkRRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B458E2274BE25002BC3AB /* SkRRect.cpp */; };
+		948852FD227D95090006E535 /* SkMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44682274BE25002BC3AB /* SkMath.cpp */; };
+		948852FE227D95510006E535 /* SkSemaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B44532274BE25002BC3AB /* SkSemaphore.cpp */; };
+		948852FF227D956A0006E535 /* SkStrokerPriv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45242274BE25002BC3AB /* SkStrokerPriv.cpp */; };
+		94885300227D95CA0006E535 /* SkThreadID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45822274BE25002BC3AB /* SkThreadID.cpp */; };
+		94885301227D96930006E535 /* SkOpts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B447C2274BE25002BC3AB /* SkOpts.cpp */; };
 		94A9DCEA22799708007A2A01 /* SkOSFile_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48102274BE26002BC3AB /* SkOSFile_stdio.cpp */; };
 		94A9DCEB2279970B007A2A01 /* SkOSFile_posix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48112274BE26002BC3AB /* SkOSFile_posix.cpp */; };
-		94A9DCEC2279971D007A2A01 /* SkDebug_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48352274BE26002BC3AB /* SkDebug_stdio.cpp */; };
 		94A9DCED22799740007A2A01 /* SkMemory_malloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B481D2274BE26002BC3AB /* SkMemory_malloc.cpp */; };
-		94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47382274BE26002BC3AB /* SkUTF.cpp */; };
 		94A9DCF122799974007A2A01 /* skia_compat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B3E402274A61A002BC3AB /* skia_compat.mm */; };
 		94A9DCF222799977007A2A01 /* skia_stub.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A9DC8E22761149007A2A01 /* skia_stub.mm */; };
 		94A9DCF322799979007A2A01 /* SKPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B4B842274D033002BC3AB /* SKPath.mm */; };
@@ -4086,82 +4077,73 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A9DCE0227996DD007A2A01 /* SkPathOpsOp.cpp in Sources */,
-				94A9DCE8227996F1007A2A01 /* SkPathWriter.cpp in Sources */,
-				94A9DCE5227996EA007A2A01 /* SkPathOpsTSect.cpp in Sources */,
+				948852D1227D8E960006E535 /* SkOpSpan.cpp in Sources */,
+				948852F3227D941F0006E535 /* SkCubicClipper.cpp in Sources */,
+				948852C7227D8E3C0006E535 /* SkDCubicLineIntersection.cpp in Sources */,
+				948852F6227D944E0006E535 /* SkMatrix.cpp in Sources */,
 				94A9DCEB2279970B007A2A01 /* SkOSFile_posix.cpp in Sources */,
-				94A9DCB72279934B007A2A01 /* SkOpts.cpp in Sources */,
-				94A9DCDF227996DB007A2A01 /* SkPathOpsLine.cpp in Sources */,
+				948852DF227D8EFC0006E535 /* SkPathWriter.cpp in Sources */,
 				94A9DCF62279D5C9007A2A01 /* CatmulRomStroke.swift in Sources */,
-				94A9DCDE227996D8007A2A01 /* SkPathOpsDebug.cpp in Sources */,
+				948852C6227D8E380006E535 /* SkDConicLineIntersection.cpp in Sources */,
 				945B4BE72275B841002BC3AB /* ViewController.swift in Sources */,
+				948852EE227D931B0006E535 /* SkOpts_crc32.cpp in Sources */,
 				94A9DCF222799977007A2A01 /* skia_stub.mm in Sources */,
-				94A9DCBE227993AC007A2A01 /* SkString.cpp in Sources */,
-				94A9DCD7227996C8007A2A01 /* SkOpSegment.cpp in Sources */,
-				94A9DCB822799354007A2A01 /* SkPath.cpp in Sources */,
-				94A9DCB42279930C007A2A01 /* SkGeometry.cpp in Sources */,
-				94A9DCD9227996CD007A2A01 /* SkPathOpsAsWinding.cpp in Sources */,
-				94A9DCCF227996B4007A2A01 /* SkDQuadLineIntersection.cpp in Sources */,
-				94A9DCBF227993AE007A2A01 /* SkStringUtils.cpp in Sources */,
-				94A9DCD6227996C5007A2A01 /* SkOpEdgeBuilder.cpp in Sources */,
-				94A9DCD4227996C1007A2A01 /* SkOpContour.cpp in Sources */,
+				948852ED227D92E80006E535 /* SkBuffer.cpp in Sources */,
+				948852EB227D92A90006E535 /* SkString.cpp in Sources */,
+				948852FF227D956A0006E535 /* SkStrokerPriv.cpp in Sources */,
 				94A9DCF122799974007A2A01 /* skia_compat.mm in Sources */,
-				94A9DCB0227992AD007A2A01 /* SkBuffer.cpp in Sources */,
-				94A9DCD3227996BE007A2A01 /* SkOpCoincidence.cpp in Sources */,
-				94A9DCBD2279939D007A2A01 /* SkSemaphore.cpp in Sources */,
-				94A9DCE4227996E8007A2A01 /* SkPathOpsTightBounds.cpp in Sources */,
-				94A9DCB2227992D8007A2A01 /* SkCpu.cpp in Sources */,
-				94A9DCC722799584007A2A01 /* SkOpts_sse41.cpp in Sources */,
-				94A9DCE2227996E3007A2A01 /* SkPathOpsRect.cpp in Sources */,
+				948852CD227D8E7D0006E535 /* SkOpContour.cpp in Sources */,
 				94A9DD06227B6D5C007A2A01 /* SKPath+Util.swift in Sources */,
 				94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */,
-				94A9DCBB2279937F007A2A01 /* SkRect.cpp in Sources */,
-				94A9DCC1227993B4007A2A01 /* SkStrokeRec.cpp in Sources */,
-				94A9DCC4227993CF007A2A01 /* SkUtils.cpp in Sources */,
-				94A9DCC922799588007A2A01 /* SkOpts_sse42.cpp in Sources */,
+				948852FD227D95090006E535 /* SkMath.cpp in Sources */,
+				948852F9227D948C0006E535 /* SkPathRef.cpp in Sources */,
+				948852DE227D8EF70006E535 /* SkPathOpsWinding.cpp in Sources */,
+				948852D0227D8E910006E535 /* SkOpSegment.cpp in Sources */,
+				948852D8227D8ECD0006E535 /* SkPathOpsOp.cpp in Sources */,
+				948852E1227D8F130006E535 /* SkDebug_stdio.cpp in Sources */,
+				948852FE227D95510006E535 /* SkSemaphore.cpp in Sources */,
+				948852CE227D8E840006E535 /* SkOpCubicHull.cpp in Sources */,
 				94A9DCFC2279FB88007A2A01 /* DrawingCanvas.swift in Sources */,
-				94A9DCDD227996D6007A2A01 /* SkPathOpsCurve.cpp in Sources */,
-				94A9DCB3227992DB007A2A01 /* SkCubicClipper.cpp in Sources */,
-				94A9DCCD227996AF007A2A01 /* SkDCubicToQuads.cpp in Sources */,
-				94A9DCDC227996D3007A2A01 /* SkPathOpsCubic.cpp in Sources */,
-				94A9DCE9227996F3007A2A01 /* SkReduceOrder.cpp in Sources */,
+				948852F7227D94720006E535 /* SkPath.cpp in Sources */,
+				948852C8227D8E500006E535 /* SkDLineIntersection.cpp in Sources */,
+				948852D9227D8ED10006E535 /* SkPathOpsQuad.cpp in Sources */,
+				948852FA227D949E0006E535 /* SkRRect.cpp in Sources */,
+				948852BC227D8D970006E535 /* SkRect.cpp in Sources */,
+				948852EA227D92A00006E535 /* SkStringUtils.cpp in Sources */,
+				948852BB227D8D7F0006E535 /* SkPoint.cpp in Sources */,
+				94885301227D96930006E535 /* SkOpts.cpp in Sources */,
+				948852D7227D8EC40006E535 /* SkPathOpsLine.cpp in Sources */,
+				948852DC227D8EEC0006E535 /* SkPathOpsTSect.cpp in Sources */,
+				948852C4227D8E140006E535 /* SkUtils.cpp in Sources */,
 				94A9DD04227A0E9B007A2A01 /* RoundedButton.swift in Sources */,
-				94A9DCC0227993B1007A2A01 /* SkStroke.cpp in Sources */,
+				948852C5227D8E330006E535 /* SkAddIntersections.cpp in Sources */,
 				94A9DCEA22799708007A2A01 /* SkOSFile_stdio.cpp in Sources */,
-				94A9DCEE22799753007A2A01 /* SkUTF.cpp in Sources */,
-				94A9DCB1227992CB007A2A01 /* SkColor.cpp in Sources */,
-				94A9DCC822799586007A2A01 /* SkOpts_hsw.cpp in Sources */,
-				94A9DCD0227996B6007A2A01 /* SkIntersections.cpp in Sources */,
+				948852DA227D8ED60006E535 /* SkPathOpsRect.cpp in Sources */,
+				948852CC227D8E750006E535 /* SkOpCoincidence.cpp in Sources */,
+				948852DB227D8EDD0006E535 /* SkPathOpsSimplify.cpp in Sources */,
+				948852D2227D8EA40006E535 /* SkPathOpsCommon.cpp in Sources */,
+				948852CA227D8E600006E535 /* SkIntersections.cpp in Sources */,
 				94A9DD002279FE33007A2A01 /* CGFloat+Math.swift in Sources */,
-				94A9DCDA227996CF007A2A01 /* SkPathOpsCommon.cpp in Sources */,
-				94A9DCB622799338007A2A01 /* SkMatrix.cpp in Sources */,
-				94A9DCBC22799388007A2A01 /* SkRRect.cpp in Sources */,
-				94A9DCEC2279971D007A2A01 /* SkDebug_stdio.cpp in Sources */,
-				94A9DCD1227996B9007A2A01 /* SkOpAngle.cpp in Sources */,
-				94A9DCCC227996AD007A2A01 /* SkDCubicLineIntersection.cpp in Sources */,
-				94A9DCC622799582007A2A01 /* SkOpts_crc32.cpp in Sources */,
+				948852D4227D8EB10006E535 /* SkPathOpsCubic.cpp in Sources */,
+				948852E4227D91AF0006E535 /* SkArenaAlloc.cpp in Sources */,
+				948852EF227D939F0006E535 /* SkColor.cpp in Sources */,
+				948852C1227D8DE10006E535 /* SkStroke.cpp in Sources */,
+				948852E0227D8F030006E535 /* SkReduceOrder.cpp in Sources */,
+				948852D5227D8EBA0006E535 /* SkPathOpsCurve.cpp in Sources */,
 				945B4BE52275B841002BC3AB /* AppDelegate.swift in Sources */,
+				948852C9227D8E560006E535 /* SkDQuadLineIntersection.cpp in Sources */,
 				94A9DCED22799740007A2A01 /* SkMemory_malloc.cpp in Sources */,
-				94A9DCE6227996EC007A2A01 /* SkPathOpsTypes.cpp in Sources */,
-				94A9DCCB227996AB007A2A01 /* SkDConicLineIntersection.cpp in Sources */,
-				94A9DCD8227996CB007A2A01 /* SkOpSpan.cpp in Sources */,
 				94A9DCF82279FB3F007A2A01 /* NamedColor.swift in Sources */,
-				94A9DCCA227996A8007A2A01 /* SkAddIntersections.cpp in Sources */,
-				94A9DCC52279957E007A2A01 /* SkOpts_avx.cpp in Sources */,
-				94A9DCD2227996BB007A2A01 /* SkOpBuilder.cpp in Sources */,
-				94A9DCD5227996C3007A2A01 /* SkOpCubicHull.cpp in Sources */,
-				94A9DCCE227996B1007A2A01 /* SkDLineIntersection.cpp in Sources */,
-				94A9DCC3227993C1007A2A01 /* SkThreadID.cpp in Sources */,
-				94A9DCBA2279936A007A2A01 /* SkPoint.cpp in Sources */,
-				94A9DCDB227996D1007A2A01 /* SkPathOpsConic.cpp in Sources */,
+				94885300227D95CA0006E535 /* SkThreadID.cpp in Sources */,
+				948852E9227D92520006E535 /* SkUTF.cpp in Sources */,
+				948852CB227D8E670006E535 /* SkOpAngle.cpp in Sources */,
+				948852DD227D8EF10006E535 /* SkPathOpsTypes.cpp in Sources */,
+				948852CF227D8E8A0006E535 /* SkOpEdgeBuilder.cpp in Sources */,
+				948852D6227D8EBF0006E535 /* SkPathOpsDebug.cpp in Sources */,
+				948852F0227D93A70006E535 /* SkCpu.cpp in Sources */,
 				94A9DCF322799979007A2A01 /* SKPath.mm in Sources */,
-				94A9DCAF22799289007A2A01 /* SkArenaAlloc.cpp in Sources */,
-				94A9DCE7227996EE007A2A01 /* SkPathOpsWinding.cpp in Sources */,
-				94A9DCB522799334007A2A01 /* SkMath.cpp in Sources */,
-				94A9DCB92279935A007A2A01 /* SkPathRef.cpp in Sources */,
-				94A9DCE3227996E5007A2A01 /* SkPathOpsSimplify.cpp in Sources */,
-				94A9DCC2227993B7007A2A01 /* SkStrokerPriv.cpp in Sources */,
-				94A9DCE1227996E1007A2A01 /* SkPathOpsQuad.cpp in Sources */,
+				948852D3227D8EAB0006E535 /* SkPathOpsConic.cpp in Sources */,
+				948852F4227D942E0006E535 /* SkGeometry.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
