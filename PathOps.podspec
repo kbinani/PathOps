@@ -4,7 +4,7 @@ third_party_header_files = ["Source/third_party/skia/include/core/SkPath.h", "So
 
 Pod::Spec.new do |spec|
   spec.name = "PathOps"
-  spec.version = "0.0.5"
+  spec.version = "0.0.6"
   spec.summary = "Boolean operation library for CGPath with skia https://skia.org/ backend."
   spec.description = <<-DESC
   Boolean operation library for CGPath with skia https://skia.org/ backend
@@ -18,9 +18,11 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     'HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/Source/third_party/skia $(PODS_TARGET_SRCROOT)/Source/third_party/skia/third_party/skcms $(PODS_TARGET_SRCROOT)/Source/third_party',
     'OTHER_CFLAGS' => '-Wno-documentation',
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'SK_RELEASE=1',
   }
 
   spec.ios.deployment_target = "9.0"
 
   spec.frameworks = "Foundation", "CoreGraphics"
+  spec.swift_version = "4.2"
 end

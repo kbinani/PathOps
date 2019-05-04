@@ -17,4 +17,12 @@ extension SKPath {
         let p = self.__toCGPath(with: resolution).takeRetainedValue()
         return (path: p, fillRule: fillRule)
     }
+
+    public func subtract(_ path: CGPath) {
+        self.subtract(SKPath(cgPath: path))
+    }
+    
+    public func union(with path: CGPath) {
+        self.union(with: SKPath(cgPath: path))
+    }
 }
