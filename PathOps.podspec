@@ -23,4 +23,5 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "9.0"
 
   spec.frameworks = "Foundation", "CoreGraphics"
+  spec.swift_version = "4.2"
 end
