@@ -4,7 +4,7 @@ third_party_header_files = ["Source/third_party/skia/include/core/SkPath.h", "So
 
 Pod::Spec.new do |spec|
   spec.name = "PathOps"
-  spec.version = "0.0.3"
+  spec.version = "0.0.4"
   spec.summary = "Boolean operation library for CGPath with skia https://skia.org/ backend."
   spec.description = <<-DESC
   Boolean operation library for CGPath with skia https://skia.org/ backend
