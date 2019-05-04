@@ -2,11 +2,6 @@
 
 version=$1
 
-if [ -z "$version" ]; then
-	echo "Usage: bash package.sh VERSION"
-	exit 1
-fi
-
 if git diff --exit-code --quiet; then
 	echo >/dev/null
 else
@@ -19,10 +14,12 @@ tmp=$(mktemp -d)
 origin=$(cd "$dir"; git remote get-url origin)
 
 (
-	cd "$dir"
-	sed -i '' "s/spec.version = \"\([^\"]*\)\"/spec.version = \"$version\"/g" PathOps.podspec
-	git add PathOps.podspec
-	git commit -m "Bump version to $version"
+	if [ -n "$version" ]; then
+		cd "$dir"
+		sed -i '' "s/spec.version = \"\([^\"]*\)\"/spec.version = \"$version\"/g" PathOps.podspec
+		git add PathOps.podspec
+		git commit -m "Bump version to $version"
+	fi
 )
 
 (
@@ -57,10 +54,17 @@ origin=$(cd "$dir"; git remote get-url origin)
 	done
 
 	git add . -A
-	git commit -m "Version $version"
-	git push origin release
-	git tag -f "$version"
-	git push -f origin "$version"
+	if [ -n "$version" ]; then
+		git commit -m "Version $version"
+	else
+		git commit -m "WIP"
+	fi
+	git push origin -f release
+
+	if [ -n "$version" ]; then
+		git tag -f "$version"
+		git push -f origin "$version"
+	fi
 )
 
 if [ -n "$tmp" ]; then
