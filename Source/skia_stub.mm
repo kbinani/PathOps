@@ -1,8 +1,22 @@
 #include "include/core/SkPaint.h"
 
 
-void SkPaint::setStrokeWidth(SkScalar width) { }
-void SkPaint::setStrokeMiter(SkScalar limit) { }
-void SkPaint::setStrokeCap(SkPaint::Cap ct) { }
-void SkPaint::setStrokeJoin(SkPaint::Join jt) { }
-void SkPaint::setStyle(SkPaint::Style style) { }
+void SkPaint::setStrokeWidth(SkScalar width) {
+    assert(false);
+}
+
+void SkPaint::setStrokeMiter(SkScalar limit) {
+    assert(false);
+}
+
+void SkPaint::setStrokeCap(SkPaint::Cap ct) {
+    assert(false);
+}
+
+void SkPaint::setStrokeJoin(SkPaint::Join jt) {
+    assert(false);
+}
+
+void SkPaint::setStyle(SkPaint::Style style) {
+    assert(false);
+}
