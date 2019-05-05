@@ -64,10 +64,6 @@
 		948852FF227D956A0006E535 /* SkStrokerPriv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45242274BE25002BC3AB /* SkStrokerPriv.cpp */; };
 		94885300227D95CA0006E535 /* SkThreadID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B45822274BE25002BC3AB /* SkThreadID.cpp */; };
 		94885301227D96930006E535 /* SkOpts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B447C2274BE25002BC3AB /* SkOpts.cpp */; };
-		94885309227EB6070006E535 /* SkOpts_avx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47C42274BE26002BC3AB /* SkOpts_avx.cpp */; };
-		9488530A227EB60C0006E535 /* SkOpts_sse41.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47CF2274BE26002BC3AB /* SkOpts_sse41.cpp */; };
-		9488530B227EB60E0006E535 /* SkOpts_sse42.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D12274BE26002BC3AB /* SkOpts_sse42.cpp */; };
-		9488530C227EB6190006E535 /* SkOpts_hsw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B47D02274BE26002BC3AB /* SkOpts_hsw.cpp */; };
 		94A9DCEA22799708007A2A01 /* SkOSFile_stdio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48102274BE26002BC3AB /* SkOSFile_stdio.cpp */; };
 		94A9DCEB2279970B007A2A01 /* SkOSFile_posix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B48112274BE26002BC3AB /* SkOSFile_posix.cpp */; };
 		94A9DCED22799740007A2A01 /* SkMemory_malloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 945B481D2274BE26002BC3AB /* SkMemory_malloc.cpp */; };
@@ -4082,14 +4078,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				948852D1227D8E960006E535 /* SkOpSpan.cpp in Sources */,
-				94885309227EB6070006E535 /* SkOpts_avx.cpp in Sources */,
 				948852F3227D941F0006E535 /* SkCubicClipper.cpp in Sources */,
 				948852C7227D8E3C0006E535 /* SkDCubicLineIntersection.cpp in Sources */,
 				948852F6227D944E0006E535 /* SkMatrix.cpp in Sources */,
 				94A9DCEB2279970B007A2A01 /* SkOSFile_posix.cpp in Sources */,
 				948852DF227D8EFC0006E535 /* SkPathWriter.cpp in Sources */,
 				94A9DCF62279D5C9007A2A01 /* CatmulRomStroke.swift in Sources */,
-				9488530C227EB6190006E535 /* SkOpts_hsw.cpp in Sources */,
 				948852C6227D8E380006E535 /* SkDConicLineIntersection.cpp in Sources */,
 				945B4BE72275B841002BC3AB /* ViewController.swift in Sources */,
 				948852EE227D931B0006E535 /* SkOpts_crc32.cpp in Sources */,
@@ -4103,11 +4097,9 @@
 				94A9DCFE2279FE16007A2A01 /* CGPoint+Math.swift in Sources */,
 				948852FD227D95090006E535 /* SkMath.cpp in Sources */,
 				948852F9227D948C0006E535 /* SkPathRef.cpp in Sources */,
-				9488530B227EB60E0006E535 /* SkOpts_sse42.cpp in Sources */,
 				948852DE227D8EF70006E535 /* SkPathOpsWinding.cpp in Sources */,
 				948852D0227D8E910006E535 /* SkOpSegment.cpp in Sources */,
 				948852D8227D8ECD0006E535 /* SkPathOpsOp.cpp in Sources */,
-				9488530A227EB60C0006E535 /* SkOpts_sse41.cpp in Sources */,
 				948852E1227D8F130006E535 /* SkDebug_stdio.cpp in Sources */,
 				948852FE227D95510006E535 /* SkSemaphore.cpp in Sources */,
 				948852CE227D8E840006E535 /* SkOpCubicHull.cpp in Sources */,
@@ -4222,6 +4214,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"SK_RELEASE=1",
+					"SK_BUILD_NO_OPTS=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -4282,7 +4275,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "SK_RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SK_RELEASE=1",
+					"SK_BUILD_NO_OPTS=1",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
